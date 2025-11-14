@@ -43,6 +43,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     {
         if (CurrentItemIdName != null)
         {
+            isDraging = true;
             transform.position = Input.mousePosition;
             //isDraging = true;
         }
@@ -54,6 +55,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         if (CurrentItemIdName != null)
         {
             transform.SetParent(parentAfterDrag);
+            isDraging = false;
         }
 
         //isDraging = false;
@@ -69,10 +71,9 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         item = newItem;
         image.sprite = newItem.image;
     }
-
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (CurrentItemIdName == "cle")
+        if (CurrentItemIdName == "cle" && isDraging == true)
         {
             GameObject.Destroy(gameObject);
         }
