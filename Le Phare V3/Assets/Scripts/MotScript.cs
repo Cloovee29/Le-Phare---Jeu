@@ -2,11 +2,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class MotScript : MonoBehaviour
+public class MotScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
 
 // public string mot; // le mot utilisé pour remplir le journal
-    private Canvas canvas;
+    public Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
 
@@ -15,7 +15,6 @@ public class MotScript : MonoBehaviour
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-        canvas = GetComponentInParent<Canvas>();
       //  GetComponentInChildren<TextMeshPro>().text = mot;
     }
 
