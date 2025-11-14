@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bc135cf740fd15c4d8e53ac4c39185fe
+guid: 61b131443f56fc74db90987b5ec436a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8089419554030596255
-    second: PHradio_0
+      213: 6175327746213496478
+    second: PH-journal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PHradio_0
+      name: PH-journal_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 980
-        height: 980
+        width: 659
+        height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16f48e276cb9cbf80800000000000000
-      internalID: -8089419554030596255
+      spriteID: e964baceddb23b550800000000000000
+      internalID: 6175327746213496478
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PHradio_0: -8089419554030596255
+      PH-journal_0: 6175327746213496478
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
