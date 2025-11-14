@@ -354,7 +354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 70067859}
-  estVisible: 0
 --- !u!114 &131754520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3354,6 +3353,7 @@ MonoBehaviour:
   fermetureJournal: {x: 0, y: 0, z: 0}
   journalOuvert: 1
   motADrag: {fileID: 131754517}
+  newSprite: {fileID: 4386398270895178191, guid: c1784451991a7e24d829a4a100777c42, type: 3}
 --- !u!1 &1627595620
 GameObject:
   m_ObjectHideFlags: 0
