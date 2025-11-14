@@ -5,7 +5,7 @@ using TMPro;
 public class MotScript : MonoBehaviour
 {
 
- public string word; // le mot utilisé pour remplir le journal
+// public string mot; // le mot utilisé pour remplir le journal
     private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
@@ -16,18 +16,14 @@ public class MotScript : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();
-        GetComponentInChildren<TextMeshProUGUI>().text = word;
+      //  GetComponentInChildren<TextMeshPro>().text = mot;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
 
      public void OnBeginDrag(PointerEventData eventData)
     {
+        canvasGroup.alpha = 0.6f; 
         canvasGroup.blocksRaycasts = false;
     }
 
@@ -38,6 +34,7 @@ public class MotScript : MonoBehaviour
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
     }
 

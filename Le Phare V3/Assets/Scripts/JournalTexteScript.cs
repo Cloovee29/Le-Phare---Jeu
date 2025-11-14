@@ -10,7 +10,7 @@ public class JournalTexteScript : MonoBehaviour
         "Aujourd’hui, j’ai rencontré un {0}. Il m’a offert un {1} " +
         "avant de disparaître dans un énorme {2}.";
 
-    public TextMeshProUGUI display;
+    public TextMeshPro display;
 
     private string[] slotValues;
 

@@ -24,7 +24,7 @@ public class TrouScript : MonoBehaviour
 
         if (dragged != null)
         {
-            JournalTexteScript.Instance.FillSlot(slotID, dragged.word);
+            //JournalTexteScript.Instance.FillSlot(slotID, dragged.mot);
         }
     }
 }
