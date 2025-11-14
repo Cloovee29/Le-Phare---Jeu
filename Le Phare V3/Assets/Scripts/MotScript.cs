@@ -18,7 +18,7 @@ public class MotScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
       //  GetComponentInChildren<TextMeshPro>().text = mot;
     }
 
-
+  
 
      public void OnBeginDrag(PointerEventData eventData)
     {

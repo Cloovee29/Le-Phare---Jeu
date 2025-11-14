@@ -6,6 +6,7 @@ public class JournalScript : MonoBehaviour
 public Vector3 ouvertureJournal;
 public Vector3 fermetureJournal;
 public bool journalOuvert;
+public GameObject motADrag;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,9 +23,11 @@ public bool journalOuvert;
      if (Input.GetKeyDown(KeyCode.J) && journalOuvert==false){
            transform.position += ouvertureJournal;
            journalOuvert = true;
+           motADrag.SetActive(true);
      }else if (Input.GetKeyDown(KeyCode.J) && journalOuvert==true){
          transform.position += fermetureJournal;
            journalOuvert = false;
+           motADrag.SetActive(false);
      }
                 
 
