@@ -15,10 +15,9 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     Transform parentAfterDrag;
     bool isDraging = false;
 
-    //void Start()
-    //{
-    //    InitialiseItem(item);
-    //}
+    public string CurrentItemIdName { get; set; }
+
+    //public InventorySlotScript[] inventorySlots;
 
     void Start()
     {
@@ -27,39 +26,42 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+
+        print(CurrentItemIdName);
         //image.raycastTarget = false;
-        parentAfterDrag = transform.parent;
-        transform.SetParent(transform.root);
-        transform.SetAsLastSibling();
-        print("begindrag");
-        isDraging = true;
+        if (CurrentItemIdName != null)
+        {
+            //isDraging = true;
+            parentAfterDrag = transform.parent;
+            transform.SetParent(transform.root);
+            transform.SetAsLastSibling();
+
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = Input.mousePosition;
-        isDraging = true;
-        print("ondrag");
-
-        //trouver un moyen de trouver le nom de l'image de inventoryitem pour faire des conditions selon l'image
-
-        //if (sprite.name = ("PH-obj_8") )
+        if (CurrentItemIdName != null)
         {
-
+            transform.position = Input.mousePosition;
+            //isDraging = true;
         }
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         //image.raycastTarget = true;
-        transform.SetParent(parentAfterDrag);
-        print("enddrag");
-        isDraging = false;
+        if (CurrentItemIdName != null)
+        {
+            transform.SetParent(parentAfterDrag);
+        }
+
+        //isDraging = false;
     }
 
     void Awake()
     {
-        image = GetComponent<Image>(); // récupère le composant Image automatiquement
+        image = GetComponent<Image>();
     }
 
     public void InitialiseItem(Item newItem)
@@ -70,6 +72,9 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     void Update()
     {
-
+        if (CurrentItemIdName == "cle")
+        {
+            GameObject.Destroy(gameObject);
+        }
     }
 }

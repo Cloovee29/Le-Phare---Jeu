@@ -15,3 +15,4 @@ MonoBehaviour:
   tile: {fileID: 0}
   range: {x: 5, y: 4}
   image: {fileID: 2725265996946083213, guid: 2f4e80c5cb34464439db61a680fe3fbc, type: 3}
+  idName: lampe

@@ -313,6 +313,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1263705361383832024, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2531,6 +2535,7 @@ GameObject:
   - component: {fileID: 1208749169}
   - component: {fileID: 1208749170}
   - component: {fileID: 1208749171}
+  - component: {fileID: 1208749172}
   m_Layer: 0
   m_Name: PHporrte_0
   m_TagString: Untagged
@@ -2654,6 +2659,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.8, y: 9.8}
   m_EdgeRadius: 0
+--- !u!114 &1208749172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208749168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177992003b787c348955ca17a7005d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryItemScript: {fileID: 0}
 --- !u!1001 &1262224193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2807,6 +2825,10 @@ PrefabInstance:
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Color.b
@@ -3763,6 +3785,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2135610571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135610563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 100, y: 100}
+  m_Spacing: {x: 20, y: 20}
+  m_Constraint: 1
+  m_ConstraintCount: 8
 --- !u!1001 &2143207188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3900,6 +3946,10 @@ PrefabInstance:
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1263705361383832024, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Pivot.x
@@ -4128,8 +4178,11 @@ PrefabInstance:
       addedObject: {fileID: 2024256609}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2485187706712919353, guid: b782d89f66bac3048acd241add1575d5, type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 2135610567}
+    - targetCorrespondingSourceObject: {fileID: 2485187706712919353, guid: b782d89f66bac3048acd241add1575d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2135610571}
   m_SourcePrefab: {fileID: 100100000, guid: b782d89f66bac3048acd241add1575d5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

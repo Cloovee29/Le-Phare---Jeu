@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManagerScript : MonoBehaviour
 {
@@ -22,20 +23,22 @@ public class InventoryManagerScript : MonoBehaviour
         {
             InventorySlotScript slot = inventorySlots[i];
             InventoryItemScript itemInSlot = slot.GetComponentInChildren<InventoryItemScript>();
-            if (itemInSlot != null)
+            if (itemInSlot.CurrentItemIdName == null)
             {
                 print("case pleine");
-                SpawnNewItem(item, slot);
+                SpawnNewItem(item, itemInSlot);
                 return;
             }
         }
     }
 
-    void SpawnNewItem(Item item, InventorySlotScript slot)
+    void SpawnNewItem(Item item, InventoryItemScript inventoryItemScript)
     {
-        GameObject newItemGo = Instantiate(inventoryItemPrefab, slot.transform);
-        InventoryItemScript inventoryItem = newItemGo.GetComponentInChildren<InventoryItemScript>();
-        inventoryItem.InitialiseItem(item);
+        //    GameObject newItemGo = Instantiate(inventoryItemPrefab, slot.transform);
+        //InventoryItemScript inventoryItem = newItemGo.GetComponentInChildren<InventoryItemScript>();
+        //inventoryItem.InitialiseItem(item);
+        inventoryItemScript.GetComponent<Image>().sprite = item.image;
+        inventoryItemScript.CurrentItemIdName = item.idName;
     }
 
     private void Update()
