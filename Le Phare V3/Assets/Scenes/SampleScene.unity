@@ -4372,6 +4372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mot
       objectReference: {fileID: 0}
+    - target: {fileID: 2730175060733808112, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7157590990942580585, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

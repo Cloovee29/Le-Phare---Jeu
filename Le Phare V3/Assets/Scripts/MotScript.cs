@@ -18,9 +18,11 @@ public class MotScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
-     public void CreerMot(string mot)
+    //Y de 400 à -200
+     public void CreerMot(string mot, float nouvelleY)
     {
         texte.text = mot;
+    GetComponent<RectTransform>().anchoredPosition = new Vector2(290,nouvelleY);
     }
 
     
