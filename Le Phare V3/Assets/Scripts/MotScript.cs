@@ -9,17 +9,21 @@ public class MotScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    public TextMeshProUGUI texte;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-      //  GetComponentInChildren<TextMeshPro>().text = mot;
     }
 
-  
+     public void CreerMot(string mot)
+    {
+        texte.text = mot;
+    }
 
+    
      public void OnBeginDrag(PointerEventData eventData)
     {
         canvasGroup.alpha = 0.6f; 
