@@ -325,6 +325,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -1364,6 +1368,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2025,7 +2033,7 @@ Transform:
   m_GameObject: {fileID: 992366462}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.288671, y: 6.425273, z: 0.6985219}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2043,6 +2051,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2289,6 +2301,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 1263705361383832024, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2696,6 +2712,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2834,6 +2854,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2976,6 +3000,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3994,6 +4022,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 1263705361383832024, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4116,6 +4148,14 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 70067859}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
