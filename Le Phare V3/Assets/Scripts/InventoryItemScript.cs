@@ -16,41 +16,20 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     Vector3 mouseWorldPosition;
 
-    private RectTransform rectTransform;
-
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Canvas canvas;
 
-    LayerMask layerMask;
-
+    public targetObjectToUseScript targetObject;
+    public string targetName;
     void Start()
     {
         image = GetComponent<Image>();
+        targetObject = GetComponent<targetObjectToUseScript>();
     }
 
     void Awake()
-    {
-        //layerMask = LayerMask.GetMask("InteractibleObjects");
-        rectTransform = GetComponent<RectTransform>();
-
+    {        
         image = GetComponent<Image>();
-    }
-
-    void FixedUpdate()
-    {
-        RaycastHit hit;
-        // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
-
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            Debug.Log("Did Hit");
-        }
-        else
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-            Debug.Log("Did not Hit");
-        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -69,37 +48,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     {
         if (CurrentItemIdName != null)
         {
-            //mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            //mouseWorldPosition.z = 0f;
-
-            ////print(mouseWorldPosition);
-            ////print(Input.mousePosition);
-            //mouseWorldPosition.z = 0f;
-
-            ////transform.position = Input.mousePosition;
-            //transform.position = mouseWorldPosition;
-
-            //Vector2 pos;
-            //RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            //    canvas.transform as RectTransform,
-            //    Input.mousePosition,
-            //    mainCamera,
-            //    out pos
-            //);
-
-            //rectTransform.anchoredPosition = pos;
-
-            Vector2 uiPosition;
-
-            // Convertit la position de la souris (écran) en position locale UI
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                canvas.transform as RectTransform,
-                Input.mousePosition,
-                mainCamera,
-                out uiPosition
-                );
-
-            rectTransform.anchoredPosition = uiPosition;
+            transform.position = Input.mousePosition;
         }
     }
 
@@ -111,6 +60,21 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             transform.SetParent(parentAfterDrag); 
         }
 
+        mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, transform.TransformDirection(Vector3.forward));
+        if (hit)
+
+        {
+            Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            Debug.Log("Did Hit");
+            //hit.transform.targetObject;
+            //print("camarche");
+        }
+        else
+        {
+            Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+            //Debug.Log("Did not Hit");
+        }
 
     }
 
