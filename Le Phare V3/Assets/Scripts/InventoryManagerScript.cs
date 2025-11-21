@@ -8,6 +8,7 @@ public class InventoryManagerScript : MonoBehaviour
     public InventorySlotScript[] inventorySlots;
     public GameObject inventoryItemPrefab;
 
+    
     private void Awake()
     {
         instance = this;
