@@ -31,8 +31,8 @@ public Sprite newSprite;
             GameObject nouveauMot = Instantiate(mot);
             nouveauMot.transform.SetParent(originalParent.parent, false); 
             listeMotADrag.Add(nouveauMot);
-            float nouveauY = 400f - i*200f;
-            listeMotADrag[i].GetComponent<MotScript>().CreerMot(listeMots[i], nouveauY);
+            float newY = 400f - i*200f;
+            listeMotADrag[i].GetComponent<MotScript>().CreateWord(listeMots[i], newY);
         }
     }
 

@@ -4,12 +4,15 @@ using UnityEngine.EventSystems;
 public class TrouScript : MonoBehaviour
 {
 
- public int slotID; // numéro du trou dans le texte
+ private float posX;
+ private float posY;
+ private string answer;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        answer = "test";
     }
 
     // Update is called once per frame
@@ -18,13 +21,13 @@ public class TrouScript : MonoBehaviour
         
     }
 
-     public void OnDrop(PointerEventData eventData)
-    {
-        var dragged = eventData.pointerDrag.GetComponent<MotScript>();
 
-        if (dragged != null)
-        {
-            //JournalTexteScript.Instance.FillSlot(slotID, dragged.mot);
-        }
+    //position du trou
+     public void GenerateHole(string correctAnswer, float nouvelleX, float nouvelleY)
+    {
+        answer = correctAnswer;
+    GetComponent<RectTransform>().anchoredPosition = new Vector2(nouvelleX,nouvelleY);
     }
+
+
 }
