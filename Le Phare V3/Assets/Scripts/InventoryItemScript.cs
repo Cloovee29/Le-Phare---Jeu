@@ -12,19 +12,21 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     Transform parentAfterDrag;
 
-    public string CurrentItemIdName { get; set; }
+    public ItemName? CurrentItemIdName { get; set; }
 
     Vector3 mouseWorldPosition;
 
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Canvas canvas;
 
-    public targetObjectToUseScript targetObject;
-    public string targetName;
+    targetObjectToUseScript targetObject;
+    GameObject targetGameObject;
+
+    public InventoryManagerScript inventoryManager;
+
     void Start()
     {
         image = GetComponent<Image>();
-        targetObject = GetComponent<targetObjectToUseScript>();
     }
 
     void Awake()
@@ -34,8 +36,6 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        //print(CurrentItemIdName);
-
         if (CurrentItemIdName != null)
         {
             parentAfterDrag = transform.parent;
@@ -57,23 +57,27 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
         if (CurrentItemIdName != null)
         {
-            transform.SetParent(parentAfterDrag); 
+            transform.SetParent(parentAfterDrag);
+            
         }
 
         mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, transform.TransformDirection(Vector3.forward));
-        if (hit)
 
+        if (hit)
         {
             Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
             Debug.Log("Did Hit");
-            //hit.transform.targetObject;
-            //print("camarche");
+            targetObject = hit.transform.GetComponent<targetObjectToUseScript>();
+            targetGameObject = hit.transform.gameObject;
+            if (targetObject.targetName == CurrentItemIdName)
+            {
+                GoodCorrespondance();
+            }
         }
         else
         {
             Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-            //Debug.Log("Did not Hit");
         }
 
     }
@@ -82,5 +86,12 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     {
         item = newItem;
         image.sprite = newItem.image;
+    }
+
+    public void GoodCorrespondance()
+    {
+        Destroy(targetGameObject);
+        inventoryManager.DeleteItem(this);
+        print("correspondance");    
     }
 }

@@ -35,11 +35,14 @@ public class InventoryManagerScript : MonoBehaviour
 
     void SpawnNewItem(Item item, InventoryItemScript inventoryItemScript)
     {
-        //    GameObject newItemGo = Instantiate(inventoryItemPrefab, slot.transform);
-        //InventoryItemScript inventoryItem = newItemGo.GetComponentInChildren<InventoryItemScript>();
-        //inventoryItem.InitialiseItem(item);
         inventoryItemScript.GetComponent<Image>().sprite = item.image;
         inventoryItemScript.CurrentItemIdName = item.idName;
+    }
+
+    public void DeleteItem (InventoryItemScript inventoryItemScript)
+    {
+        inventoryItemScript.GetComponent<Image>().sprite = null;
+        inventoryItemScript.CurrentItemIdName = null;
     }
 
     private void Update()
