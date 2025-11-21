@@ -5,32 +5,29 @@ using TMPro;
 public class MotScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
 
-// public string mot; // le mot utilisé pour remplir le journal
     public Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
-    public TextMeshProUGUI texte;
-    private bool dansLeTrou;
-
-    private float YBasique;
-
-    Vector3 mouseWorldPosition;
-    [SerializeField] private Camera mainCamera;
-  //  [SerializeField] private Canvas canvas;
+    public TextMeshProUGUI word;
+    private bool inTheHole;
+    private float YBasic;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        inTheHole = false;
     }
 
     //Y de 400 à -200
-     public void CreerMot(string mot, float nouvelleY)
+     public void CreateWord(string newWord, float newY)
     {
-        texte.text = mot;
-    GetComponent<RectTransform>().anchoredPosition = new Vector2(290,nouvelleY);
+        word.text = newWord;
+        YBasic = newY;
+        GetComponent<RectTransform>().anchoredPosition = new Vector2(290,newY);
     }
+    
 
     
      public void OnBeginDrag(PointerEventData eventData)
@@ -48,20 +45,21 @@ public class MotScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     {
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-if(!dansLeTrou){
 
-}
-
+        if(!inTheHole){
+            GetComponent<RectTransform>().anchoredPosition = new Vector2(290, YBasic);
+        }
     }
 
     private void OnTriggerEnter2D (Collider2D collision){
-        dansLeTrou = true;
+        inTheHole = true;
          Debug.Log("Le mot est entré dans le trou !");
-        
     }
 
-    private void OnTriggerExit2D (Collider2D collision){
-        dansLeTrou = false;
+    private void OnTriggerExit2D (Collider2D collision)
+    
+    {
+        inTheHole = false;
          Debug.Log("Le mot est sorti du trou !");
         
     }
