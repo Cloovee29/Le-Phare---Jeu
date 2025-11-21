@@ -764,8 +764,8 @@ MonoBehaviour:
   textDescription: {fileID: 1811483658}
   objectDescription: Ceci est une lampe
   readingTime: 3
-  objectDescribed: {fileID: 0}
-  positionAboveObject: 0
+  objectDescribed: {fileID: 235297798}
+  positionAboveObject: 2.5
 --- !u!1001 &269650738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2770,7 +2770,7 @@ MonoBehaviour:
   objectDescription: Ceci est une porte
   readingTime: 3
   objectDescribed: {fileID: 1208749168}
-  positionAboveObject: 10
+  positionAboveObject: 2.5
 --- !u!1001 &1262224193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3765,6 +3765,14 @@ PrefabInstance:
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
