@@ -21,5 +21,6 @@ public enum ItemName
 {
     Key,
     Radio,
-    Light
+    Light, 
+    Diplome
 }
