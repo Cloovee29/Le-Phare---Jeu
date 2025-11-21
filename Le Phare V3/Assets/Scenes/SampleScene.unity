@@ -418,9 +418,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 70067859}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 933263916}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -1461,9 +1469,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 70067859}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 933263916}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2144,9 +2160,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 70067859}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 933263916}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2394,9 +2418,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 70067859}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 933263916}
     - target: {fileID: 1263705361383832024, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2655,7 +2687,6 @@ GameObject:
   - component: {fileID: 1208749169}
   - component: {fileID: 1208749170}
   - component: {fileID: 1208749171}
-  - component: {fileID: 1208749173}
   - component: {fileID: 1208749172}
   m_Layer: 0
   m_Name: PHporrte_0
@@ -2792,20 +2823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e748b123aea473a4c9672b2719165432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetName: Door
---- !u!114 &1208749173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208749168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 177992003b787c348955ca17a7005d43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InventoryItemScript: {fileID: 0}
+  targetName: 0
 --- !u!1001 &1262224193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2819,9 +2837,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 70067859}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 933263916}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2961,9 +2987,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 70067859}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 933263916}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3107,9 +3141,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 70067859}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 933263916}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4131,9 +4173,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 70067859}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 933263916}
     - target: {fileID: 1263705361383832024, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4272,6 +4322,10 @@ PrefabInstance:
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 1208749172}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 933263916}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
       value: 
