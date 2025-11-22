@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class InventoryManagerScript : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class InventoryManagerScript : MonoBehaviour
 
     public InventorySlotScript[] inventorySlots;
     public GameObject inventoryItemPrefab;
+
+    public Item diplomeMarie;
 
     
     private void Awake()
@@ -16,7 +19,15 @@ public class InventoryManagerScript : MonoBehaviour
 
     private void Start()
     {
-        
+        //void SpawnNewItemBeggining(Item diplomeMarie, InventoryItemScript inventoryItemScript)
+        //{
+        //    inventoryItemScript.GetComponent<Image>().sprite = diplomeMarie.image;
+        //    inventoryItemScript.CurrentItemIdName = diplomeMarie.idName;
+        //    SpawnNewItemBeggining(diplomeMarie , inventoryItemScript);
+        //}
+
+        AddItem(diplomeMarie);
+
     }
     public void AddItem(Item item)
     {
@@ -38,6 +49,12 @@ public class InventoryManagerScript : MonoBehaviour
         inventoryItemScript.GetComponent<Image>().sprite = item.image;
         inventoryItemScript.CurrentItemIdName = item.idName;
     }
+
+    //void SpawnNewItemBeggining(Item diplomeMarie, InventoryItemScript inventoryItemScript)
+    //{
+    //    inventoryItemScript.GetComponent<Image>().sprite = diplomeMarie.image;
+    //    inventoryItemScript.CurrentItemIdName = diplomeMarie.idName;        
+    //}
 
     public void DeleteItem (InventoryItemScript inventoryItemScript)
     {

@@ -24,9 +24,12 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public InventoryManagerScript inventoryManager;
 
+    public Sprite newDiplome;
+
     void Start()
     {
         image = GetComponent<Image>();
+        
     }
 
     void Awake()
@@ -70,9 +73,20 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             Debug.Log("Did Hit");
             targetObject = hit.transform.GetComponent<targetObjectToUseScript>();
             targetGameObject = hit.transform.gameObject;
-            if (targetObject.targetName == CurrentItemIdName)
+
+            //if (targetObject.targetName == CurrentItemIdName)
+            //{
+            //    GoodCorrespondance();
+            //}
+
+            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Diplome)
             {
-                GoodCorrespondance();
+                ChangeDiplome();
+            }
+
+            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Key)
+            {
+                OpenDoor();
             }
         }
         else
@@ -88,10 +102,27 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         image.sprite = newItem.image;
     }
 
-    public void GoodCorrespondance()
+    //public void GoodCorrespondance()
+    //{
+    //    Destroy(targetGameObject);
+    //    inventoryManager.DeleteItem(this);
+    //    print("correspondance");
+    //}
+    public void ChangeDiplome()
+    {
+        //newDiplome = targetGameObject.GetComponent<SpriteRenderer>().sprite;
+        targetGameObject.GetComponent<SpriteRenderer>().sprite = newDiplome;
+
+        inventoryManager.DeleteItem(this);
+        print("changerDiplome");
+    }
+
+    public void OpenDoor()
     {
         Destroy(targetGameObject);
         inventoryManager.DeleteItem(this);
-        print("correspondance");    
+        print("porteouverte");
     }
+
 }
+
