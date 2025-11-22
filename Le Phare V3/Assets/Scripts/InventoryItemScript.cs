@@ -26,9 +26,12 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public Sprite newDiplome;
 
+    public GameObject zoomSerrure;
+
     void Start()
     {
         image = GetComponent<Image>();
+        zoomSerrure.SetActive(false);
         
     }
 
@@ -119,9 +122,13 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public void OpenDoor()
     {
-        Destroy(targetGameObject);
-        inventoryManager.DeleteItem(this);
-        print("porteouverte");
+        //Destroy(targetGameObject);
+        //inventoryManager.DeleteItem(this);
+        //print("porteouverte");
+
+        zoomSerrure.SetActive(true);
+
+
     }
 
 }
