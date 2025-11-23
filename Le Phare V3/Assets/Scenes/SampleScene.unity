@@ -488,6 +488,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &131754527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131754517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07de9e5525096834bac6861a6bbc8fcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 70067859}
+  word: {fileID: 131754521}
 --- !u!1001 &161054561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -600,10 +614,10 @@ GameObject:
   m_Component:
   - component: {fileID: 193165104}
   - component: {fileID: 193165103}
-  - component: {fileID: 193165105}
   - component: {fileID: 193165106}
+  - component: {fileID: 193165107}
   m_Layer: 0
-  m_Name: Trou
+  m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -683,18 +697,6 @@ RectTransform:
   m_AnchoredPosition: {x: -630, y: 376}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &193165105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193165102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3126b2fdeb80ec41af01e82822d0069, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &193165106
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -741,6 +743,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &193165107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193165102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3126b2fdeb80ec41af01e82822d0069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &201436994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4412,11 +4426,10 @@ MonoBehaviour:
   word: {fileID: 131754517}
   listHoles:
   - {fileID: 193165102}
-  listeMots:
-  - Pomme
-  - Banane
-  - Kiwi
-  originalParent: {fileID: 1565773478}
+  listWords:
+  - Pikachu
+  - Arceus
+  - Meloetta
   newSprite: {fileID: 4386398270895178191, guid: c1784451991a7e24d829a4a100777c42, type: 3}
 --- !u!1 &1627595620
 GameObject:
@@ -5815,7 +5828,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2730175060733808112, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_Name
-      value: Mot
+      value: Word
       objectReference: {fileID: 0}
     - target: {fileID: 2730175060733808112, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_IsActive
@@ -5923,6 +5936,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2730175060733808112, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 131754525}
+    - targetCorrespondingSourceObject: {fileID: 2730175060733808112, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 131754527}
   m_SourcePrefab: {fileID: 100100000, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

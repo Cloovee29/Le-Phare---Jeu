@@ -13,25 +13,23 @@ public bool journalOpened;
 public GameObject word;
 private List<GameObject> listWordsToDrag;
 public List<GameObject> listHoles;
-public List<string> listeMots;
-
-public Transform originalParent;
+public List<string> listWords;
 public Sprite newSprite; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
         journalOpened = false;
         listWordsToDrag = new List<GameObject>();
 
-        for (int i = 0; i < listeMots.Count; i++)
+        //crée une liste d'objets mots à partir de la liste de scripts dans unity
+        for (int i = 0; i < listWords.Count; i++)
         {
             GameObject newWord = Instantiate(word);
-            newWord.transform.SetParent(originalParent.parent, false);
+            newWord.transform.SetParent(transform.parent, false);
             listWordsToDrag.Add(newWord);
             float newY = 400f - i*200f;
-            listWordsToDrag[i].GetComponent<MotScript>().CreateWord(listeMots[i], newY);
+            listWordsToDrag[i].GetComponent<WordScript>().CreateWord(listWords[i], newY);
         }
     }
 
@@ -39,13 +37,13 @@ public Sprite newSprite;
     void Update()
     {
 
-       
+       //changement de page de journal WIP
      if (Input.GetKeyDown(KeyCode.P)&& journalOpened)
         {
          GetComponent<SpriteRenderer>().sprite = newSprite;
-            }
+        }
 
-
+     //Affiche le journal et les mots associés à l'écran
      if (Input.GetKeyDown(KeyCode.J) && journalOpened == false){
            transform.position += positionJournalOpened;
             journalOpened = true;

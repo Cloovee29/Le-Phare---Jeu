@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 7157590990942580585}
   - component: {fileID: 6327409021464374079}
   - component: {fileID: 7319954968452145150}
-  - component: {fileID: 9139683721806386333}
   - component: {fileID: 8489022298341272677}
   m_Layer: 5
-  m_Name: Mot
+  m_Name: Word
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,20 +137,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &9139683721806386333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2730175060733808112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07de9e5525096834bac6861a6bbc8fcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  texte: {fileID: 7319954968452145150}
 --- !u!225 &8489022298341272677
 CanvasGroup:
   m_ObjectHideFlags: 0

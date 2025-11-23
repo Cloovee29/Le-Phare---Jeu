@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class MotScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
 
     public Canvas canvas;

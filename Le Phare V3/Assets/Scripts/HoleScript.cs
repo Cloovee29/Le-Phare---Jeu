@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class TrouScript : MonoBehaviour
+public class HoleScript : MonoBehaviour
 {
 
  private float posX;
