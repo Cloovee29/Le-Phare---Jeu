@@ -18,6 +18,10 @@ public class JournalScript : MonoBehaviour
     public Sprite newSprite;
 
     public GameObject journal;
+    public GameObject bgJournal;
+
+    public GameObject inventaire;
+    public GameObject arrows;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -82,7 +86,11 @@ public class JournalScript : MonoBehaviour
 
         journalOpened = !journalOpened;
         journal.SetActive(journalOpened);
+        bgJournal.SetActive(journalOpened);
         transform.GetChild(0).gameObject.SetActive(journalOpened);
+
+        inventaire.SetActive(!journalOpened);
+        arrows.SetActive(!journalOpened);
     }
 }
 
