@@ -22,5 +22,5 @@ public enum ItemName
     Key,
     Radio,
     Light, 
-    Diplome
+    Diplome,
 }

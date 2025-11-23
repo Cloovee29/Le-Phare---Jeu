@@ -5,6 +5,7 @@ public class KeyScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 {
 
     Transform key;
+    public GameObject zoomSerrure;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,40 +21,32 @@ public class KeyScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        //throw new System.NotImplementedException();
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        //throw new System.NotImplementedException();
         transform.position = Input.mousePosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        //throw new System.NotImplementedException();
         
     }
 
     public void TurnKey()
     {
-        //Vector3 localScale = GetComponent<Transform>().localScale;
-
-        // if (transform.localScale.x == -1)
-        // {
-        //     transform.localScale = new Vector3(1, 1, 1);
-        //     Vector3 localScale = GetComponent<Transform>().localScale;
-        // }
-
-        //else if (transform.localScale.x == 1)
-        // {
-        //     transform.localScale = new Vector3(-1, 1, 1);
-        //    Vector3 localScale = GetComponent<Transform>().localScale;
-        // }
-
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+        //float scaleX = transform.localScale.x;
+    }
+public void OnTriggerEnter2D(Collider2D collision)
+    {
+        float scaleX = transform.localScale.x;
+        if (collision.CompareTag("Serrure") && scaleX == -1f)
+        {
+            zoomSerrure.SetActive(false);
+        }
     }
 }
 
