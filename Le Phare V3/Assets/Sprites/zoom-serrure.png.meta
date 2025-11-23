@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      zoom-serrure_0: 3194811658278240946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

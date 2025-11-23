@@ -6,13 +6,13 @@ using UnityEngine.EventSystems;
 public class JournalScript : MonoBehaviour
 {
 
-public Vector3 ouvertureJournal;
-public Vector3 fermetureJournal;
-public bool journalOuvert;
+public Vector3 positionJournalOpened;
+public Vector3 positionJournalClosed;
+public bool journalOpened;
 
-public GameObject mot;
-private List<GameObject> listeMotADrag;
-public List<GameObject> listeTrous;
+public GameObject word;
+private List<GameObject> listWordsToDrag;
+public List<GameObject> listHoles;
 public List<string> listeMots;
 
 public Transform originalParent;
@@ -21,18 +21,17 @@ public Sprite newSprite;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ouvertureJournal  = new Vector3(16f, -14f, 0f);
-        fermetureJournal  = new Vector3(-16f, 14f, 0f);
-        journalOuvert = false;
-        listeMotADrag = new List<GameObject>();
+       
+        journalOpened = false;
+        listWordsToDrag = new List<GameObject>();
 
         for (int i = 0; i < listeMots.Count; i++)
         {
-            GameObject nouveauMot = Instantiate(mot);
-            nouveauMot.transform.SetParent(originalParent.parent, false); 
-            listeMotADrag.Add(nouveauMot);
+            GameObject newWord = Instantiate(word);
+            newWord.transform.SetParent(originalParent.parent, false);
+            listWordsToDrag.Add(newWord);
             float newY = 400f - i*200f;
-            listeMotADrag[i].GetComponent<MotScript>().CreateWord(listeMots[i], newY);
+            listWordsToDrag[i].GetComponent<MotScript>().CreateWord(listeMots[i], newY);
         }
     }
 
@@ -40,31 +39,29 @@ public Sprite newSprite;
     void Update()
     {
 
-    //vérifier si un mot est dans un trou
-
-
        
-     if (Input.GetKeyDown(KeyCode.P)&& journalOuvert){
+     if (Input.GetKeyDown(KeyCode.P)&& journalOpened)
+        {
          GetComponent<SpriteRenderer>().sprite = newSprite;
             }
 
 
-     if (Input.GetKeyDown(KeyCode.J) && journalOuvert==false){
-           transform.position += ouvertureJournal;
-           journalOuvert = true;
-           listeMotADrag[0].SetActive(true);
-           listeMotADrag[1].SetActive(true);
-           listeMotADrag[2].SetActive(true);
+     if (Input.GetKeyDown(KeyCode.J) && journalOpened == false){
+           transform.position += positionJournalOpened;
+            journalOpened = true;
 
-           
+            listWordsToDrag[0].SetActive(true);
+            listWordsToDrag[1].SetActive(true);
+            listWordsToDrag[2].SetActive(true);
 
 
-     }else if (Input.GetKeyDown(KeyCode.J) && journalOuvert==true){
-         transform.position += fermetureJournal;
-           journalOuvert = false;
-           listeMotADrag[0].SetActive(false);
-           listeMotADrag[1].SetActive(false);
-           listeMotADrag[2].SetActive(false);
+     }else if (Input.GetKeyDown(KeyCode.J) && journalOpened == true){
+         transform.position += positionJournalClosed;
+            journalOpened = false;
+
+            listWordsToDrag[0].SetActive(false);
+            listWordsToDrag[1].SetActive(false);
+            listWordsToDrag[2].SetActive(false);
      }
                 
 
