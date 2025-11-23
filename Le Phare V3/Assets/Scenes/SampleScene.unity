@@ -303,11 +303,9 @@ RectTransform:
   m_Children:
   - {fileID: 590714995}
   - {fileID: 1966188915}
-  - {fileID: 131754518}
-  - {fileID: 193165104}
-  - {fileID: 1565773478}
   - {fileID: 161054562}
   - {fileID: 2060885982}
+  - {fileID: 1290704065}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -686,16 +684,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193165102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 340.34198, y: 110.68031, z: 110.68031}
+  m_LocalPosition: {x: 0, y: 0, z: -12.420001}
+  m_LocalScale: {x: 340.342, y: 110.68031, z: 110.68031}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 70067860}
+  m_Father: {fileID: 1290704065}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -630, y: 376}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -407, y: 286}
+  m_SizeDelta: {x: 0.702, y: 0.666}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &193165106
 BoxCollider2D:
@@ -3105,6 +3103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 992366464}
+  - component: {fileID: 992366465}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3127,6 +3126,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &992366465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992366462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e42dcc430a87e840a3f691d51aa942b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  journalScript: {fileID: 1290704066}
 --- !u!1001 &1026619639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3978,6 +3990,106 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1263705361383832024, guid: bac685edc57687c4e8a690df91227975, type: 3}
   m_PrefabInstance: {fileID: 1262224193}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1290704064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1290704065}
+  - component: {fileID: 1290704068}
+  - component: {fileID: 1290704067}
+  - component: {fileID: 1290704066}
+  m_Layer: 5
+  m_Name: JournalV2UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1290704065
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290704064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 131754518}
+  - {fileID: 193165104}
+  m_Father: {fileID: 70067860}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000014067, y: -0.0000019073}
+  m_SizeDelta: {x: 1515.86, y: 923.44}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1290704066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290704064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f703329f6272794f8ab3dc94af7ae75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  journalOpened: 0
+  word: {fileID: 131754517}
+  listHoles:
+  - {fileID: 193165102}
+  listWords:
+  - Pikachu
+  - Arceus
+  - Meloetta
+  newSprite: {fileID: 4386398270895178191, guid: c1784451991a7e24d829a4a100777c42, type: 3}
+  journal: {fileID: 1290704064}
+--- !u!114 &1290704067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290704064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6175327746213496478, guid: 61b131443f56fc74db90987b5ec436a7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1290704068
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290704064}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1387989507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4337,7 +4449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1565773477
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4402,11 +4514,11 @@ Transform:
   m_GameObject: {fileID: 1565773476}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1013.34357, y: -493.38205, z: -16.61219}
-  m_LocalScale: {x: 4.908236, y: 5.0723066, z: 2.2946086}
+  m_LocalPosition: {x: -0.029449463, y: -0.015640259, z: -7.7849517}
+  m_LocalScale: {x: 1.2649887, y: 1.3072742, z: 0.59138435}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 70067860}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1565773479
 MonoBehaviour:
@@ -4420,17 +4532,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f703329f6272794f8ab3dc94af7ae75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionJournalOpened: {x: 16, y: -14, z: 0}
-  positionJournalClosed: {x: -16, y: 14, z: 0}
   journalOpened: 0
   word: {fileID: 131754517}
   listHoles:
   - {fileID: 193165102}
   listWords:
-  - Pikachu
-  - Arceus
-  - Meloetta
+  - 1
+  - 2
+  - 3
   newSprite: {fileID: 4386398270895178191, guid: c1784451991a7e24d829a4a100777c42, type: 3}
+  journal: {fileID: 0}
 --- !u!1 &1627595620
 GameObject:
   m_ObjectHideFlags: 0
@@ -5193,7 +5304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2060885982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5824,7 +5935,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 70067860}
+    m_TransformParent: {fileID: 1290704065}
     m_Modifications:
     - target: {fileID: 2730175060733808112, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_Name
@@ -5884,15 +5995,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7157590990942580585, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7157590990942580585, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7157590990942580585, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7157590990942580585, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5916,7 +6027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7319954968452145150, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_text
-      value: test
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9139683721806386333, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: word
@@ -5951,3 +6062,4 @@ SceneRoots:
   - {fileID: 70067860}
   - {fileID: 131336211}
   - {fileID: 1627595621}
+  - {fileID: 1565773478}
