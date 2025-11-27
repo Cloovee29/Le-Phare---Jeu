@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 0}
   range: {x: 5, y: 4}
-  image: {fileID: 3470248247857214391, guid: 942eb1d992c78d14c84603a80cff7666, type: 3}
-  idName: cle
+  image: {fileID: 7307273179880218002, guid: f37ad95fcb03a664e8a0fa1fc9522102, type: 3}
+  idName: 0

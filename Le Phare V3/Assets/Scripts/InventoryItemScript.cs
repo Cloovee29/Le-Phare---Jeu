@@ -12,51 +12,36 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     Transform parentAfterDrag;
 
-    public string CurrentItemIdName { get; set; }
+    public ItemName? CurrentItemIdName { get; set; }
 
     Vector3 mouseWorldPosition;
-
-    private RectTransform rectTransform;
 
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Canvas canvas;
 
-    LayerMask layerMask;
+    targetObjectToUseScript targetObject;
+    GameObject targetGameObject;
+
+    public InventoryManagerScript inventoryManager;
+
+    public Sprite newDiplome;
+
+    public GameObject zoomSerrure;
 
     void Start()
     {
         image = GetComponent<Image>();
+        zoomSerrure.SetActive(false);
+        
     }
 
     void Awake()
-    {
-        //layerMask = LayerMask.GetMask("InteractibleObjects");
-        rectTransform = GetComponent<RectTransform>();
-
+    {        
         image = GetComponent<Image>();
-    }
-
-    void FixedUpdate()
-    {
-        RaycastHit hit;
-        // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
-
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            Debug.Log("Did Hit");
-        }
-        else
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-            Debug.Log("Did not Hit");
-        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        //print(CurrentItemIdName);
-
         if (CurrentItemIdName != null)
         {
             parentAfterDrag = transform.parent;
@@ -69,37 +54,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     {
         if (CurrentItemIdName != null)
         {
-            //mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            //mouseWorldPosition.z = 0f;
-
-            ////print(mouseWorldPosition);
-            ////print(Input.mousePosition);
-            //mouseWorldPosition.z = 0f;
-
-            ////transform.position = Input.mousePosition;
-            //transform.position = mouseWorldPosition;
-
-            //Vector2 pos;
-            //RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            //    canvas.transform as RectTransform,
-            //    Input.mousePosition,
-            //    mainCamera,
-            //    out pos
-            //);
-
-            //rectTransform.anchoredPosition = pos;
-
-            Vector2 uiPosition;
-
-            // Convertit la position de la souris (écran) en position locale UI
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                canvas.transform as RectTransform,
-                Input.mousePosition,
-                mainCamera,
-                out uiPosition
-                );
-
-            rectTransform.anchoredPosition = uiPosition;
+            transform.position = Input.mousePosition;
         }
     }
 
@@ -108,9 +63,39 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
         if (CurrentItemIdName != null)
         {
-            transform.SetParent(parentAfterDrag); 
+            transform.SetParent(parentAfterDrag);
+            
         }
 
+        mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, transform.TransformDirection(Vector3.forward));
+
+        if (hit)
+        {
+            Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            Debug.Log("Did Hit");
+            targetObject = hit.transform.GetComponent<targetObjectToUseScript>();
+            targetGameObject = hit.transform.gameObject;
+
+            //if (targetObject.targetName == CurrentItemIdName)
+            //{
+            //    GoodCorrespondance();
+            //}
+
+            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Diplome)
+            {
+                ChangeDiplome();
+            }
+
+            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Key)
+            {
+                OpenDoor();
+            }
+        }
+        else
+        {
+            Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
 
     }
 
@@ -119,4 +104,32 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         item = newItem;
         image.sprite = newItem.image;
     }
+
+    //public void GoodCorrespondance()
+    //{
+    //    Destroy(targetGameObject);
+    //    inventoryManager.DeleteItem(this);
+    //    print("correspondance");
+    //}
+    public void ChangeDiplome()
+    {
+        //newDiplome = targetGameObject.GetComponent<SpriteRenderer>().sprite;
+        targetGameObject.GetComponent<SpriteRenderer>().sprite = newDiplome;
+
+        inventoryManager.DeleteItem(this);
+        print("changerDiplome");
+    }
+
+    public void OpenDoor()
+    {
+        //Destroy(targetGameObject);
+        //inventoryManager.DeleteItem(this);
+        //print("porteouverte");
+
+        zoomSerrure.SetActive(true);
+
+
+    }
+
 }
+

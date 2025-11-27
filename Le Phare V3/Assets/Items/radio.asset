@@ -15,4 +15,4 @@ MonoBehaviour:
   tile: {fileID: 0}
   range: {x: 5, y: 4}
   image: {fileID: -8089419554030596255, guid: bc135cf740fd15c4d8e53ac4c39185fe, type: 3}
-  idName: radio
+  idName: 1

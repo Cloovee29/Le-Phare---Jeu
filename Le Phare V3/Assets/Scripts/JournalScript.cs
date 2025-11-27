@@ -1,65 +1,96 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
+using Microsoft.Unity.VisualStudio.Editor;
 
 public class JournalScript : MonoBehaviour
 {
 
-public Vector3 ouvertureJournal;
-public Vector3 fermetureJournal;
-public bool journalOuvert;
+    //public Vector3 positionJournalOpened;
+    //public Vector3 positionJournalClosed;
+    public bool journalOpened;
 
-public GameObject mot;
-private List<GameObject> motADrag;
-public List<string> listeMots;
-public Transform originalParent;
+    public GameObject word;
+    private List<GameObject> listWordsToDrag;
+    public List<GameObject> listHoles;
+    public List<string> listWords;
+    public Sprite newSprite;
 
-public Sprite newSprite; 
+    public GameObject journal;
+    public GameObject bgJournal;
+
+    public GameObject inventaire;
+    public GameObject arrows;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ouvertureJournal  = new Vector3(16f, -14f, 0f);
-        fermetureJournal  = new Vector3(-16f, 14f, 0f);
-        journalOuvert = false;
-         motADrag = new List<GameObject>();
-        for (int i = 0; i < listeMots.Count; i++)
+        journalOpened = false;
+        //gameObject.SetActive(false);
+        listWordsToDrag = new List<GameObject>();
+
+        //crée une liste d'objets mots à partir de la liste de scripts dans unity
+
+        for (int i = 0; i < listWords.Count; i++)
         {
-            GameObject nouveauMot = Instantiate(mot);
-            nouveauMot.transform.SetParent(originalParent.parent, false); 
-            motADrag.Add(nouveauMot);
-            float nouveauY = 400f - i*200f;
-            motADrag[i].GetComponent<MotScript>().CreerMot(listeMots[i], nouveauY);
+            GameObject newWord = Instantiate(word);
+            //newWord.transform.SetParent(transform.parent, false);
+            newWord.transform.SetParent(journal.transform, false);
+            listWordsToDrag.Add(newWord);
+            float newY = 400f - i * 200f;
+            listWordsToDrag[i].GetComponent<WordScript>().CreateWord(listWords[i], newY);
+            
         }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       
-     if (Input.GetKeyDown(KeyCode.P)&& journalOuvert){
-         GetComponent<SpriteRenderer>().sprite = newSprite;
-            }
 
 
-     if (Input.GetKeyDown(KeyCode.J) && journalOuvert==false){
-           transform.position += ouvertureJournal;
-           journalOuvert = true;
-           motADrag[0].SetActive(true);
-           motADrag[1].SetActive(true);
-           motADrag[2].SetActive(true);
+        //changement de page de journal WIP
+        if (Input.GetKeyDown(KeyCode.P) && journalOpened)
+        {
+            GetComponent<SpriteRenderer>().sprite = newSprite;
+        }
+    }
+    public void ActiveJournal()
+    {
+        //Affiche le journal et les mots associés à l'écran
 
-           
+        //journalOpened = false;
+        //if (journalOpened == false)
+        //{
+        //    //transform.position += positionJournalOpened;
+        //    gameObject.SetActive(true);
+        //    journalOpened = true;
+
+        //    //listWordsToDrag[0].SetActive(true);
+        //    //listWordsToDrag[1].SetActive(true);
+        //    //listWordsToDrag[2].SetActive(true);
 
 
-     }else if (Input.GetKeyDown(KeyCode.J) && journalOuvert==true){
-         transform.position += fermetureJournal;
-           journalOuvert = false;
-           motADrag[0].SetActive(false);
-           motADrag[1].SetActive(false);
-           motADrag[2].SetActive(false);
-     }
-                
+        //}
 
+        //if (journalOpened == true)
+        //{
+        //    //transform.position += positionJournalClosed;
+        //    gameObject.SetActive(false);
+        //    journalOpened = false;
+
+        //    //listWordsToDrag[0].SetActive(false);
+        //    //listWordsToDrag[1].SetActive(false);
+        //    //listWordsToDrag[2].SetActive(false);
+
+        journalOpened = !journalOpened;
+        journal.SetActive(journalOpened);
+        bgJournal.SetActive(journalOpened);
+        transform.GetChild(0).gameObject.SetActive(journalOpened);
+
+        inventaire.SetActive(!journalOpened);
+        arrows.SetActive(!journalOpened);
     }
 }
+

@@ -1,15 +1,17 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class KeyScript : MonoBehaviour
+public class KeyScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
 
-    public InventoryItemScript InventoryItemScript;
-    public string CurrentItemIdName { get; set; }
-    Item item;
+    Transform key;
+    public GameObject zoomSerrure;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //isDraging = false;
+        Cursor.lockState = CursorLockMode.Confined;
+        
     }
 
     // Update is called once per frame
@@ -17,13 +19,34 @@ public class KeyScript : MonoBehaviour
     {
 
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnBeginDrag(PointerEventData eventData)
     {
-        if (CurrentItemIdName == "cle")
-        {
-            GameObject.Destroy(gameObject);
+    }
 
+    public void OnDrag(PointerEventData eventData)
+    {
+        transform.position = Input.mousePosition;
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        
+    }
+
+    public void TurnKey()
+    {
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+        //float scaleX = transform.localScale.x;
+    }
+public void OnTriggerEnter2D(Collider2D collision)
+    {
+        float scaleX = transform.localScale.x;
+        if (collision.CompareTag("Serrure") && scaleX == -1f)
+        {
+            zoomSerrure.SetActive(false);
         }
     }
 }
+
