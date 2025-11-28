@@ -7,7 +7,7 @@ public class GameManagerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //journalScript = GetComponent<JournalScript>();
+      
     }
 
     // Update is called once per frame
@@ -16,7 +16,6 @@ public class GameManagerScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
             journalScript.ActiveJournal();
-
         }
     }
 }

@@ -57,7 +57,6 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     }
 
     private void OnTriggerExit2D (Collider2D collision)
-    
     {
         inTheHole = false;
          Debug.Log("Le mot est sorti du trou !");
