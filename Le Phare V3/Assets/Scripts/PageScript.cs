@@ -5,16 +5,14 @@ using System.Collections.Generic;
 public class PageScript : MonoBehaviour
 {
 
-    public List<GameObject> listHoles; //liste de trous associés à une page
+    private List<GameObject> listHoles; //liste de trous associés à une page
     private List<GameObject> listWordsToDrag; //liste des mots à placer dans le journal
-    public int numbPage; //numéro de la page du carnet
-    
+    private int numbPage; //numéro de la page du carnet
     public GameObject word;
-
     public GameObject journal;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         listWordsToDrag = new List<GameObject>();
 
@@ -36,7 +34,9 @@ public class PageScript : MonoBehaviour
         {
             GameObject newWord = Instantiate(word);
             newWord.transform.SetParent(journal.transform, false);
+            Debug.Log(newWord);
             listWordsToDrag.Add(newWord);
+
             float newY = 400f - i * 200f;
             listWordsToDrag[i].GetComponent<WordScript>().CreateWord(listWords[i], newY);
         }
