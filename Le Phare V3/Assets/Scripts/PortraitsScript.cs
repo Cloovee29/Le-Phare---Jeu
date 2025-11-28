@@ -6,7 +6,7 @@ public class PortraitsScript : MonoBehaviour
     public GameObject PortraitPosTarget;
     private Vector3 offset;
     bool goodPositionPortrait;
-    int countGoodPositionPortrait;
+    public static int countGoodPositionPortrait = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,8 +20,7 @@ public class PortraitsScript : MonoBehaviour
     {
         if(countGoodPositionPortrait == 5)
         {
-            SolvedEnigma();
-            
+            SolvedEnigma();            
         }
         
     }
@@ -52,7 +51,7 @@ public class PortraitsScript : MonoBehaviour
         {
             //goodPositionPortrait = true;
             print("enigmeresolue");
-            countGoodPositionPortrait = countGoodPositionPortrait++;
+            countGoodPositionPortrait = countGoodPositionPortrait + 1;
             print(countGoodPositionPortrait);
         }
     }
@@ -62,15 +61,15 @@ public class PortraitsScript : MonoBehaviour
         if (collision.gameObject.tag == gameObject.tag)
         {
             //goodPositionPortrait = true;
-            print("enigmebinne mais arretee");
-            countGoodPositionPortrait = countGoodPositionPortrait--;
+            print("enigmebonne mais arretee");
+            countGoodPositionPortrait = countGoodPositionPortrait - 1;
             print(countGoodPositionPortrait);
         }
     }
 
     void SolvedEnigma()
     {
-        
+        print("enigmeresolue");
     }
 }
 

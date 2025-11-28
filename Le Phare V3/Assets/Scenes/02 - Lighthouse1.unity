@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 410751947}
   m_Layer: 0
   m_Name: portrait5_0
-  m_TagString: Untagged
+  m_TagString: Portrait5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
