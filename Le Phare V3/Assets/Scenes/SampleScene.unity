@@ -885,7 +885,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 193165102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3126b2fdeb80ec41af01e82822d0069, type: 3}
+  m_Script: {fileID: 11500000, guid: f8a7767a8ba134d4e83605cd9bf34d6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &201436994
@@ -3821,6 +3821,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056835778}
   m_CullTransparentMesh: 1
+--- !u!1 &1062033229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062033230}
+  - component: {fileID: 1062033231}
+  m_Layer: 0
+  m_Name: Page
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1062033230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062033229}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -101.95033, y: 139.51994, z: -10.238107}
+  m_LocalScale: {x: 3.322438, y: 3.322438, z: 3.322438}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1290704065}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1062033231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062033229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5cbe3c8bce9e843ab3245c38cf169c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listHoles: []
+  numbPage: 1
+  listWords:
+  - oui
+  - non
+  - antonin
+  word: {fileID: 131754517}
+  journal: {fileID: 1290704064}
 --- !u!1001 &1067336533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4679,6 +4731,7 @@ RectTransform:
   m_Children:
   - {fileID: 131754518}
   - {fileID: 193165104}
+  - {fileID: 1062033230}
   m_Father: {fileID: 70067860}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4699,15 +4752,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   journalOpened: 0
-  word: {fileID: 131754517}
-  listHoles:
-  - {fileID: 193165102}
-  listWords:
-  - Pikachu
-  - Arceus
-  - Meloetta
-  newSprite: {fileID: 4386398270895178191, guid: c1784451991a7e24d829a4a100777c42, type: 3}
   journal: {fileID: 1290704064}
+  listPages:
+  - {fileID: 1062033229}
   bgJournal: {fileID: 1428778498}
   inventaire: {fileID: 590714994}
   arrows: {fileID: 1966188914}
