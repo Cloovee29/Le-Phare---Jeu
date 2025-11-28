@@ -1,4 +1,6 @@
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
 
@@ -26,7 +28,12 @@ public class InventoryManagerScript : MonoBehaviour
         //    SpawnNewItemBeggining(diplomeMarie , inventoryItemScript);
         //}
 
-        AddItem(diplomeMarie);
+        if(SceneManager.GetActiveScene().name == "01 - HouseScene")
+        {
+            AddItem(diplomeMarie);
+        }
+
+        
 
     }
     public void AddItem(Item item)

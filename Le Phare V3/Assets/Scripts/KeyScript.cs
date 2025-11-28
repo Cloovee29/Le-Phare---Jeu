@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class KeyScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -45,7 +46,8 @@ public void OnTriggerEnter2D(Collider2D collision)
         float scaleX = transform.localScale.x;
         if (collision.CompareTag("Serrure") && scaleX == -1f)
         {
-            zoomSerrure.SetActive(false);
+            //zoomSerrure.SetActive(false);
+            SceneManager.LoadScene("02 - Lighthouse1");
         }
     }
 }

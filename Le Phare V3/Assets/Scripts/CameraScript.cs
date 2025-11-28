@@ -14,13 +14,9 @@ public class CameraScript : MonoBehaviour
     public GameObject arrowLeft;
     public GameObject arrowRight;
 
-    public GameObject character;
-
-    //bool isMoving;
-
    void Start()
     {
-        arrowRight.SetActive(false);
+        arrowLeft.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;
     }
 

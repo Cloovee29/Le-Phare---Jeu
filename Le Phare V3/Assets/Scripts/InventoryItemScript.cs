@@ -1,6 +1,8 @@
+using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
@@ -23,16 +25,17 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     GameObject targetGameObject;
 
     public InventoryManagerScript inventoryManager;
+    public DoorLevel1Zoom doorLevel1Zoom;
 
     public Sprite newDiplome;
 
-    public GameObject zoomSerrure;
+    //public GameObject zoomSerrure;
 
     void Start()
     {
         image = GetComponent<Image>();
-        zoomSerrure.SetActive(false);
-        
+        //zoomSerrure.SetActive(false);
+        //gameManager = GetComponent<GameManagerScript>();       
     }
 
     void Awake()
@@ -63,8 +66,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
         if (CurrentItemIdName != null)
         {
-            transform.SetParent(parentAfterDrag);
-            
+            transform.SetParent(parentAfterDrag);          
         }
 
         mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -77,11 +79,6 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             targetObject = hit.transform.GetComponent<targetObjectToUseScript>();
             targetGameObject = hit.transform.gameObject;
 
-            //if (targetObject.targetName == CurrentItemIdName)
-            //{
-            //    GoodCorrespondance();
-            //}
-
             if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Diplome)
             {
                 ChangeDiplome();
@@ -89,14 +86,14 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
             if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Key)
             {
-                OpenDoor();
+                doorLevel1Zoom.OpenDoor();
+                print("clemarche");
             }
         }
         else
         {
             Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
         }
-
     }
 
     public void InitialiseItem(Item newItem)
@@ -105,31 +102,24 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         image.sprite = newItem.image;
     }
 
-    //public void GoodCorrespondance()
-    //{
-    //    Destroy(targetGameObject);
-    //    inventoryManager.DeleteItem(this);
-    //    print("correspondance");
-    //}
     public void ChangeDiplome()
     {
-        //newDiplome = targetGameObject.GetComponent<SpriteRenderer>().sprite;
         targetGameObject.GetComponent<SpriteRenderer>().sprite = newDiplome;
 
         inventoryManager.DeleteItem(this);
         print("changerDiplome");
     }
 
-    public void OpenDoor()
-    {
-        //Destroy(targetGameObject);
-        //inventoryManager.DeleteItem(this);
-        //print("porteouverte");
+    //public void OpenDoor()
+    //{
 
-        zoomSerrure.SetActive(true);
+    //    if (SceneManager.GetActiveScene().name == "01 - HouseScene")
+    //    {
+    //        zoomSerrure.SetActive(true);
+    //    }
 
 
-    }
+    //}
 
 }
 
