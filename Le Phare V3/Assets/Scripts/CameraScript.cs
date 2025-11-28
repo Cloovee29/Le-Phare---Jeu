@@ -14,6 +14,8 @@ public class CameraScript : MonoBehaviour
     public GameObject arrowLeft;
     public GameObject arrowRight;
 
+    public GameObject characterMarie;
+
    void Start()
     {
         arrowRight.SetActive(false);
@@ -32,6 +34,7 @@ public class CameraScript : MonoBehaviour
             arrowLeft.SetActive(false);
             arrowRight.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
+
         });
     }
 

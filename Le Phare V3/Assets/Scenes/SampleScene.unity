@@ -5178,7 +5178,7 @@ GameObject:
   - component: {fileID: 1583246240}
   - component: {fileID: 1583246242}
   m_Layer: 0
-  m_Name: personnage_marie_0
+  m_Name: characterMarie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5268,6 +5268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   groundY: -1.06
+  Arrows: {fileID: 1966188914}
 --- !u!1 &1627595620
 GameObject:
   m_ObjectHideFlags: 0
@@ -5932,6 +5933,7 @@ MonoBehaviour:
   duration: 2
   arrowLeft: {fileID: 298344931}
   arrowRight: {fileID: 972524028}
+  characterMarie: {fileID: 0}
 --- !u!1 &2017482972
 GameObject:
   m_ObjectHideFlags: 0
@@ -6034,7 +6036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2060885982
 RectTransform:
   m_ObjectHideFlags: 0
