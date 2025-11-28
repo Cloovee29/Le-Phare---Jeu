@@ -14,7 +14,9 @@ public class CameraScript : MonoBehaviour
     public GameObject arrowLeft;
     public GameObject arrowRight;
 
-    public GameObject characterMarie;
+    public GameObject character;
+
+    //bool isMoving;
 
    void Start()
     {
@@ -29,22 +31,26 @@ public class CameraScript : MonoBehaviour
 
     public void ButtonLeft()
     {
+        //character.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         background.DOMoveX(screenLeft, duration).SetEase(Ease.OutCubic).OnComplete(() => {
             arrowLeft.SetActive(false);
             arrowRight.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
+            //character.SetActive(true);
 
         });
     }
 
     public void ButtonRight()
     {
+        //character.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         background.DOMoveX(screenRight, duration).SetEase(Ease.OutCubic).OnComplete(() => {
             arrowRight.SetActive(false);
             arrowLeft.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
+            //character.SetActive(true);
         });
     }
 }
