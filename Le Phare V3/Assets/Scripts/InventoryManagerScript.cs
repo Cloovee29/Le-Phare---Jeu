@@ -21,20 +21,10 @@ public class InventoryManagerScript : MonoBehaviour
 
     private void Start()
     {
-        //void SpawnNewItemBeggining(Item diplomeMarie, InventoryItemScript inventoryItemScript)
-        //{
-        //    inventoryItemScript.GetComponent<Image>().sprite = diplomeMarie.image;
-        //    inventoryItemScript.CurrentItemIdName = diplomeMarie.idName;
-        //    SpawnNewItemBeggining(diplomeMarie , inventoryItemScript);
-        //}
-
         if(SceneManager.GetActiveScene().name == "01 - HouseScene")
         {
             AddItem(diplomeMarie);
         }
-
-        
-
     }
     public void AddItem(Item item)
     {
@@ -56,12 +46,6 @@ public class InventoryManagerScript : MonoBehaviour
         inventoryItemScript.GetComponent<Image>().sprite = item.image;
         inventoryItemScript.CurrentItemIdName = item.idName;
     }
-
-    //void SpawnNewItemBeggining(Item diplomeMarie, InventoryItemScript inventoryItemScript)
-    //{
-    //    inventoryItemScript.GetComponent<Image>().sprite = diplomeMarie.image;
-    //    inventoryItemScript.CurrentItemIdName = diplomeMarie.idName;        
-    //}
 
     public void DeleteItem (InventoryItemScript inventoryItemScript)
     {

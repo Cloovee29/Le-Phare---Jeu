@@ -33,9 +33,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     void Start()
     {
-        image = GetComponent<Image>();
-        //zoomSerrure.SetActive(false);
-        //gameManager = GetComponent<GameManagerScript>();       
+        image = GetComponent<Image>();    
     }
 
     void Awake()
@@ -89,6 +87,11 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 doorLevel1Zoom.OpenDoor();
                 print("clemarche");
             }
+
+            //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait1)
+            //{
+            //    inventoryManager.DeleteItem(this);
+            //}
         }
         else
         {
@@ -109,17 +112,5 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         inventoryManager.DeleteItem(this);
         print("changerDiplome");
     }
-
-    //public void OpenDoor()
-    //{
-
-    //    if (SceneManager.GetActiveScene().name == "01 - HouseScene")
-    //    {
-    //        zoomSerrure.SetActive(true);
-    //    }
-
-
-    //}
-
 }
 

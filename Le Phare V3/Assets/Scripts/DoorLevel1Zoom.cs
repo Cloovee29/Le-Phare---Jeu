@@ -17,12 +17,6 @@ public class DoorLevel1Zoom : MonoBehaviour
 
     public void OpenDoor()
     {
-
-        //if (SceneManager.GetActiveScene().name == "01 - HouseScene")
-        //{
         zoomSerrure.SetActive(true);
-        //}
-
-
     }
 }

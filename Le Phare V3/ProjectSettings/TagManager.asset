@@ -11,6 +11,7 @@ TagManager:
   - Portrait3
   - Portrait4
   - Portrait5
+  - Portrait
   layers:
   - Default
   - TransparentFX

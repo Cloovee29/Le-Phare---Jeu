@@ -25,24 +25,24 @@ public class PortraitsScript : MonoBehaviour
         
     }
 
-    private void OnMouseDown()
-    {
+    //private void OnMouseDown()
+    //{
 
-    }
+    //}
 
-    private void OnMouseUp()
-    {
+    //private void OnMouseUp()
+    //{
 
 
-    }
+    //}
 
-    private void OnMouseDrag()
-    {
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(
-        new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(transform.position).z)
-    );
-        transform.position = mouseWorldPos + offset;
-    }
+    //private void OnMouseDrag()
+    //{
+    //    Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(
+    //    new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(transform.position).z)
+    //);
+    //    transform.position = mouseWorldPos + offset;
+    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
