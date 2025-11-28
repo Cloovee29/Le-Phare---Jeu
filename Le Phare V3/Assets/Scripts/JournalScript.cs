@@ -44,7 +44,6 @@ public class JournalScript : MonoBehaviour
            listPages[i].GetComponent<PageScript>().CreatePage(i, listWordsTemp);
         }
 
-
     }
 
     // Update is called once per frame
@@ -54,7 +53,7 @@ public class JournalScript : MonoBehaviour
         //changement de page de journal WIP
         if (Input.GetKeyDown(KeyCode.P) && journalOpened)
         {
-
+            listPages[0].SetActive(false);
     //permet de changer de page du carnet
     //afficher la nouvelle page du carnet et cacher la précédente
 }
@@ -69,7 +68,7 @@ public class JournalScript : MonoBehaviour
         journal.SetActive(journalOpened);
         bgJournal.SetActive(journalOpened);
 
-       // transform.GetChild(0).gameObject.SetActive(journalOpened);
+        transform.GetChild(0).gameObject.SetActive(journalOpened);
 
         inventaire.SetActive(!journalOpened);
         arrows.SetActive(!journalOpened);

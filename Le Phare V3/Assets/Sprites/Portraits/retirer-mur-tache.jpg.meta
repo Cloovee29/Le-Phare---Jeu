@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      retirer-mur-tache_0: -750835910762785561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
