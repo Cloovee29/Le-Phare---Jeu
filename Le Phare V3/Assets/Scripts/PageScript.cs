@@ -8,8 +8,7 @@ public class PageScript : MonoBehaviour
     public List<GameObject> listHoles; //liste de trous associés à une page
     private List<GameObject> listWordsToDrag; //liste des mots à placer dans le journal
     public int numbPage; //numéro de la page du carnet
-
-    public List<string> listWords;
+    
     public GameObject word;
 
     public GameObject journal;
@@ -17,8 +16,21 @@ public class PageScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
         listWordsToDrag = new List<GameObject>();
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    //Y de 400 à -200
+    public void CreatePage(int numbNewPage, List<string> listWords)
+    {
+        numbPage = numbNewPage;
+
         //crée une liste d'objets mots à partir de la liste de scripts dans unity
         for (int i = 0; i < listWords.Count; i++)
         {
@@ -28,11 +40,8 @@ public class PageScript : MonoBehaviour
             float newY = 400f - i * 200f;
             listWordsToDrag[i].GetComponent<WordScript>().CreateWord(listWords[i], newY);
         }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

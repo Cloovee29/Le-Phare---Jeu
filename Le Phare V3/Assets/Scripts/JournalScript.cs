@@ -12,8 +12,9 @@ public class JournalScript : MonoBehaviour
     public bool journalOpened;
 
     public GameObject journal;
+    public GameObject page;
 
-    public List<GameObject> listPages; //liste des pages du carnet
+    private List<GameObject> listPages; //liste des pages du carnet
     public GameObject bgJournal; //background du journal
 
     public GameObject inventaire;
@@ -22,6 +23,17 @@ public class JournalScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
+        //création des pages du carnet
+        for (int i = 0; i < 2; i++)
+        {
+            GameObject newPage = Instantiate(page);
+            newPage.transform.SetParent(journal.transform, false);
+            listPages.Add(newPage);
+        }
+
+       // page.CreatePage();
+
     }
 
     // Update is called once per frame
@@ -31,9 +43,12 @@ public class JournalScript : MonoBehaviour
         //changement de page de journal WIP
         if (Input.GetKeyDown(KeyCode.P) && journalOpened)
         {
-            //permet de changer de page du carnet
-            //afficher la nouvelle page du carnet et cacher la précédente
-        }
+             // public List<GameObject> listPages;
+
+
+    //permet de changer de page du carnet
+    //afficher la nouvelle page du carnet et cacher la précédente
+}
     }
 
 
