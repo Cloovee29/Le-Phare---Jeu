@@ -633,8 +633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07de9e5525096834bac6861a6bbc8fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  word: {fileID: 0}
+  canvas: {fileID: 70067859}
+  word: {fileID: 131754521}
 --- !u!1001 &161054561
 PrefabInstance:
   m_ObjectHideFlags: 0
