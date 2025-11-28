@@ -9,7 +9,7 @@ public class PageScript : MonoBehaviour
     private List<GameObject> listWordsToDrag; //liste des mots à placer dans le journal
     private int numbPage; //numéro de la page du carnet
     public GameObject word;
-    public GameObject journal;
+    public GameObject page;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -33,7 +33,7 @@ public class PageScript : MonoBehaviour
         for (int i = 0; i < listWords.Count; i++)
         {
             GameObject newWord = Instantiate(word);
-            newWord.transform.SetParent(journal.transform, false);
+            newWord.transform.SetParent(page.transform, false);
             Debug.Log(newWord);
             listWordsToDrag.Add(newWord);
 

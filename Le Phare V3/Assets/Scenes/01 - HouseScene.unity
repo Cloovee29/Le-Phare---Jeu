@@ -4815,6 +4815,10 @@ MonoBehaviour:
   bgJournal: {fileID: 1428778498}
   inventaire: {fileID: 590714994}
   arrows: {fileID: 1966188914}
+  pagesContent:
+  - {fileID: 11400000, guid: 3492cff2548cb51409ad98f776219e2a, type: 2}
+  - {fileID: 11400000, guid: 0c5e075d0845ec644a93b4838539b611, type: 2}
+  currentPage: 1
 --- !u!114 &1290704067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4835,7 +4839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6061226262183411004, guid: 8e45301d519083245a848fb3058e1f09, type: 3}
+  m_Sprite: {fileID: 6175327746213496478, guid: 61b131443f56fc74db90987b5ec436a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6692,6 +6696,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7522337901277996814, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: page
+      value: 
+      objectReference: {fileID: 1062033229}
     - target: {fileID: 7522337901277996814, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: word
       value: 
