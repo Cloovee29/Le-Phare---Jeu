@@ -8,6 +8,10 @@ public class PortraitsScript : MonoBehaviour
     bool goodPositionPortrait;
     public static int countGoodPositionPortrait = 0;
 
+    public Sprite portrait1;
+    public Sprite portrait3;
+    public Sprite portrait5;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,31 +22,38 @@ public class PortraitsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(countGoodPositionPortrait == 5)
+        if(countGoodPositionPortrait == 3)
         {
             SolvedEnigma();            
         }
         
     }
 
-    //private void OnMouseDown()
-    //{
+    private void OnMouseDown()
+    {
 
-    //}
+    }
 
-    //private void OnMouseUp()
-    //{
+    private void OnMouseUp()
+    {
 
 
-    //}
+    }
 
-    //private void OnMouseDrag()
-    //{
-    //    Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(
-    //    new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(transform.position).z)
-    //);
-    //    transform.position = mouseWorldPos + offset;
-    //}
+    private void OnMouseDrag()
+    {
+        if (gameObject.GetComponent<SpriteRenderer>().sprite == portrait1 || 
+            gameObject.GetComponent<SpriteRenderer>().sprite == portrait3 || 
+            gameObject.GetComponent<SpriteRenderer>().sprite == portrait5)
+        {
+            print("spritechange");
+            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(
+            new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(transform.position).z)
+);
+            transform.position = mouseWorldPos + offset;
+        }
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -50,7 +61,7 @@ public class PortraitsScript : MonoBehaviour
         if (collision.gameObject.tag == gameObject.tag)
         {
             //goodPositionPortrait = true;
-            print("enigmeresolue");
+            print("bien placé");
             countGoodPositionPortrait = countGoodPositionPortrait + 1;
             print(countGoodPositionPortrait);
         }
@@ -61,7 +72,7 @@ public class PortraitsScript : MonoBehaviour
         if (collision.gameObject.tag == gameObject.tag)
         {
             //goodPositionPortrait = true;
-            print("enigmebonne mais arretee");
+            print("bien puis mal placé");
             countGoodPositionPortrait = countGoodPositionPortrait - 1;
             print(countGoodPositionPortrait);
         }

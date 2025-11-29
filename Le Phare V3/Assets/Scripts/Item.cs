@@ -24,8 +24,8 @@ public enum ItemName
     Light, 
     Diplome,
     Portrait1,
-    Portrait2,
     Portrait3,
     Portrait4,
     Portrait5,
+    Portrait,
 }

@@ -30,7 +30,6 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     public Sprite newDiplome;
 
     public Sprite portrait1OnWall;
-    public Sprite portrait2OnWall;
     public Sprite portrait3OnWall;
     public Sprite portrait4OnWall;
     public Sprite portrait5OnWall;
@@ -79,9 +78,11 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         if (hit)
         {
             Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            Debug.Log("Did Hit");
+            //Debug.Log("Did Hit");
             targetObject = hit.transform.GetComponent<targetObjectToUseScript>();
             targetGameObject = hit.transform.gameObject;
+
+            // SCENE 1
 
             if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Diplome)
             {
@@ -94,32 +95,42 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 print("clemarche");
             }
 
-            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait1)
+            // SCENE 2 - LES PORTRAITS
+
+            //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait)
+            //{
+            //    //targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait1OnWall;
+            //    targetObject.GetComponent<SpriteRenderer>().sprite = item.image;
+            //    inventoryManager.DeleteItem(this);
+            //}
+
+            if (CurrentItemIdName == ItemName.Portrait1 && targetObject.targetName == ItemName.Portrait ||
+                CurrentItemIdName == ItemName.Portrait3 && targetObject.targetName == ItemName.Portrait ||
+                CurrentItemIdName == ItemName.Portrait5 && targetObject.targetName == ItemName.Portrait)
             {
-                targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait1OnWall;
+                //targetObject.GetComponent<SpriteRenderer>().sprite = item.image;
+                //targetObject.GetComponent<SpriteRenderer>().sprite = itemImage;
                 inventoryManager.DeleteItem(this);
+                print("assoc");
             }
 
-            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait2)
-            {
-                targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait2OnWall;
-                inventoryManager.DeleteItem(this);
-            }
-            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait3)
-            {
-                targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait3OnWall;
-                inventoryManager.DeleteItem(this);
-            }
-            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait4)
-            {
-                targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait4OnWall;
-                inventoryManager.DeleteItem(this);
-            }
-            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait5)
-            {
-                targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait5OnWall;
-                inventoryManager.DeleteItem(this);
-            }
+            //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait3)
+            //{
+            //    print("portrait3");
+            //    targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait3OnWall;
+            //    inventoryManager.DeleteItem(this);
+            //}
+            //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait4)
+            //{
+            //    targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait4OnWall;
+            //    inventoryManager.DeleteItem(this);
+            //}
+            //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait5)
+            //{
+            //    print("portrait5");
+            //    targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait5OnWall;
+            //    inventoryManager.DeleteItem(this);
+            //}
         }
         else
         {

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: portrait4
   m_EditorClassIdentifier: 
   image: {fileID: -3382475915297799148, guid: be4ce0fd762214447aaa9027be849550, type: 3}
-  idName: 7
+  idName: 6
