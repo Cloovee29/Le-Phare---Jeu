@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a2dcaeeba8304734ca91157be0e97432
+guid: f35b5025fd1fb7c4b9b88b6a20694efd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8209660055318790805
-    second: portrait2_0
+      213: 707887783255445628
+    second: tableau_enigme3_no_shadow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: portrait2_0
+      name: tableau_enigme3_no_shadow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 552
-        height: 800
+        x: 37
+        y: 16
+        width: 123
+        height: 227
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5928dfbd2529ee170800000000000000
-      internalID: 8209660055318790805
+      spriteID: c7097c5303ce2d900800000000000000
+      internalID: 707887783255445628
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bee4f76d53c7eff4280a395b95320d2b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      portrait2_0: 8209660055318790805
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

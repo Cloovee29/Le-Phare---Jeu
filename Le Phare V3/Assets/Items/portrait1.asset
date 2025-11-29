@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b8b365ed1a05a47a634eefdb53127e, type: 3}
   m_Name: portrait1
   m_EditorClassIdentifier: 
-  image: {fileID: -7890715025306128115, guid: 59e72be5ee47d5d4781845b88b9e161d, type: 3}
+  image: {fileID: -6144841604792410135, guid: e38dbde6a6620b34b87dfd7796aeea54, type: 3}
   idName: 4

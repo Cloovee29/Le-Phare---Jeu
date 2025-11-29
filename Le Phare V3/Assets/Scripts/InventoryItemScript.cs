@@ -29,6 +29,12 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public Sprite newDiplome;
 
+    public Sprite portrait1OnWall;
+    public Sprite portrait2OnWall;
+    public Sprite portrait3OnWall;
+    public Sprite portrait4OnWall;
+    public Sprite portrait5OnWall;
+
     //public GameObject zoomSerrure;
 
     void Start()
@@ -88,10 +94,32 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 print("clemarche");
             }
 
-            //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait1)
-            //{
-            //    inventoryManager.DeleteItem(this);
-            //}
+            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait1)
+            {
+                targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait1OnWall;
+                inventoryManager.DeleteItem(this);
+            }
+
+            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait2)
+            {
+                targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait2OnWall;
+                inventoryManager.DeleteItem(this);
+            }
+            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait3)
+            {
+                targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait3OnWall;
+                inventoryManager.DeleteItem(this);
+            }
+            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait4)
+            {
+                targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait4OnWall;
+                inventoryManager.DeleteItem(this);
+            }
+            if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait5)
+            {
+                targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait5OnWall;
+                inventoryManager.DeleteItem(this);
+            }
         }
         else
         {
