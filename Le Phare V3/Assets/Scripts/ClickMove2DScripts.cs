@@ -57,9 +57,9 @@ public class ClickMove2D : MonoBehaviour
 
             //fonctionne pas donc j'ai fait fonction au dessus
             //if (mousePos.x < transform.position.x)
-            //    spriteRenderer.flipX = true;  // regarde à gauche
+            //    spriteRenderer.flipX = true;  // regarde à gauche 
             //else
-            //    spriteRenderer.flipX = false; // regarde à droite
+            //    spriteRenderer.flipX = false; // regarde à droite   
 
             targetPosition = mousePos;
         }
@@ -82,8 +82,7 @@ public class ClickMove2D : MonoBehaviour
         targetPosition = initialPosition;
     }
 
-    // c'est à la fin de l'animation de défilement
-    public void ShowCharacter()
+    public void ShowCharacter()      // c'est à la fin de l'animation de défilement
     {
         spriteRenderer.enabled = true;
     }

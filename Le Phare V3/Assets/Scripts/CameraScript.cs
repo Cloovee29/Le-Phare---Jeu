@@ -3,6 +3,7 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.TextCore.Text;
 
 public class CameraScript : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class CameraScript : MonoBehaviour
     public float screenLeft;
     public float screenRight;
     public float duration;
+
+    public ClickMove2D character;
 
     public GameObject arrowLeft;
     public GameObject arrowRight;
@@ -27,6 +30,9 @@ public class CameraScript : MonoBehaviour
 
     public void ButtonLeft()
     {
+        character.HideAndResetCharacter(); // pour faire depop dora
+
+
         //character.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         background.DOMoveX(screenLeft, duration).SetEase(Ease.OutCubic).OnComplete(() => {
@@ -35,11 +41,17 @@ public class CameraScript : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             //character.SetActive(true);
 
+            character.ShowCharacter(); // pour remettre dora
+
+
         });
     }
 
     public void ButtonRight()
     {
+
+        character.HideAndResetCharacter();
+
         //character.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         background.DOMoveX(screenRight, duration).SetEase(Ease.OutCubic).OnComplete(() => {
@@ -47,6 +59,9 @@ public class CameraScript : MonoBehaviour
             arrowLeft.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
             //character.SetActive(true);
+
+            character.ShowCharacter();
+
         });
     }
 }
