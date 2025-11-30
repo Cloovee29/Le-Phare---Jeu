@@ -21,7 +21,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Canvas canvas;
 
-    targetObjectToUseScript targetObject;
+    public static targetObjectToUseScript targetObject; //enlever public static si problemes
     GameObject targetGameObject;
 
     public InventoryManagerScript inventoryManager;
@@ -34,11 +34,15 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     public Sprite portrait4OnWall;
     public Sprite portrait5OnWall;
 
+    public PortraitsInstanciateScript portraitsInstanciate;
+
+    public static Vector3 targetObjectPos;
+
     //public GameObject zoomSerrure;
 
     void Start()
     {
-        image = GetComponent<Image>();    
+        image = GetComponent<Image>();
     }
 
     void Awake()
@@ -97,40 +101,26 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
             // SCENE 2 - LES PORTRAITS
 
-            //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait)
-            //{
-            //    //targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait1OnWall;
-            //    targetObject.GetComponent<SpriteRenderer>().sprite = item.image;
-            //    inventoryManager.DeleteItem(this);
-            //}
-
-            if (CurrentItemIdName == ItemName.Portrait1 && targetObject.targetName == ItemName.Portrait ||
-                CurrentItemIdName == ItemName.Portrait3 && targetObject.targetName == ItemName.Portrait ||
-                CurrentItemIdName == ItemName.Portrait5 && targetObject.targetName == ItemName.Portrait)
+            if (CurrentItemIdName == ItemName.Portrait1 && targetObject.targetName == ItemName.Portrait)
             {
-                //targetObject.GetComponent<SpriteRenderer>().sprite = item.image;
-                //targetObject.GetComponent<SpriteRenderer>().sprite = itemImage;
                 inventoryManager.DeleteItem(this);
-                print("assoc");
+                portraitsInstanciate.InstanciatePortrait1();
+                targetObjectPos = targetObject.transform.position;
             }
 
-            //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait3)
-            //{
-            //    print("portrait3");
-            //    targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait3OnWall;
-            //    inventoryManager.DeleteItem(this);
-            //}
-            //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait4)
-            //{
-            //    targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait4OnWall;
-            //    inventoryManager.DeleteItem(this);
-            //}
-            //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Portrait5)
-            //{
-            //    print("portrait5");
-            //    targetGameObject.GetComponent<SpriteRenderer>().sprite = portrait5OnWall;
-            //    inventoryManager.DeleteItem(this);
-            //}
+            if (CurrentItemIdName == ItemName.Portrait3 && targetObject.targetName == ItemName.Portrait)
+            {
+                inventoryManager.DeleteItem(this);
+                portraitsInstanciate.InstanciatePortrait3();
+                targetObjectPos = targetObject.transform.position;
+            }
+
+            if (CurrentItemIdName == ItemName.Portrait5 && targetObject.targetName == ItemName.Portrait)
+            {
+                inventoryManager.DeleteItem(this);
+                portraitsInstanciate.InstanciatePortrait5();
+                targetObjectPos = targetObject.transform.position;
+            }
         }
         else
         {
