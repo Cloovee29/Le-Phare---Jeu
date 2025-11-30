@@ -278,11 +278,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5195975607264081587, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.64
+      value: -5.24
       objectReference: {fileID: 0}
     - target: {fileID: 5195975607264081587, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.06
+      value: -1.72
       objectReference: {fileID: 0}
     - target: {fileID: 5195975607264081587, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -322,7 +322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5859461775448578166, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: Arrows
@@ -332,6 +332,14 @@ PrefabInstance:
       propertyPath: eventSystem
       value: 
       objectReference: {fileID: 1616148178}
+    - target: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1432733165}
+    - target: {fileID: 6556169225859257901, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2395,6 +2403,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &1432733165 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6556169225859257901, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
+  m_PrefabInstance: {fileID: 199033055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1442741045
 GameObject:
   m_ObjectHideFlags: 0

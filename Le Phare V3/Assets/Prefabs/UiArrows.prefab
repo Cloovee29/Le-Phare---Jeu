@@ -54,6 +54,7 @@ MonoBehaviour:
   screenLeft: 0
   screenRight: -17.8
   duration: 2
+  character: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
   arrowLeft: {fileID: 1979085001188756740}
   arrowRight: {fileID: 6630565078864303158}
 --- !u!1 &1979085001188756740

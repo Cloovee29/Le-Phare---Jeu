@@ -13,7 +13,6 @@ public class PortraitsInstanciateScript : MonoBehaviour
 
     Vector3 worldPos;
     Vector3 mousePos;
-    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

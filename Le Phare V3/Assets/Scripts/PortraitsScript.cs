@@ -12,6 +12,9 @@ public class PortraitsScript : MonoBehaviour
     public Sprite portrait3;
     public Sprite portrait5;
 
+    Vector3 targetPosition;
+    bool isOnTarget = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,8 +38,11 @@ public class PortraitsScript : MonoBehaviour
 
     private void OnMouseUp()
     {
-
-
+        if (isOnTarget)
+        {
+            transform.position = targetPosition;
+            print("rePos");
+        }
     }
 
     private void OnMouseDrag()
@@ -45,7 +51,6 @@ public class PortraitsScript : MonoBehaviour
          new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(transform.position).z)
          );
          transform.position = mouseWorldPos + offset;
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -55,6 +60,16 @@ public class PortraitsScript : MonoBehaviour
             print("bien placé");
             countGoodPositionPortrait++;
             print(countGoodPositionPortrait);
+            
+        }
+
+        if (collision.gameObject.tag == "Portrait1" ||
+            collision.gameObject.tag == "Portrait3" ||
+            collision.gameObject.tag == "Portrait5")
+        {
+            isOnTarget = true;
+            targetPosition = collision.transform.position;
+            print("cible detectee");
         }
     }
 
@@ -65,6 +80,14 @@ public class PortraitsScript : MonoBehaviour
             print("bien puis mal placé");
             countGoodPositionPortrait--;
             print(countGoodPositionPortrait);
+        }
+
+        if (collision.gameObject.CompareTag("Portrait1") ||
+            collision.gameObject.CompareTag("Portrait3") ||
+            collision.gameObject.CompareTag("Portrait5"))
+        {
+            isOnTarget = false;
+            print("Sorti de la cible");
         }
     }
 
