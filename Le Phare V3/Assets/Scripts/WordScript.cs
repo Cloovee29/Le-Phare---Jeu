@@ -12,6 +12,9 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     private bool inTheHole;
     private float YBasic;
 
+    Vector3 mouseWorldPosition;
+    [SerializeField] private Camera mainCamera;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,7 +41,8 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        //rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor; // ancien code 
+        transform.position = Input.mousePosition; // nouveau code = le mot suit bien l'image pendant le drag
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -49,6 +53,8 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         if(!inTheHole){
             GetComponent<RectTransform>().anchoredPosition = new Vector2(290, YBasic);
         }
+
+        transform.position = Input.mousePosition; // nouveau code = si je mets pas ca il se place bizarrement à la fin du drag
     }
 
     private void OnTriggerEnter2D (Collider2D collision){
