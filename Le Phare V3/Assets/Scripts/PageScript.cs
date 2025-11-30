@@ -6,7 +6,7 @@ public class PageScript : MonoBehaviour
 {
 
     private List<GameObject> listHoles; //liste de trous associés à une page
-    private List<GameObject> listWordsToDrag; //liste des mots à placer dans le journal
+    public List<GameObject> listWordsToDrag; //liste des mots à placer dans le journal
     private int numbPage; //numéro de la page du carnet
     public GameObject word;
     public GameObject page;
@@ -37,7 +37,7 @@ public class PageScript : MonoBehaviour
             Debug.Log(newWord);
             listWordsToDrag.Add(newWord);
 
-            float newY = 400f - i * 200f;
+           float newY = 60f - i * 20f;
             listWordsToDrag[i].GetComponent<WordScript>().CreateWord(listWords[i], newY);
         }
 

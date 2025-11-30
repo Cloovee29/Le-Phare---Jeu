@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rdc_phare_brouillon_0: -6570177148011234592
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

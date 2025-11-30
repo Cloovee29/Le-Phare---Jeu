@@ -1,8 +1,9 @@
-using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.EventSystems;
 using Microsoft.Unity.VisualStudio.Editor;
+using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class JournalScript : MonoBehaviour
 {
@@ -22,11 +23,12 @@ public class JournalScript : MonoBehaviour
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
 
         listPages = new List<GameObject>();
-      
+        currentPage = 0;
+
         //création des pages du carnet
         for (int i = 0; i < pagesContent.Count; i++)
         {
@@ -51,12 +53,34 @@ public class JournalScript : MonoBehaviour
     {
       
         //changement de page de journal WIP
-        if (Input.GetKeyDown(KeyCode.P) && journalOpened)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && journalOpened)
         {
-            listPages[0].SetActive(false);
-    //permet de changer de page du carnet
-    //afficher la nouvelle page du carnet et cacher la précédente
-}
+            currentPage = 1;
+            ChangePage();
+
+            //permet de changer de page du carnet
+            //afficher la nouvelle page du carnet et cacher la précédente
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && journalOpened)
+        {
+            currentPage = 0;
+            ChangePage();
+
+            //permet de changer de page du carnet
+            //afficher la nouvelle page du carnet et cacher la précédente
+        }
+    }
+
+    public void ChangePage()
+    {
+        for (int i = 0; i < listPages.Count; i++)
+            listPages[i].SetActive(i == currentPage);
+
+        for (int i = 0; i < listPages[currentPage].transform.childCount; i++)
+        {
+            listPages[currentPage].transform.GetChild(i).gameObject.SetActive(journalOpened);
+        }
     }
 
 
@@ -67,8 +91,10 @@ public class JournalScript : MonoBehaviour
         journalOpened = !journalOpened;
         journal.SetActive(journalOpened);
         bgJournal.SetActive(journalOpened);
-
+        page.transform.GetChild(0).gameObject.SetActive(journalOpened);
         transform.GetChild(0).gameObject.SetActive(journalOpened);
+
+        ChangePage();
 
         inventaire.SetActive(!journalOpened);
         arrows.SetActive(!journalOpened);

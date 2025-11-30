@@ -25,7 +25,7 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     {
         word.text = newWord;
         YBasic = newY;
-        GetComponent<RectTransform>().anchoredPosition = new Vector2(290,newY);
+        GetComponent<RectTransform>().anchoredPosition = new Vector2(120,newY);
     }
     
 
