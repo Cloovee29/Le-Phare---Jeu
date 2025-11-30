@@ -1,19 +1,29 @@
 ﻿using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
+using System.Collections; 
 
 public class ClickMove2D : MonoBehaviour
 {
     public float speed = 2f;  // vitesse 
-    public float groundY = -1.06f;    // position sur axe des Y et hauteur du sol
+    public float groundY = -1.72f;    // position sur axe des Y et hauteur du sol
     private Vector3 targetPosition;
+
+    private SpriteRenderer spriteRenderer;
+
+    private Vector3 initialPosition;
 
     public GameObject Arrows;
     public EventSystem eventSystem;
 
     void Start()
     {
-        targetPosition = transform.position;   // début à son emplacement actuel sur scene (parler des emplacements des flèches qui dérangent le LD
+        targetPosition = transform.position;   // début à son emplacement actuel sur scene
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        initialPosition = transform.position;
     }
 
     void Update()
@@ -26,6 +36,31 @@ public class ClickMove2D : MonoBehaviour
 
             mousePos.z = 0;   // pas retirer sinon perso bouge sur les murs
 
+            // là je veux qu'il flip si je clique dans le sens inverse de là où il regarde (sprite initial)
+
+            if (mousePos.x < transform.position.x){
+                Vector3 scale = transform.localScale;
+
+                scale.x = -Mathf.Abs(scale.x);
+
+                transform.localScale = scale;
+            }
+            else
+            {
+
+                Vector3 scale = transform.localScale;
+
+                scale.x = Mathf.Abs(scale.x);
+
+                transform.localScale = scale;
+            }
+
+            //fonctionne pas donc j'ai fait fonction au dessus
+            //if (mousePos.x < transform.position.x)
+            //    spriteRenderer.flipX = true;  // regarde à gauche
+            //else
+            //    spriteRenderer.flipX = false; // regarde à droite
+
             targetPosition = mousePos;
         }
 
@@ -35,5 +70,21 @@ public class ClickMove2D : MonoBehaviour
 
         targetPosition,
         speed * Time.deltaTime);
+    }
+    // Pour quand on clique sur une flèche
+    public void HideAndResetCharacter()
+    {
+        // ça rend dora invisible
+        spriteRenderer.enabled = false;
+
+        // ça la remet à sa position de tout début
+        transform.position = initialPosition;
+        targetPosition = initialPosition;
+    }
+
+    // c'est à la fin de l'animation de défilement
+    public void ShowCharacter()
+    {
+        spriteRenderer.enabled = true;
     }
 }

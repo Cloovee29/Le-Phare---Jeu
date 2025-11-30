@@ -2253,7 +2253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5195975607264081587, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.06
+      value: -1.72
       objectReference: {fileID: 0}
     - target: {fileID: 5195975607264081587, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2295,6 +2295,10 @@ PrefabInstance:
       propertyPath: Arrows
       value: 
       objectReference: {fileID: 1966188914}
+    - target: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
+      propertyPath: groundY
+      value: -1.72
+      objectReference: {fileID: 0}
     - target: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: eventSystem
       value: 
