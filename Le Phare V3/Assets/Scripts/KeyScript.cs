@@ -8,6 +8,10 @@ public class KeyScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     Transform key;
     public GameObject zoomSerrure;
 
+    // pour son de la porte LVL1
+    //public AudioSource doorAudio;
+    //public AudioClip openingClip;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -46,8 +50,20 @@ public void OnTriggerEnter2D(Collider2D collision)
         float scaleX = transform.localScale.x;
         if (collision.CompareTag("Serrure") && scaleX == -1f)
         {
+            //partie amelie si questions !c'est pour faire jouer le son de la porte; ça a pas fonctionné
+            //if (dooraudio != null && openingclip != null)
+            //{
+            //    audiosource audio = door.getcomponent<audiosource>();
+            //    if (audio != null && openingclip != null)
+            //    {
+            //        dooraudio.clip = openingclip;
+            //        dooraudio.play();
+            //    }
+            //}
+
             //zoomSerrure.SetActive(false);
             SceneManager.LoadScene("02 - Lighthouse1");
+
         }
     }
 }
