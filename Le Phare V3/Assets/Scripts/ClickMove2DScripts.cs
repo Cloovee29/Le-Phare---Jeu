@@ -17,6 +17,9 @@ public class ClickMove2D : MonoBehaviour
     public GameObject Arrows;
     public EventSystem eventSystem;
 
+    private AudioSource footstepsAudio;
+
+
     void Start()
     {
         targetPosition = transform.position;   // début à son emplacement actuel sur scene
@@ -24,11 +27,25 @@ public class ClickMove2D : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         initialPosition = transform.position;
+
+        footstepsAudio = GetComponent<AudioSource>();
+
     }
 
     void Update()
-    {        
-        if (Input.GetMouseButtonDown(0) && eventSystem.currentSelectedGameObject == null)
+    {
+        if (transform.position != targetPosition)
+        {
+            if (!footstepsAudio.isPlaying)
+                footstepsAudio.Play();
+        }
+        else
+        {
+            if (footstepsAudio.isPlaying)
+                footstepsAudio.Stop();
+        }
+
+            if (Input.GetMouseButtonDown(0) && eventSystem.currentSelectedGameObject == null)
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);   // position de mon curseur sur mon écran retranscris en position sur Unity
 
