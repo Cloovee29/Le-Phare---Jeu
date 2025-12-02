@@ -4,6 +4,7 @@ using TMPro;
 public class ShowDescriptionScript : MonoBehaviour
 {
     public GameObject uiDescription;
+    private GameObject newDescription;
     public TextMeshProUGUI textDescription;
     public string objectDescription;
     public float readingTime;
@@ -13,7 +14,7 @@ public class ShowDescriptionScript : MonoBehaviour
     void Start()
     {
         //GameObject newDescription = Instantiate(uiDescription);
-        uiDescription.SetActive(false); //désactive la description lorsqu'elle n'est pas active
+        //uiDescription.SetActive(false); //désactive la description lorsqu'elle n'est pas active
     }
 
     // Update is called once per frame
@@ -21,10 +22,11 @@ public class ShowDescriptionScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            //Instantiate(uiDescription);
-            uiDescription.SetActive(true);
+            newDescription = Instantiate(uiDescription, uiDescription.transform.parent);
+            //uiDescription.SetActive(true);
             textDescriptionPosition();
             Debug.Log("print" + objectDescribed.transform.position);
+            textDescription = newDescription.GetComponentInChildren<TextMeshProUGUI>();
             textDescription.text = objectDescription;
             Invoke("endDescription", readingTime); //permet de mettre une durée de lecture à la description
         }
@@ -32,21 +34,24 @@ public class ShowDescriptionScript : MonoBehaviour
 
     void endDescription()
     {
-        uiDescription.SetActive(false);
+        if (newDescription != null)
+        {
+            Destroy(newDescription);
+        }   
     }
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            uiDescription.SetActive(false);
-        }
+        //if (Input.GetMouseButton(0))
+        //{
+        //   uiDescription.SetActive(false);
+        //}
     }
     
     public void textDescriptionPosition()
     {
         Vector3 newUiDescriptionPosition = objectDescribed.transform.position + new Vector3(0, positionAboveObject, 0);
-        uiDescription.transform.position = Camera.main.WorldToScreenPoint(newUiDescriptionPosition);
+        newDescription.transform.position = Camera.main.WorldToScreenPoint(newUiDescriptionPosition);
         Debug.Log("Function has been called");
     }
 }

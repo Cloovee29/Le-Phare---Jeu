@@ -341,8 +341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 0}
-  doorAudio: {fileID: 0}
-  openingClip: {fileID: 0}
 --- !u!1 &70067856
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,8 +436,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 590714995}
-  - {fileID: 1966188915}
   - {fileID: 161054562}
+  - {fileID: 1966188915}
   - {fileID: 2060885982}
   - {fileID: 1428778499}
   - {fileID: 1290704065}
@@ -635,8 +633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07de9e5525096834bac6861a6bbc8fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 70067859}
-  word: {fileID: 131754521}
 --- !u!1001 &161054561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -648,6 +644,10 @@ PrefabInstance:
     - target: {fileID: 112677598339260891, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_Name
       value: TextDescription
+      objectReference: {fileID: 0}
+    - target: {fileID: 112677598339260891, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2030633702596705275, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_Pivot.x
@@ -711,11 +711,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2030633702596705275, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -860.36804
+      value: 1065
       objectReference: {fileID: 0}
     - target: {fileID: 2030633702596705275, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -505.2685
+      value: -491
       objectReference: {fileID: 0}
     - target: {fileID: 2030633702596705275, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -728,6 +728,30 @@ PrefabInstance:
     - target: {fileID: 2030633702596705275, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_fontSize
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_margin.y
+      value: -405.9432
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_margin.z
+      value: -1050.9775
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -902,6 +926,7 @@ GameObject:
   - component: {fileID: 207086206}
   - component: {fileID: 207086207}
   - component: {fileID: 207086208}
+  - component: {fileID: 207086209}
   m_Layer: 0
   m_Name: PHradio_0
   m_TagString: Untagged
@@ -1039,6 +1064,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryManagerScript: {fileID: 933263916}
   itemToPickup: {fileID: 11400000, guid: eaefa3cc59a7fb9458e1e97586ddfd51, type: 2}
+--- !u!114 &207086209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207086204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDescription: {fileID: 1990228115}
+  textDescription: {fileID: 1990228116}
+  objectDescription: Ceci est une super radio
+  readingTime: 5
+  objectDescribed: {fileID: 207086204}
+  positionAboveObject: 0
 --- !u!1 &207986362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1242,7 @@ GameObject:
   - component: {fileID: 235297800}
   - component: {fileID: 235297801}
   - component: {fileID: 235297802}
+  - component: {fileID: 235297803}
   m_Layer: 0
   m_Name: PH-obj_0
   m_TagString: InventoryObject
@@ -1336,6 +1380,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryManagerScript: {fileID: 933263916}
   itemToPickup: {fileID: 11400000, guid: 47d02a9d18116df409f7e05def5dd15a, type: 2}
+--- !u!114 &235297803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235297798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDescription: {fileID: 0}
+  textDescription: {fileID: 0}
+  objectDescription: 
+  readingTime: 0
+  objectDescribed: {fileID: 0}
+  positionAboveObject: 0
 --- !u!1 &345293269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,8 +1950,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 0}
-  doorAudio: {fileID: 0}
-  openingClip: {fileID: 0}
 --- !u!114 &933263916 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2978058265001133317, guid: d47bc41e4856c4d42bcf6d0ad7256f64, type: 3}
@@ -1993,8 +2053,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 745158382}
-  doorAudio: {fileID: 0}
-  openingClip: {fileID: 0}
 --- !u!61 &946166872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2818,6 +2876,7 @@ GameObject:
   - component: {fileID: 1208749171}
   - component: {fileID: 1208749172}
   - component: {fileID: 1208749173}
+  - component: {fileID: 1208749174}
   m_Layer: 0
   m_Name: PHporte_0
   m_TagString: Untagged
@@ -2967,6 +3026,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 2060885981}
+--- !u!114 &1208749174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208749168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDescription: {fileID: 1990228115}
+  textDescription: {fileID: 1990228116}
+  objectDescription: Ceci est une vraie porte
+  readingTime: 3
+  objectDescribed: {fileID: 1208749168}
+  positionAboveObject: 0
 --- !u!1 &1290704064
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,8 +3440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 0}
-  doorAudio: {fileID: 0}
-  openingClip: {fileID: 0}
 --- !u!114 &1741213776 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5866110495667885079, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
@@ -3466,8 +3541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 0}
-  doorAudio: {fileID: 0}
-  openingClip: {fileID: 0}
 --- !u!1 &1894481016
 GameObject:
   m_ObjectHideFlags: 0
@@ -3649,6 +3722,22 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2515330988639527313, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
   m_PrefabInstance: {fileID: 4656405673638489524}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1990228115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 112677598339260891, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+  m_PrefabInstance: {fileID: 161054561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1990228116 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+  m_PrefabInstance: {fileID: 161054561}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990228115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2016547166 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
