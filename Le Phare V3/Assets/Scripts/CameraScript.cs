@@ -30,7 +30,7 @@ public class CameraScript : MonoBehaviour
 
     public void ButtonLeft()
     {
-        character.HideAndResetCharacter(); // pour faire depop dora
+        character.HideAndResetCharacter(); // pour faire depop le personnage
 
 
         //character.SetActive(false);
@@ -41,7 +41,7 @@ public class CameraScript : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             //character.SetActive(true);
 
-            character.ShowCharacter(); // pour remettre dora
+            character.ShowCharacter(); // pour remettre le personnage
 
 
         });

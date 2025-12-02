@@ -10,7 +10,7 @@ public class ClickMove2D : MonoBehaviour
     public float groundY = -1.72f;    // position sur axe des Y et hauteur du sol
     private Vector3 targetPosition;
 
-    private SpriteRenderer spriteRenderer;
+    SpriteRenderer spriteRenderer;
 
     private Vector3 initialPosition;
 
@@ -91,7 +91,7 @@ public class ClickMove2D : MonoBehaviour
     // Pour quand on clique sur une flèche
     public void HideAndResetCharacter()
     {
-        // ça rend dora invisible
+        // ça rend le personnage invisible
         spriteRenderer.enabled = false;
 
         // ça la remet à sa position de tout début

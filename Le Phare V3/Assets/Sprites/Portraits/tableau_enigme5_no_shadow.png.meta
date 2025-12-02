@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: be4ce0fd762214447aaa9027be849550
+guid: 98d9a8b63c6629c478269d996a6fc5f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3382475915297799148
-    second: portrait4_0
+      213: 2422606481503027303
+    second: tableau_enigme5_no_shadow_0
+  - first:
+      213: -296734717133364256
+    second: tableau_enigme5_no_shadow_1
+  - first:
+      213: 1251366084341592592
+    second: tableau_enigme5_no_shadow_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,35 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: portrait4_0
+      name: tableau_enigme5_no_shadow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 600
-        height: 900
+        x: 38
+        y: 1
+        width: 123
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 17, z: 0, w: 9}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7600c8862c3de9120800000000000000
+      internalID: 2422606481503027303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tableau_enigme5_no_shadow_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 109
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +156,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4144c5f73180f01d0800000000000000
-      internalID: -3382475915297799148
+      spriteID: 0e36db0d859c1ebf0800000000000000
+      internalID: -296734717133364256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tableau_enigme5_no_shadow_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012f62dd2debd5110800000000000000
+      internalID: 1251366084341592592
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 35f44f09eda06b947acf4878bd982472
+    spriteID: 56952533a78153945a9cebb51486bf05
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      portrait4_0: -3382475915297799148
+      tableau_enigme5_no_shadow_0: 2422606481503027303
+      tableau_enigme5_no_shadow_1: -296734717133364256
+      tableau_enigme5_no_shadow_2: 1251366084341592592
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
