@@ -3887,6 +3887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 2060885981}
+  character: {fileID: 2102459816}
+  arrows: {fileID: 1966188914}
 --- !u!114 &1208749174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5219,7 +5221,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
   m_PrefabInstance: {fileID: 1016281150}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2102459816}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02e67b0171b61f147a274c4e04237c35, type: 3}
@@ -5315,6 +5317,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2102459816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5859461775448578166, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
+  m_PrefabInstance: {fileID: 1016281150}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2135610567 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4755481561254092858, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
