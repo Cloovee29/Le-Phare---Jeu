@@ -3,8 +3,8 @@ guid: f0a5d2ac49bcaf1498d9a157d456149d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4578112272192123382
-    second: istockphoto-695052136-612x612_0
+      213: 8974944937154645212
+    second: longue-vue_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: istockphoto-695052136-612x612_0
+      name: longue-vue_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0ec122f4274770c0800000000000000
-      internalID: -4578112272192123382
+      spriteID: cdc0bc97ed86d8c70800000000000000
+      internalID: 8974944937154645212
       vertices: []
       indices: 
       edges: []

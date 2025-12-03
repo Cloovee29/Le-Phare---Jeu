@@ -11,6 +11,8 @@ TagManager:
   - Portrait4
   - Portrait5
   - Portrait
+  - Coquillage
+  - longue-vue
   layers:
   - Default
   - TransparentFX

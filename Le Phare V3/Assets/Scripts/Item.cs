@@ -28,4 +28,6 @@ public enum ItemName
     Portrait4,
     Portrait5,
     Portrait,
+    LongueVue,
+    Coquillage,
 }

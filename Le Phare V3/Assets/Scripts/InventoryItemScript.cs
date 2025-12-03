@@ -49,9 +49,13 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     public Sprite oldDiplomeSurbriSprite;
     public Sprite oldDiplomeSprite;
 
+    public AudioSource musicCoquillage;
+    //public AudioSource footsteps;
+
     void Start()
     {
         image = GetComponent<Image>();
+        musicCoquillage = GetComponent<AudioSource>();
     }
 
     void Awake()
@@ -149,6 +153,14 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         {
             Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
         }
+
+        // SCENE 3
+        if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Coquillage)
+        {
+            musicCoquillage.Play();
+            print("COQUILLAGEMARIE");
+        }
+
     }
 
     public void InitialiseItem(Item newItem)
