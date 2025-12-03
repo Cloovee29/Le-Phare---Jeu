@@ -20,14 +20,9 @@ public class PageScript : MonoBehaviour
         listWordsToDrag = new List<GameObject>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     //Y de 400 à -200
-    public void CreatePage(int numbNewPage, List<string> listWords)
+    public void CreatePage(int numbNewPage, List<string> listWords, List<Holes> listHoles)
     {
         numbPage = numbNewPage;
         

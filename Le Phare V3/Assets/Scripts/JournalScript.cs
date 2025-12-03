@@ -37,13 +37,20 @@ public class JournalScript : MonoBehaviour
             listPages.Add(newPage);
             
             List<string> listWordsTemp = new List<string>();
-            
+            List<Holes> listHolesTemp = new List<Holes>();
+
             foreach (string word in pagesContent[i].listWords)
             {
                 listWordsTemp.Add(word);
             }
-           
-            listPages[i].GetComponent<PageScript>().CreatePage(i, listWordsTemp);
+
+            //mettre les trous WIP
+            foreach (Holes hole in pagesContent[i].listHoles)
+            {
+               listHolesTemp.Add(hole);
+            }
+
+            listPages[i].GetComponent<PageScript>().CreatePage(i, listWordsTemp, listHolesTemp);
         }
 
     }
