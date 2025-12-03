@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b8b365ed1a05a47a634eefdb53127e, type: 3}
   m_Name: cle
   m_EditorClassIdentifier: 
-  tile: {fileID: 0}
-  range: {x: 5, y: 4}
-  image: {fileID: 7307273179880218002, guid: f37ad95fcb03a664e8a0fa1fc9522102, type: 3}
+  image: {fileID: 6213522638460677980, guid: 506b771872d1f7248a1ee8173a851e4b, type: 3}
   idName: 0

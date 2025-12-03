@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class PortraitsScript : MonoBehaviour
 {
@@ -94,6 +95,7 @@ public class PortraitsScript : MonoBehaviour
     void SolvedEnigma()
     {
         print("enigmeresolue");
+        SceneManager.LoadScene("03 - Lighthouse2");
     }
 }
 

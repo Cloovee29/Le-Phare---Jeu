@@ -1163,7 +1163,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207086204}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c7c6dd82b097464fb829717a0084edc, type: 3}
   m_Name: 
@@ -1216,8 +1216,8 @@ Transform:
   m_GameObject: {fileID: 207986362}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.77, y: 2.32, z: -4.55}
-  m_LocalScale: {x: 0.2042291, y: 0.2042291, z: 0.2042291}
+  m_LocalPosition: {x: 15.826, y: 2.38, z: -4.55}
+  m_LocalScale: {x: 1.5614038, y: 1.5614038, z: 1.5614038}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2017482973}
@@ -1260,13 +1260,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.12, y: 4.16}
+    oldSize: {x: 0.93, y: 0.74}
     newSize: {x: 6.12, y: 4.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 6.12, y: 4.16}
+  m_Size: {x: 0.95, y: 0.73}
   m_EdgeRadius: 0
 --- !u!212 &207986365
 SpriteRenderer:
@@ -1312,7 +1312,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 444011341456272329, guid: 0decc88f2f217d341a4df5e372f36006, type: 3}
+  m_Sprite: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1365,8 +1365,8 @@ Transform:
   m_GameObject: {fileID: 235297798}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.1, y: 0.18, z: -4.72}
-  m_LocalScale: {x: 0.11782508, y: 0.11782508, z: 0.11782508}
+  m_LocalPosition: {x: 1.883, y: -0.143, z: -4.72}
+  m_LocalScale: {x: 1.02, y: 1.02, z: 1.02}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2017482973}
@@ -1415,7 +1415,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2725265996946083213, guid: 2f4e80c5cb34464439db61a680fe3fbc, type: 3}
+  m_Sprite: {fileID: 7202785322945237657, guid: 8f489e7cc0eace948bc5e6c12379a509, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1464,13 +1464,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.5, y: 9.8}
+    oldSize: {x: 0.66, y: 1.08}
     newSize: {x: 10.5, y: 9.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 10.5, y: 9.8}
+  m_Size: {x: 0.67, y: 1.09}
   m_EdgeRadius: 0
 --- !u!114 &235297802
 MonoBehaviour:
@@ -1479,7 +1479,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235297798}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c7c6dd82b097464fb829717a0084edc, type: 3}
   m_Name: 
@@ -2882,7 +2882,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5195975607264081587, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.24
+      value: -4.44
       objectReference: {fileID: 0}
     - target: {fileID: 5195975607264081587, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3757,8 +3757,8 @@ Transform:
   m_GameObject: {fileID: 1208749168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.07, y: -0.37, z: -4.52}
-  m_LocalScale: {x: 0.21214949, y: 0.50802743, z: 0.36422962}
+  m_LocalPosition: {x: 25.0485, y: -0.3923, z: -4.52}
+  m_LocalScale: {x: 0.9151196, y: 0.92066276, z: 0.36422962}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2017482973}
@@ -3807,8 +3807,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6061226262183411004, guid: 8e45301d519083245a848fb3058e1f09, type: 3}
-  m_Color: {r: 0.49803925, g: 0.49803925, b: 0.49803925, a: 0}
+  m_Sprite: {fileID: 8077096663480454593, guid: 146b3515cf9483a4d93373a9db6da960, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3856,13 +3856,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.8, y: 9.8}
+    oldSize: {x: 2.47, y: 5.6}
     newSize: {x: 9.8, y: 9.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9.8, y: 9.8}
+  m_Size: {x: 2.43, y: 5.59}
   m_EdgeRadius: 0
 --- !u!114 &1208749172
 MonoBehaviour:
@@ -5019,7 +5019,7 @@ GameObject:
   - component: {fileID: 1894481019}
   - component: {fileID: 1894481020}
   m_Layer: 0
-  m_Name: PHcle_0
+  m_Name: trousseauKeys
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5034,9 +5034,9 @@ Transform:
   m_GameObject: {fileID: 1894481016}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.43, y: 0, z: -4.52}
-  m_LocalScale: {x: 0.123918906, y: 0.123918906, z: 0.123918906}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 23.635, y: 0.011, z: -4.52}
+  m_LocalScale: {x: 0.89, y: 0.89, z: 0.89}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2017482973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5084,7 +5084,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7307273179880218002, guid: f37ad95fcb03a664e8a0fa1fc9522102, type: 3}
+  m_Sprite: {fileID: 6213522638460677980, guid: 506b771872d1f7248a1ee8173a851e4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5133,13 +5133,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.78, y: 11.92}
+    oldSize: {x: 0.67, y: 0.86}
     newSize: {x: 4.76, y: 4.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.76, y: 4.8}
+  m_Size: {x: 0.69, y: 0.79}
   m_EdgeRadius: 0
 --- !u!114 &1894481020
 MonoBehaviour:
@@ -5562,6 +5562,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 728162649757734194, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: newDiplome
+      value: 
+      objectReference: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
+    - target: {fileID: 728162649757734194, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplome
+      value: 
+      objectReference: {fileID: 207986362}
+    - target: {fileID: 728162649757734194, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 992366465}
@@ -5570,6 +5578,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2060885981}
     - target: {fileID: 728162649757734194, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: trousseauKeys
+      value: 
+      objectReference: {fileID: 1894481016}
+    - target: {fileID: 728162649757734194, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: doorLevel1Zoom
       value: 
       objectReference: {fileID: 1208749173}
@@ -5577,6 +5589,14 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 933263916}
+    - target: {fileID: 728162649757734194, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSprite
+      value: 
+      objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 728162649757734194, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSurbriSprite
+      value: 
+      objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
     - target: {fileID: 764809691417638412, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5610,6 +5630,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 1141907149801089650, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: newDiplome
+      value: 
+      objectReference: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
+    - target: {fileID: 1141907149801089650, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplome
+      value: 
+      objectReference: {fileID: 207986362}
+    - target: {fileID: 1141907149801089650, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 992366465}
@@ -5618,6 +5646,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2060885981}
     - target: {fileID: 1141907149801089650, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: trousseauKeys
+      value: 
+      objectReference: {fileID: 1894481016}
+    - target: {fileID: 1141907149801089650, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: doorLevel1Zoom
       value: 
       objectReference: {fileID: 1208749173}
@@ -5625,6 +5657,14 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 933263916}
+    - target: {fileID: 1141907149801089650, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSprite
+      value: 
+      objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 1141907149801089650, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSurbriSprite
+      value: 
+      objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
     - target: {fileID: 1289667469402129285, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_Name
       value: toolbar
@@ -5638,6 +5678,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 1505670265639067537, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: newDiplome
+      value: 
+      objectReference: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
+    - target: {fileID: 1505670265639067537, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplome
+      value: 
+      objectReference: {fileID: 207986362}
+    - target: {fileID: 1505670265639067537, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 992366465}
@@ -5646,6 +5694,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2060885981}
     - target: {fileID: 1505670265639067537, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: trousseauKeys
+      value: 
+      objectReference: {fileID: 1894481016}
+    - target: {fileID: 1505670265639067537, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: doorLevel1Zoom
       value: 
       objectReference: {fileID: 1208749173}
@@ -5653,6 +5705,14 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 933263916}
+    - target: {fileID: 1505670265639067537, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSprite
+      value: 
+      objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 1505670265639067537, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSurbriSprite
+      value: 
+      objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
     - target: {fileID: 1965628767674359581, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5686,6 +5746,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: newDiplome
+      value: 
+      objectReference: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplome
+      value: 
+      objectReference: {fileID: 207986362}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 992366465}
@@ -5694,6 +5762,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2060885981}
     - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: trousseauKeys
+      value: 
+      objectReference: {fileID: 1894481016}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: doorLevel1Zoom
       value: 
       objectReference: {fileID: 1208749173}
@@ -5701,6 +5773,14 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 933263916}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSprite
+      value: 
+      objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSurbriSprite
+      value: 
+      objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
     - target: {fileID: 2199298554002923613, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5886,6 +5966,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: newDiplome
+      value: 
+      objectReference: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplome
+      value: 
+      objectReference: {fileID: 207986362}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 992366465}
@@ -5894,6 +5982,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2060885981}
     - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: trousseauKeys
+      value: 
+      objectReference: {fileID: 1894481016}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: doorLevel1Zoom
       value: 
       objectReference: {fileID: 1208749173}
@@ -5901,6 +5993,14 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 933263916}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSprite
+      value: 
+      objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSurbriSprite
+      value: 
+      objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
     - target: {fileID: 4427833692976593796, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: canvas
       value: 
@@ -5910,6 +6010,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 4427833692976593796, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: newDiplome
+      value: 
+      objectReference: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
+    - target: {fileID: 4427833692976593796, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplome
+      value: 
+      objectReference: {fileID: 207986362}
+    - target: {fileID: 4427833692976593796, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 992366465}
@@ -5918,6 +6026,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2060885981}
     - target: {fileID: 4427833692976593796, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: trousseauKeys
+      value: 
+      objectReference: {fileID: 1894481016}
+    - target: {fileID: 4427833692976593796, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: doorLevel1Zoom
       value: 
       objectReference: {fileID: 1208749173}
@@ -5925,6 +6037,14 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 933263916}
+    - target: {fileID: 4427833692976593796, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSprite
+      value: 
+      objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 4427833692976593796, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSurbriSprite
+      value: 
+      objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
     - target: {fileID: 4881942735666493059, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: canvas
       value: 
@@ -5934,6 +6054,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 4881942735666493059, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: newDiplome
+      value: 
+      objectReference: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
+    - target: {fileID: 4881942735666493059, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplome
+      value: 
+      objectReference: {fileID: 207986362}
+    - target: {fileID: 4881942735666493059, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 992366465}
@@ -5942,6 +6070,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2060885981}
     - target: {fileID: 4881942735666493059, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: trousseauKeys
+      value: 
+      objectReference: {fileID: 1894481016}
+    - target: {fileID: 4881942735666493059, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: doorLevel1Zoom
       value: 
       objectReference: {fileID: 1208749173}
@@ -5949,6 +6081,14 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 933263916}
+    - target: {fileID: 4881942735666493059, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSprite
+      value: 
+      objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 4881942735666493059, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSurbriSprite
+      value: 
+      objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
     - target: {fileID: 5045357174823109859, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5982,6 +6122,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 5220743392054817577, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: newDiplome
+      value: 
+      objectReference: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
+    - target: {fileID: 5220743392054817577, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplome
+      value: 
+      objectReference: {fileID: 207986362}
+    - target: {fileID: 5220743392054817577, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 992366465}
@@ -5990,6 +6138,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2060885981}
     - target: {fileID: 5220743392054817577, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: trousseauKeys
+      value: 
+      objectReference: {fileID: 1894481016}
+    - target: {fileID: 5220743392054817577, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: doorLevel1Zoom
       value: 
       objectReference: {fileID: 1208749173}
@@ -5997,6 +6149,14 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 933263916}
+    - target: {fileID: 5220743392054817577, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSprite
+      value: 
+      objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 5220743392054817577, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSurbriSprite
+      value: 
+      objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
     - target: {fileID: 5485876374740308993, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -6126,6 +6286,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: newDiplome
+      value: 
+      objectReference: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplome
+      value: 
+      objectReference: {fileID: 207986362}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 992366465}
@@ -6134,13 +6302,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2060885981}
     - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: trousseauKeys
+      value: 
+      objectReference: {fileID: 1894481016}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: doorLevel1Zoom
       value: 
       objectReference: {fileID: 1208749173}
     - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: portrait5OnWall
+      value: 
+      objectReference: {fileID: 2422606481503027303, guid: 98d9a8b63c6629c478269d996a6fc5f0, type: 3}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 933263916}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: newDiplomeSprite
+      value: 
+      objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSprite
+      value: 
+      objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: oldDiplomeSurbriSprite
+      value: 
+      objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
     - target: {fileID: 6920897178620560237, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

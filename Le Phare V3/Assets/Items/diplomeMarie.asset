@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b8b365ed1a05a47a634eefdb53127e, type: 3}
   m_Name: diplomeMarie
   m_EditorClassIdentifier: 
-  tile: {fileID: 0}
-  range: {x: 5, y: 4}
-  image: {fileID: -6807855386030664175, guid: edae90eff7d095044a2303aec029b1bb, type: 3}
+  image: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
   idName: 3

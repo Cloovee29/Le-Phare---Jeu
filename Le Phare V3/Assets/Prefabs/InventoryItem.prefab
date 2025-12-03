@@ -96,7 +96,9 @@ MonoBehaviour:
   doorLevel1Zoom: {fileID: 0}
   newDiplome: {fileID: -6807855386030664175, guid: edae90eff7d095044a2303aec029b1bb, type: 3}
   portrait1OnWall: {fileID: -6144841604792410135, guid: e38dbde6a6620b34b87dfd7796aeea54, type: 3}
-  portrait2OnWall: {fileID: 8209660055318790805, guid: a2dcaeeba8304734ca91157be0e97432, type: 3}
   portrait3OnWall: {fileID: 707887783255445628, guid: f35b5025fd1fb7c4b9b88b6a20694efd, type: 3}
   portrait4OnWall: {fileID: -3382475915297799148, guid: be4ce0fd762214447aaa9027be849550, type: 3}
   portrait5OnWall: {fileID: 6836476687461265887, guid: c53eb6c4a3e5a3940bc1bf4622339da3, type: 3}
+  portraitsInstanciate: {fileID: 0}
+  trousseauKeysSurbri: {fileID: 4557975357189581176, guid: df467ce5b79ba77458eb1d682fe92720, type: 3}
+  trousseauKeys: {fileID: 0}

@@ -38,7 +38,16 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public static Vector3 targetObjectPos;
 
-    //public GameObject zoomSerrure;
+    //bool onDrag = false;
+
+    // assignations surbrillance   
+
+    public GameObject doorGO;
+    public Sprite doorSurbri;
+
+    public GameObject oldDiplome;
+    public Sprite oldDiplomeSurbriSprite;
+    public Sprite oldDiplomeSprite;
 
     void Start()
     {
@@ -66,6 +75,16 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         {
             transform.position = Input.mousePosition;
         }
+
+        //if (CurrentItemIdName == ItemName.Key)
+        //{
+        //    trousseauKeys.GetComponent<SpriteRenderer>().sprite = doorSurbri;
+        //}
+
+        if (CurrentItemIdName == ItemName.Diplome)
+        {
+            oldDiplome.GetComponent<SpriteRenderer>().sprite = oldDiplomeSurbriSprite;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -91,6 +110,10 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Diplome)
             {
                 ChangeDiplome();
+            }
+
+            if (CurrentItemIdName == ItemName.Diplome) {
+                    oldDiplome.GetComponent<SpriteRenderer>().sprite = oldDiplomeSprite;
             }
 
             if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Key)
