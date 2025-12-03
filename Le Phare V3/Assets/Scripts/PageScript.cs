@@ -34,7 +34,6 @@ public class PageScript : MonoBehaviour
         {
             GameObject newWord = Instantiate(word);
             newWord.transform.SetParent(page.transform, false);
-            Debug.Log(newWord);
             listWordsToDrag.Add(newWord);
 
            float newY = 60f - i * 20f;

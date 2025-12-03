@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tableau_enigme4_no_shadow_gondole_0: -4834703095271348106
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

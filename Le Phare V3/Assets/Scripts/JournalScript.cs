@@ -35,15 +35,15 @@ public class JournalScript : MonoBehaviour
             GameObject newPage = Instantiate(page);
             newPage.transform.SetParent(journal.transform, false);
             listPages.Add(newPage);
-
+            
             List<string> listWordsTemp = new List<string>();
             
             foreach (string word in pagesContent[i].listWords)
             {
                 listWordsTemp.Add(word);
             }
-
-           listPages[i].GetComponent<PageScript>().CreatePage(i, listWordsTemp);
+           
+            listPages[i].GetComponent<PageScript>().CreatePage(i, listWordsTemp);
         }
 
     }

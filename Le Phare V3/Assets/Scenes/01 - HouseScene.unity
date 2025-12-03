@@ -871,9 +871,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07de9e5525096834bac6861a6bbc8fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  word: {fileID: 0}
-  mainCamera: {fileID: 0}
+  canvas: {fileID: 70067859}
+  word: {fileID: 131754521}
+  mainCamera: {fileID: 519420031}
 --- !u!1001 &161054561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6482,7 +6482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7157590990942580585, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5765852
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 7157590990942580585, guid: 030c6fa26baf6f44cbac3411ab67f58f, type: 3}
       propertyPath: m_LocalRotation.w
