@@ -4,15 +4,15 @@ using UnityEngine.EventSystems;
 public class HoleScript : MonoBehaviour
 {
 
- private float posX;
- private float posY;
- private string answer;
+ public float posX;
+ public float posY;
+ public string answer;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        answer = "test";
+      
     }
 
     // Update is called once per frame

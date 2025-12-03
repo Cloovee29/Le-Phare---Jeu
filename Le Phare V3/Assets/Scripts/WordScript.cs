@@ -59,13 +59,13 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     private void OnTriggerEnter2D (Collider2D collision){
         inTheHole = true;
-       //  Debug.Log("Le mot est entré dans le trou !");
+        Debug.Log("Le mot est entré dans le trou !");
     }
 
     private void OnTriggerExit2D (Collider2D collision)
     {
         inTheHole = false;
-      //   Debug.Log("Le mot est sorti du trou !");
+        Debug.Log("Le mot est sorti du trou !");
         
     }
 
