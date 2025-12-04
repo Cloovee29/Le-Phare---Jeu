@@ -255,7 +255,7 @@ MonoBehaviour:
   - {fileID: -1641259752620419291, guid: 92b5a29475146364ba1d5e7b252f1604, type: 3}
   delay: 3
   Level1: 
-  fadeController: {fileID: 0}
+  fadeController: {fileID: 1269285664}
 --- !u!1 &529387454
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,8 +516,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07256ab6cbc86844495bf65f98e5d4bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeImage: {fileID: 0}
-  fadeDuration: 1.5
 --- !u!114 &1269285664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b066de80a0c657479ac81bc2d62af93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeImage: {fileID: 0}
+  fadeImage: {fileID: 1269285661}
   fadeDuration: 1.5
 --- !u!1 &1402150411
 GameObject:
