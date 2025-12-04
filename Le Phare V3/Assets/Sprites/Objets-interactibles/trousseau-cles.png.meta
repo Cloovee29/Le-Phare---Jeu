@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trousseau-cles_0: 6213522638460677980
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

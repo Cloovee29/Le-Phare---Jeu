@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trousseau-cles_surbri_0: 4557975357189581176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
