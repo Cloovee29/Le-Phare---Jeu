@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class IntroCinematicScript : MonoBehaviour
+public class IntroCinematic : MonoBehaviour
 {
     public Image displayImage;
     public Sprite[] images;

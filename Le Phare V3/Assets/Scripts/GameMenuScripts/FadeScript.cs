@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-public class FadeScript : MonoBehaviour
+public class FadeController : MonoBehaviour
 {
     public Image fadeImage;
 

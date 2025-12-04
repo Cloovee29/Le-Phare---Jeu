@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartGameScript : MonoBehaviour
+public class StartGame : MonoBehaviour
 {
     public string IntroCinematicScene;
 
@@ -9,7 +9,7 @@ public class StartGameScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene(IntroCinematicScene); // ici ça charge la scène cinématique d'intro
+            SceneManager.LoadScene("00 - IntroCinematicScene"); // ici ça charge la scène cinématique d'intro
         }
     }
 }
