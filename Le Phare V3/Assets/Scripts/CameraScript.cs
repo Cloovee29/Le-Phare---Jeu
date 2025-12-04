@@ -49,7 +49,6 @@ public class CameraScript : MonoBehaviour
 
     public void ButtonRight()
     {
-
         character.HideAndResetCharacter();
 
         //character.SetActive(false);
