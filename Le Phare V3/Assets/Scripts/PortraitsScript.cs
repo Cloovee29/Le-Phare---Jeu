@@ -42,7 +42,7 @@ public class PortraitsScript : MonoBehaviour
         if (isOnTarget)
         {
             transform.position = targetPosition;
-            print("rePos");
+            //print("rePos");
         }
     }
 
@@ -58,7 +58,7 @@ public class PortraitsScript : MonoBehaviour
     {
         if (collision.gameObject.tag == gameObject.tag)
         {
-            print("bien placé");
+            //print("bien placé");
             countGoodPositionPortrait++;
             print(countGoodPositionPortrait);
             
@@ -70,7 +70,7 @@ public class PortraitsScript : MonoBehaviour
         {
             isOnTarget = true;
             targetPosition = collision.transform.position;
-            print("cible detectee");
+            //print("cible detectee");
         }
     }
 
@@ -78,7 +78,7 @@ public class PortraitsScript : MonoBehaviour
     {
         if (collision.gameObject.tag == gameObject.tag)
         {
-            print("bien puis mal placé");
+            //print("bien puis mal placé");
             countGoodPositionPortrait--;
             print(countGoodPositionPortrait);
         }
@@ -88,10 +88,9 @@ public class PortraitsScript : MonoBehaviour
             collision.gameObject.CompareTag("Portrait5"))
         {
             isOnTarget = false;
-            print("Sorti de la cible");
+            //print("Sorti de la cible");
         }
     }
-
     void SolvedEnigma()
     {
         print("enigmeresolue");

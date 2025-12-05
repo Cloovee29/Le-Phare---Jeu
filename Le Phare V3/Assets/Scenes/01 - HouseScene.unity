@@ -2924,6 +2924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: characterMarie
       objectReference: {fileID: 0}
+    - target: {fileID: 5859461775448578166, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: Arrows
       value: 

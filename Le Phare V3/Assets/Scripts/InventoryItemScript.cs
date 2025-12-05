@@ -21,7 +21,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Canvas canvas;
 
-    public static targetObjectToUseScript targetObject; //enlever public static si problemes
+    public targetObjectToUseScript targetObject; //enlever public static si problemes
     GameObject targetGameObject;
 
     public InventoryManagerScript inventoryManager;
@@ -36,7 +36,11 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public PortraitsInstanciateScript portraitsInstanciate;
 
-    public static Vector3 targetObjectPos;
+    public Vector3 targetObjectPos; // remettre public static si prob
+
+    public Vector3 posPlacePortrait1;
+    public Vector3 posPlacePortrait3;
+    public Vector3 posPlacePortrait5;
 
     //bool onDrag = false;
 
@@ -128,25 +132,40 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
             // SCENE 2 - LES PORTRAITS
 
+            if (targetObject.CompareTag("Portrait1"))
+            {
+                posPlacePortrait1 = targetObject.transform.position;
+            }
+
+            if (targetObject.CompareTag("Portrait3"))
+            {
+                posPlacePortrait3 = targetObject.transform.position;
+            }
+
+            if (targetObject.CompareTag("Portrait5"))
+            {
+                posPlacePortrait5 = targetObject.transform.position;
+            }
+
             if (CurrentItemIdName == ItemName.Portrait1 && targetObject.targetName == ItemName.Portrait)
             {
                 inventoryManager.DeleteItem(this);
                 portraitsInstanciate.InstanciatePortrait1();
-                targetObjectPos = targetObject.transform.position;
+                targetObjectPos = posPlacePortrait1;
             }
 
             if (CurrentItemIdName == ItemName.Portrait3 && targetObject.targetName == ItemName.Portrait)
             {
                 inventoryManager.DeleteItem(this);
                 portraitsInstanciate.InstanciatePortrait3();
-                targetObjectPos = targetObject.transform.position;
+                targetObjectPos = posPlacePortrait3;
             }
 
             if (CurrentItemIdName == ItemName.Portrait5 && targetObject.targetName == ItemName.Portrait)
             {
                 inventoryManager.DeleteItem(this);
                 portraitsInstanciate.InstanciatePortrait5();
-                targetObjectPos = targetObject.transform.position;
+                targetObjectPos = posPlacePortrait5;
             }
         }
         else
@@ -155,10 +174,11 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         }
 
         // SCENE 3
+        
         if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Coquillage)
         {
-            musicCoquillage.Play();
-            print("COQUILLAGEMARIE");
+            item.audioClip = null;
+            print("coquillage utilisé");
         }
 
     }

@@ -14,6 +14,7 @@ public class Item : ScriptableObject
     //[Header("Both")]
     public Sprite image;
     public ItemName idName;
+    public AudioClip audioClip;
 
 }
 

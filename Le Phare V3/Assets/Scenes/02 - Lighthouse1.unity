@@ -176,6 +176,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8def27fc7296ac48acc2089c5d88b2e, type: 3}
+--- !u!114 &3514107 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6060461035980724332, guid: c8def27fc7296ac48acc2089c5d88b2e, type: 3}
+  m_PrefabInstance: {fileID: 3514106}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &15386168
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +264,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -6144841604792410135, guid: e38dbde6a6620b34b87dfd7796aeea54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -338,6 +349,7 @@ GameObject:
   - component: {fileID: 302873932}
   - component: {fileID: 302873935}
   - component: {fileID: 302873936}
+  - component: {fileID: 302873937}
   m_Layer: 0
   m_Name: portrait1_0
   m_TagString: Portrait1
@@ -434,7 +446,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -6144841604792410135, guid: e38dbde6a6620b34b87dfd7796aeea54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -503,6 +515,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &302873937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302873930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c05e2d9f402ad4db2bd98506c731eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portrait1Drag: {fileID: 302873930}
+  portrait3Drag: {fileID: 1226506978}
+  portrait5Drag: {fileID: 931944675}
+  portraitParent: {fileID: 944377961}
 --- !u!114 &345878400 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8698779285332748926, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
@@ -607,6 +635,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 2029964523}
+    - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: background
       value: 
       objectReference: {fileID: 2021351350}
@@ -618,6 +650,11 @@ PrefabInstance:
 --- !u!224 &366534072 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2515330988639527313, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+  m_PrefabInstance: {fileID: 366534071}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &366534073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1256034983169195623, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
   m_PrefabInstance: {fileID: 366534071}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &374381250 stripped
@@ -998,7 +1035,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 2422606481503027303, guid: 98d9a8b63c6629c478269d996a6fc5f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1345,7 +1382,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 707887783255445628, guid: f35b5025fd1fb7c4b9b88b6a20694efd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1837,7 +1874,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 707887783255445628, guid: f35b5025fd1fb7c4b9b88b6a20694efd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1943,18 +1980,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: characterMarie
       objectReference: {fileID: 0}
+    - target: {fileID: 5859461775448578166, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: Arrows
       value: 
-      objectReference: {fileID: 1256034983169195623, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      objectReference: {fileID: 366534073}
     - target: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
       propertyPath: eventSystem
       value: 
-      objectReference: {fileID: 6060461035980724332, guid: c8def27fc7296ac48acc2089c5d88b2e, type: 3}
-    - target: {fileID: 6556169225859257901, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3514107}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2051,7 +2088,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 2422606481503027303, guid: 98d9a8b63c6629c478269d996a6fc5f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2782,6 +2819,17 @@ Transform:
   - {fileID: 758236191}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2029964523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
+  m_PrefabInstance: {fileID: 1368921681}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e67b0171b61f147a274c4e04237c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2146879304
 PrefabInstance:
   m_ObjectHideFlags: 0
