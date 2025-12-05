@@ -38,9 +38,9 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public Vector3 targetObjectPos; // remettre public static si prob
 
-    public Vector3 posPlacePortrait1;
-    public Vector3 posPlacePortrait3;
-    public Vector3 posPlacePortrait5;
+    //public Vector3 posPlacePortrait1;
+    //public Vector3 posPlacePortrait3;
+    //public Vector3 posPlacePortrait5;
 
     //bool onDrag = false;
 
@@ -53,13 +53,14 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     public Sprite oldDiplomeSurbriSprite;
     public Sprite oldDiplomeSprite;
 
-    public AudioSource musicCoquillage;
-    //public AudioSource footsteps;
+    public AudioSource audioSourceMusic;
+    //public AudioClip musicCoquillage;
+    public AudioSource footsteps;
 
     void Start()
     {
         image = GetComponent<Image>();
-        musicCoquillage = GetComponent<AudioSource>();
+        audioSourceMusic = GetComponent<AudioSource>();
     }
 
     void Awake()
@@ -132,40 +133,40 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
             // SCENE 2 - LES PORTRAITS
 
-            if (targetObject.CompareTag("Portrait1"))
-            {
-                posPlacePortrait1 = targetObject.transform.position;
-            }
+            //if (targetObject.CompareTag("Portrait1"))
+            //{
+            //    posPlacePortrait1 = targetObject.transform.position;
+            //}
 
-            if (targetObject.CompareTag("Portrait3"))
-            {
-                posPlacePortrait3 = targetObject.transform.position;
-            }
+            //if (targetObject.CompareTag("Portrait3"))
+            //{
+            //    posPlacePortrait3 = targetObject.transform.position;
+            //}
 
-            if (targetObject.CompareTag("Portrait5"))
-            {
-                posPlacePortrait5 = targetObject.transform.position;
-            }
+            //if (targetObject.CompareTag("Portrait5"))
+            //{
+            //    posPlacePortrait5 = targetObject.transform.position;
+            //}
 
             if (CurrentItemIdName == ItemName.Portrait1 && targetObject.targetName == ItemName.Portrait)
             {
                 inventoryManager.DeleteItem(this);
                 portraitsInstanciate.InstanciatePortrait1();
-                targetObjectPos = posPlacePortrait1;
+                //targetObjectPos = posPlacePortrait1;
             }
 
             if (CurrentItemIdName == ItemName.Portrait3 && targetObject.targetName == ItemName.Portrait)
             {
                 inventoryManager.DeleteItem(this);
                 portraitsInstanciate.InstanciatePortrait3();
-                targetObjectPos = posPlacePortrait3;
+                //targetObjectPos = posPlacePortrait3;
             }
 
             if (CurrentItemIdName == ItemName.Portrait5 && targetObject.targetName == ItemName.Portrait)
             {
                 inventoryManager.DeleteItem(this);
                 portraitsInstanciate.InstanciatePortrait5();
-                targetObjectPos = posPlacePortrait5;
+                //targetObjectPos = posPlacePortrait5;
             }
         }
         else
@@ -177,7 +178,8 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         
         if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Coquillage)
         {
-            item.audioClip = null;
+            audioSourceMusic.clip = item.audioClip;
+            
             print("coquillage utilisé");
         }
 
