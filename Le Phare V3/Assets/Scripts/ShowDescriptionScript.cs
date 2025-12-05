@@ -10,6 +10,7 @@ public class ShowDescriptionScript : MonoBehaviour
     public float readingTime;
     public GameObject objectDescribed;
     public float positionAboveObject;
+    public float positionSideObject;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,7 +51,7 @@ public class ShowDescriptionScript : MonoBehaviour
     
     public void textDescriptionPosition()
     {
-        Vector3 newUiDescriptionPosition = objectDescribed.transform.position + new Vector3(0, positionAboveObject, 0);
+        Vector3 newUiDescriptionPosition = objectDescribed.transform.position + new Vector3(positionSideObject, positionAboveObject, 0);
         newDescription.transform.position = Camera.main.WorldToScreenPoint(newUiDescriptionPosition);
         Debug.Log("Function has been called");
     }
