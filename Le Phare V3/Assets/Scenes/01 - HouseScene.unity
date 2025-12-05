@@ -987,7 +987,7 @@ PrefabInstance:
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 9a7ff3dc3ec144a4ba0d0290701d6e8e, type: 2}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_fontStyle
       value: 1
@@ -999,7 +999,7 @@ PrefabInstance:
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: -3393347521476360519, guid: 9a7ff3dc3ec144a4ba0d0290701d6e8e, type: 2}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_enableAutoSizing
       value: 1
