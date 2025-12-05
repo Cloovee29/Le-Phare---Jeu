@@ -43,8 +43,9 @@ public class InventoryManagerScript : MonoBehaviour
 
     void SpawnNewItem(Item item, InventoryItemScript inventoryItemScript)
     {
-        inventoryItemScript.GetComponent<Image>().sprite = item.image;
+        //inventoryItemScript.GetComponent<Image>().sprite = item.image;
         inventoryItemScript.CurrentItemIdName = item.idName;
+        inventoryItemScript.InitialiseItem(item);
     }
 
     public void DeleteItem (InventoryItemScript inventoryItemScript)

@@ -53,14 +53,11 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     public Sprite oldDiplomeSurbriSprite;
     public Sprite oldDiplomeSprite;
 
-    public AudioSource audioSourceMusic;
     //public AudioClip musicCoquillage;
-    public AudioSource footsteps;
 
     void Start()
     {
         image = GetComponent<Image>();
-        audioSourceMusic = GetComponent<AudioSource>();
     }
 
     void Awake()
@@ -122,7 +119,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             }
 
             if (CurrentItemIdName == ItemName.Diplome) {
-                    oldDiplome.GetComponent<SpriteRenderer>().sprite = oldDiplomeSprite;
+                oldDiplome.GetComponent<SpriteRenderer>().sprite = oldDiplomeSprite;
             }
 
             if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Key)
@@ -178,8 +175,10 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         
         if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Coquillage)
         {
+            AudioSource audioSourceMusic = targetObject.GetComponent<ClickMove2D>().characterFeedback;
+
             audioSourceMusic.clip = item.audioClip;
-            
+            audioSourceMusic.Play();
             print("coquillage utilisé");
         }
 

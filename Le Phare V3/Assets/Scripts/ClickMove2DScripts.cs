@@ -19,6 +19,8 @@ public class ClickMove2D : MonoBehaviour
 
     private AudioSource footstepsAudio;
 
+    public AudioSource characterFeedback;
+
 
     void Start()
     {
