@@ -33,7 +33,8 @@ public class PortraitsInstanciateScript : MonoBehaviour
         GameObject newPortrait = Instantiate(portrait1Drag);
         newPortrait.SetActive(true);
         newPortrait.transform.SetParent(portraitParent.transform, true);
-        newPortrait.transform.position = inventoryItemScript.targetObjectPos; // avant : InventoryItemScript en static pour récup target object depuis inventoryitemscript donc pas d'assigantion avant et appel direct du script ici
+        //newPortrait.transform.position = inventoryItemScript.targetObjectPos; // avant : InventoryItemScript en static pour récup target object depuis inventoryitemscript donc pas d'assigantion avant et appel direct du script ici
+        newPortrait.transform.position = worldPos;
     }
 
     public void InstanciatePortrait3()
@@ -42,7 +43,8 @@ public class PortraitsInstanciateScript : MonoBehaviour
         newPortrait.SetActive(true);
         newPortrait.transform.SetParent(portraitParent.transform, true);
         //newPortrait.transform.position = targetObject.transform.position;
-        newPortrait.transform.position = inventoryItemScript.posPlacePortrait3;
+        //newPortrait.transform.position = inventoryItemScript.posPlacePortrait3;
+        newPortrait.transform.position = worldPos;
     }
 
     public void InstanciatePortrait5()
@@ -50,6 +52,7 @@ public class PortraitsInstanciateScript : MonoBehaviour
         GameObject newPortrait = Instantiate(portrait5Drag);
         newPortrait.SetActive(true);
         newPortrait.transform.SetParent(portraitParent.transform, true);
-        newPortrait.transform.position = inventoryItemScript.posPlacePortrait5;
+        //newPortrait.transform.position = inventoryItemScript.posPlacePortrait5;
+        newPortrait.transform.position = worldPos;
     }
 }
