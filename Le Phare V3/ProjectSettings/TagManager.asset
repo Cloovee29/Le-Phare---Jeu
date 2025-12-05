@@ -13,6 +13,10 @@ TagManager:
   - Portrait
   - Coquillage
   - longue-vue
+  - Note1
+  - Note2
+  - Note3
+  - Note4
   layers:
   - Default
   - TransparentFX

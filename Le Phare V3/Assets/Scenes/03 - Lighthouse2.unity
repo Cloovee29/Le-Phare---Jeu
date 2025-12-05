@@ -196,6 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 171825750}
+  - component: {fileID: 171825751}
   m_Layer: 0
   m_Name: notes-music
   m_TagString: Untagged
@@ -222,6 +223,18 @@ Transform:
   - {fileID: 532910030}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &171825751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171825749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07dead802d6f132478e1e1619076193e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &252803289
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,11 +246,11 @@ GameObject:
   - component: {fileID: 252803291}
   - component: {fileID: 252803290}
   - component: {fileID: 252803292}
-  - component: {fileID: 252803294}
   - component: {fileID: 252803295}
+  - component: {fileID: 252803296}
   m_Layer: 0
   m_Name: note-music1
-  m_TagString: Untagged
+  m_TagString: Note1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -306,7 +319,7 @@ Transform:
   m_GameObject: {fileID: 252803289}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5714557, y: 2.6821678, z: -3.2210844}
+  m_LocalPosition: {x: -3.1, y: 2.44, z: -3.2210844}
   m_LocalScale: {x: 0.32180578, y: 0.32180578, z: 0.32180578}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -409,18 +422,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &252803294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252803289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07dead802d6f132478e1e1619076193e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &252803295
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -467,6 +468,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.27, y: 4.25}
   m_EdgeRadius: 0
+--- !u!114 &252803296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252803289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d5b343e472bbe49be895af86a53cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 171825751}
 --- !u!1 &344461034
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,10 +629,10 @@ GameObject:
   - component: {fileID: 532910029}
   - component: {fileID: 532910031}
   - component: {fileID: 532910033}
-  - component: {fileID: 532910032}
+  - component: {fileID: 532910034}
   m_Layer: 0
   m_Name: note-music4
-  m_TagString: Untagged
+  m_TagString: Note4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -790,18 +804,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &532910032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532910028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07dead802d6f132478e1e1619076193e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &532910033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -848,6 +850,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.27, y: 4.25}
   m_EdgeRadius: 0
+--- !u!114 &532910034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532910028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d5b343e472bbe49be895af86a53cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 171825751}
 --- !u!114 &608352668 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3090079281526891969, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
@@ -2164,11 +2179,11 @@ GameObject:
   - component: {fileID: 1432252837}
   - component: {fileID: 1432252836}
   - component: {fileID: 1432252835}
-  - component: {fileID: 1432252839}
   - component: {fileID: 1432252838}
+  - component: {fileID: 1432252839}
   m_Layer: 0
   m_Name: note-music2
-  m_TagString: Untagged
+  m_TagString: Note2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2395,9 +2410,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1432252834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07dead802d6f132478e1e1619076193e, type: 3}
+  m_Script: {fileID: 11500000, guid: 25d5b343e472bbe49be895af86a53cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 171825751}
 --- !u!114 &1575554214 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4755481561254092858, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
@@ -2636,10 +2652,10 @@ GameObject:
   - component: {fileID: 1939681483}
   - component: {fileID: 1939681485}
   - component: {fileID: 1939681487}
-  - component: {fileID: 1939681486}
+  - component: {fileID: 1939681488}
   m_Layer: 0
   m_Name: note-music3
-  m_TagString: Untagged
+  m_TagString: Note3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2811,18 +2827,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1939681486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939681482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07dead802d6f132478e1e1619076193e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1939681487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2869,6 +2873,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.27, y: 4.25}
   m_EdgeRadius: 0
+--- !u!114 &1939681488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939681482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d5b343e472bbe49be895af86a53cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 171825751}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
