@@ -55,7 +55,7 @@ public class ClickMove2D : MonoBehaviour
 
             mousePos.z = 0;   // pas retirer sinon perso bouge sur les murs
 
-            // là je veux qu'il flip si je clique dans le sens inverse de là où il regarde (sprite initial)
+            // flip
 
             if (mousePos.x < transform.position.x){
                 Vector3 scale = transform.localScale;
@@ -74,12 +74,6 @@ public class ClickMove2D : MonoBehaviour
                 transform.localScale = scale;
             }
 
-            //fonctionne pas donc j'ai fait fonction au dessus
-            //if (mousePos.x < transform.position.x)
-            //    spriteRenderer.flipX = true;  // regarde à gauche 
-            //else
-            //    spriteRenderer.flipX = false; // regarde à droite   
-
             targetPosition = mousePos;
         }
 
@@ -93,10 +87,8 @@ public class ClickMove2D : MonoBehaviour
     // Pour quand on clique sur une flèche
     public void HideAndResetCharacter()
     {
-        // ça rend le personnage invisible
         spriteRenderer.enabled = false;
 
-        // ça la remet à sa position de tout début
         transform.position = initialPosition;
         targetPosition = initialPosition;
     }

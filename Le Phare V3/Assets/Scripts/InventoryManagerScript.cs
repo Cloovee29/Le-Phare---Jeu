@@ -53,9 +53,4 @@ public class InventoryManagerScript : MonoBehaviour
         inventoryItemScript.GetComponent<Image>().sprite = null;
         inventoryItemScript.CurrentItemIdName = null;
     }
-
-    private void Update()
-    {
-      
-    }
 }

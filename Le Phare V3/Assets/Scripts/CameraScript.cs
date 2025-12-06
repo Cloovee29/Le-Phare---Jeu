@@ -30,16 +30,13 @@ public class CameraScript : MonoBehaviour
 
     public void ButtonLeft()
     {
-        character.HideAndResetCharacter(); // pour faire depop le personnage
+        character.HideAndResetCharacter();
 
-
-        //character.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         background.DOMoveX(screenLeft, duration).SetEase(Ease.OutCubic).OnComplete(() => {
             arrowLeft.SetActive(false);
             arrowRight.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
-            //character.SetActive(true);
 
             character.ShowCharacter(); // pour remettre le personnage
 
@@ -51,13 +48,11 @@ public class CameraScript : MonoBehaviour
     {
         character.HideAndResetCharacter();
 
-        //character.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         background.DOMoveX(screenRight, duration).SetEase(Ease.OutCubic).OnComplete(() => {
             arrowRight.SetActive(false);
             arrowLeft.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
-            //character.SetActive(true);
 
             character.ShowCharacter();
 

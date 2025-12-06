@@ -181,6 +181,14 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             audioSourceMusic.Play();
             print("coquillage utilisé");
         }
+        if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.LongueVue)
+        {
+            print("longue-vue utilisée");
+        }
+        else
+        {
+            Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
 
     }
 
