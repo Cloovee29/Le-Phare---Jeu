@@ -973,6 +973,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_text
+      value: Description d'un objet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_fontSize
       value: 72
       objectReference: {fileID: 0}
@@ -4875,7 +4879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1290704065
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4981,16 +4985,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311587673}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.4332523}
+  m_LocalRotation: {x: -0, y: 0.0033652203, z: -0, w: 0.99999434}
+  m_LocalPosition: {x: 0, y: 0, z: -1.4}
   m_LocalScale: {x: 0.3009838, y: 0.3009838, z: 0.3009838}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1062033230}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.386, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -73, y: -22}
+  m_AnchoredPosition: {x: -72, y: -36.8}
   m_SizeDelta: {x: 724.391, y: 455.488}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1311587675
@@ -5013,18 +5017,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TEXT TEXT TETTEXT TEXT TETTEXT TEXT TETTEXT TEXT TETTEXT TEXT TETTEXT TEXT
-    TETTEXT TEXT TETTEXT TEXT TETTEXT TEXT TETTEXT TEXT TETTEXT TEXT TETTEXT TEXT
-    TETTEXT TEXT TETTEXT TEXT TET
+  m_text: "(Texte brouillon, non d\xE9finitif)\n\n1ere journ\xE9e. Rien \xE0 signaler.
+    ..., le dernier gardien, a bien nettoy\xE9.\n\nMer calme. Aucun b\xE2teau. \n\nFortes
+    bourrasques et orage. J'ai entendu quelques cris. Mouettes ?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 70b790c8f1557a64f9114797b8bebce0, type: 2}
+  m_sharedMaterial: {fileID: 7089517059793726885, guid: 70b790c8f1557a64f9114797b8bebce0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -5042,13 +5046,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -5080,7 +5084,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -467.21405}
+  m_margin: {x: 0, y: 0, z: 50.902466, w: -467.21405}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

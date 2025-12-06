@@ -572,7 +572,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fenetre-fermee_0: 8459961477915552771
+      fenetre-fermee_1: 2494930247539460204
+      fenetre-fermee_10: -1136705525002163090
+      fenetre-fermee_11: -8217900549064647656
+      fenetre-fermee_12: 9087427570079086228
+      fenetre-fermee_13: 3723586679271620563
+      fenetre-fermee_14: 8589690437948428410
+      fenetre-fermee_15: 222208860398600368
+      fenetre-fermee_16: 1323619582957521503
+      fenetre-fermee_17: 5927465251319716492
+      fenetre-fermee_2: 1319669299776685962
+      fenetre-fermee_3: -7623499994327411198
+      fenetre-fermee_4: 3305267346624230629
+      fenetre-fermee_5: 5430762736900396617
+      fenetre-fermee_6: 1951008400897370604
+      fenetre-fermee_7: 1215153665326166045
+      fenetre-fermee_8: -1581125004378961338
+      fenetre-fermee_9: 6282201156156393705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

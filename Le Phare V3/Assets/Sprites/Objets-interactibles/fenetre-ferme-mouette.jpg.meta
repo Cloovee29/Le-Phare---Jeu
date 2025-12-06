@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fenetre-ferme-mouette_0: 4527590413791668147
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
