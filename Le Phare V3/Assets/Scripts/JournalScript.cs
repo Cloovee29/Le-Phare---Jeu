@@ -35,22 +35,7 @@ public class JournalScript : MonoBehaviour
             GameObject newPage = Instantiate(page);
             newPage.transform.SetParent(journal.transform, false);
             listPages.Add(newPage);
-            
-            List<string> listWordsTemp = new List<string>();
-            List<Holes> listHolesTemp = new List<Holes>();
-
-            foreach (string word in pagesContent[i].listWords)
-            {
-                listWordsTemp.Add(word);
-            }
-
-            //mettre les trous WIP
-            foreach (Holes hole in pagesContent[i].listHoles)
-            {
-               listHolesTemp.Add(hole);
-            }
-
-            listPages[i].GetComponent<PageScript>().CreatePage(i, listWordsTemp, listHolesTemp);
+            listPages[i].GetComponent<PageScript>().CreatePage(i, pagesContent[i]);
         }
 
     }
@@ -60,18 +45,18 @@ public class JournalScript : MonoBehaviour
     {
       
         //changement de page de journal WIP
-        if (Input.GetKeyDown(KeyCode.RightArrow) && journalOpened)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && journalOpened && currentPage+1< pagesContent.Count)
         {
-            currentPage = 1;
+            currentPage = currentPage + 1;
             ChangePage();
 
             //permet de changer de page du carnet
             //afficher la nouvelle page du carnet et cacher la précédente
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && journalOpened)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && journalOpened && currentPage - 1 > -1)
         {
-            currentPage = 0;
+            currentPage = currentPage - 1;
             ChangePage();
 
             //permet de changer de page du carnet

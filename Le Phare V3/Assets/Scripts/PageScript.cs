@@ -1,6 +1,7 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
 
 public class PageScript : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class PageScript : MonoBehaviour
     public GameObject Hole; //un seul trou pour tester avant d'étendre à la liste
 
     private List<GameObject> listWordsToDrag; //liste des mots à placer dans le journal
-    public string textPage; //texte de la page
+
     private int numbPage; //numéro de la page du carnet
     public GameObject word;
     public GameObject page;
@@ -22,20 +23,22 @@ public class PageScript : MonoBehaviour
 
 
     //Y de 400 à -200
-    public void CreatePage(int numbNewPage, List<string> listWords, List<Holes> listHoles)
+    public void CreatePage(int numbNewPage, PageSOScript pageContent)
     {
         numbPage = numbNewPage;
-        
+
+        transform.Find("TextPage").GetComponent<TextMeshProUGUI>().text = pageContent.textPage1;
+        transform.Find("TextPage2").GetComponent<TextMeshProUGUI>().text = pageContent.textPage2;
 
         //crée une liste d'objets mots à partir de la liste de scripts dans unity
-        for (int i = 0; i < listWords.Count; i++)
+        for (int i = 0; i < pageContent.listWords.Count; i++)
         {
             GameObject newWord = Instantiate(word);
             newWord.transform.SetParent(page.transform, false);
             listWordsToDrag.Add(newWord);
 
            float newY = 60f - i * 20f;
-            listWordsToDrag[i].GetComponent<WordScript>().CreateWord(listWords[i], newY);
+            listWordsToDrag[i].GetComponent<WordScript>().CreateWord(pageContent.listWords[i], newY);
         }
     }
 

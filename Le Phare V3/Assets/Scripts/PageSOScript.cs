@@ -11,6 +11,9 @@ public class PageSOScript : ScriptableObject
     public List<string> listWords; //liste des mots à placer dans le journal
     public int numbPage; //numéro de la page du carnet
     public List<Holes> listHoles;
+
+    public string textPage1;
+    public string textPage2;
 }
 
 public enum PageName
