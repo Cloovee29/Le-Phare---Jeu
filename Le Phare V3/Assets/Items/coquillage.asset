@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: coquillage
   m_EditorClassIdentifier: 
   image: {fileID: -6857052098410394146, guid: 990e27ac48d7b0e4f88774800dd9ca6a, type: 3}
-  idName: 10
+  idName: 11
   audioClip: {fileID: 8300000, guid: ecd076d67f5452d418564dcbac484f2a, type: 3}

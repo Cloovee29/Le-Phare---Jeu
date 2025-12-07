@@ -86,10 +86,10 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             transform.position = Input.mousePosition;
         }
 
-        //if (CurrentItemIdName == ItemName.Key)
-        //{
-        //    trousseauKeys.GetComponent<SpriteRenderer>().sprite = doorSurbri;
-        //}
+        if (CurrentItemIdName == ItemName.Key)
+        {
+            doorGO.GetComponent<SpriteRenderer>().sprite = doorSurbri;
+        }
 
         if (CurrentItemIdName == ItemName.Diplome)
         {
@@ -107,6 +107,11 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
         mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, transform.TransformDirection(Vector3.forward));
+
+        if (targetObject = null)
+        {
+            transform.SetParent(parentAfterDrag);
+        }
 
         if (hit)
         {
@@ -127,6 +132,13 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 ChangeDiplome();
             }
 
+            if (targetObject.targetName != CurrentItemIdName)
+            {
+                targetObject = null;
+                targetGameObject = null;
+                transform.SetParent(parentAfterDrag);
+            }
+
             if (CurrentItemIdName == ItemName.Diplome) {
                 oldDiplome.GetComponent<SpriteRenderer>().sprite = oldDiplomeSprite;
             }
@@ -134,7 +146,6 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Key)
             {
                 doorLevel1Zoom.OpenDoor();
-                print("clemarche");
             }
 
             // SCENE 2 - LES PORTRAITS
@@ -188,19 +199,15 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
             audioSourceMusic.clip = item.audioClip;
             audioSourceMusic.Play();
-            print("coquillage utilisé");
         }
         if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.PieceLongueVue)
         {
-            print("longue-vue complétée");
             fieldGlassInstanciate.InstantiateCompleteFieldglass();
             inventoryManager.DeleteItem(this);
-            Object.Destroy(targetObject);
         }
 
         if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.LongueVue)
         {
-            print("vue dehors");
             gameManager.windowView();
         }
 
@@ -217,7 +224,6 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         targetGameObject.GetComponent<SpriteRenderer>().sprite = newDiplome;
 
         inventoryManager.DeleteItem(this);
-        print("changerDiplome");
     }
 }
 

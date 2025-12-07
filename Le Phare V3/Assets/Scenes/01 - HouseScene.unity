@@ -6794,6 +6794,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 70067859}
     - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: doorGO
+      value: 
+      objectReference: {fileID: 1208749168}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: doorSurbri
+      value: 
+      objectReference: {fileID: -324942578282475242, guid: da704ba15916e8747abee4727dab3f25, type: 3}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
@@ -7013,6 +7021,14 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 70067859}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: doorGO
+      value: 
+      objectReference: {fileID: 1208749168}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: doorSurbri
+      value: 
+      objectReference: {fileID: -324942578282475242, guid: da704ba15916e8747abee4727dab3f25, type: 3}
     - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: mainCamera
       value: 
@@ -7333,6 +7349,14 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 70067859}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: doorGO
+      value: 
+      objectReference: {fileID: 1208749168}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: doorSurbri
+      value: 
+      objectReference: {fileID: -324942578282475242, guid: da704ba15916e8747abee4727dab3f25, type: 3}
     - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: mainCamera
       value: 
