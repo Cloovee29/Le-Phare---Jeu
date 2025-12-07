@@ -9,19 +9,20 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     public TextMeshProUGUI word;
-    private bool inTheHole;
     private float YBasic;
 
     Vector3 mouseWorldPosition;
     [SerializeField] private Camera mainCamera;
+
+    private bool isLocked;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-        inTheHole = false;
-    }
+        isLocked = false;
+}
 
     //Y de 400 à -200
      public void CreateWord(string newWord, float newY)
@@ -35,38 +36,38 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     
      public void OnBeginDrag(PointerEventData eventData)
     {
+
+        if (isLocked) return;
         canvasGroup.alpha = 0.6f; 
         canvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-     
+        if (isLocked) return;
         transform.position = Input.mousePosition; // nouveau code = le mot suit bien l'image pendant le drag
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (isLocked) return;
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-
-        if(!inTheHole){
-            GetComponent<RectTransform>().anchoredPosition = new Vector2(290, YBasic);
-        }
-
         transform.position = Input.mousePosition; // nouveau code = si je mets pas ca il se place bizarrement à la fin du drag
     }
 
     private void OnTriggerEnter2D (Collider2D collision){
-        inTheHole = true;
-        Debug.Log("Le mot est entré dans le trou !");
-    }
+        HoleScript hole = collision.GetComponent<HoleScript>();
 
-    private void OnTriggerExit2D (Collider2D collision)
-    {
-        inTheHole = false;
-        Debug.Log("Le mot est sorti du trou !");
-        
+        if (hole != null)
+        {
+            if (word.text == hole.answer)
+            {
+                isLocked = true;
+                canvasGroup.alpha = 1f;
+            }
+        }
+            
     }
 
 }

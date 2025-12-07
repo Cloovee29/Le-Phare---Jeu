@@ -34,7 +34,6 @@ public class InventoryManagerScript : MonoBehaviour
             InventoryItemScript itemInSlot = slot.GetComponentInChildren<InventoryItemScript>();
             if (itemInSlot.CurrentItemIdName == null)
             {
-                print("case pleine");
                 SpawnNewItem(item, itemInSlot);
                 return;
             }

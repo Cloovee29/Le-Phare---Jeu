@@ -23,10 +23,10 @@ public class HoleScript : MonoBehaviour
 
 
     //position du trou
-     public void GenerateHole(string correctAnswer, float nouvelleX, float nouvelleY)
+     public void GenerateHole(HoleSOScript hole)
     {
-        answer = correctAnswer;
-    GetComponent<RectTransform>().anchoredPosition = new Vector2(nouvelleX,nouvelleY);
+        answer = hole.answer;
+    GetComponent<RectTransform>().anchoredPosition = new Vector2(hole.posY,hole.posY);
     }
 
 

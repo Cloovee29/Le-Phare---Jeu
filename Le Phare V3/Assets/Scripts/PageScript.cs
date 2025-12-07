@@ -49,13 +49,7 @@ public class PageScript : MonoBehaviour
             newHole.transform.SetParent(page.transform, false);
             listHoles.Add(newHole);
 
-            HoleSOScript holeData = pageContent.listHoles[i];
-
-            string answer = holeData.answer;
-            float posX = holeData.posX;
-            float posY = holeData.posY;
-
-            listHoles[i].GetComponent<HoleScript>().GenerateHole(answer, posX, posY);
+            listHoles[i].GetComponent<HoleScript>().GenerateHole(pageContent.listHoles[i]);
         }
     }
 
