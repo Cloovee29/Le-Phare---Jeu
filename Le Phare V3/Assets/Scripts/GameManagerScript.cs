@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManagerScript : MonoBehaviour
 {
     public JournalScript journalScript;
-
+    public GameObject windowViewGO;
    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,6 +20,12 @@ public class GameManagerScript : MonoBehaviour
         {
             journalScript.ActiveJournal();
         }
+    }
+
+    public void windowView()
+    {
+        print("fenetreouverteVue");
+        windowViewGO.SetActive(true);
     }
 
 

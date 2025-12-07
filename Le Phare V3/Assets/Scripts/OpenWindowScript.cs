@@ -10,6 +10,8 @@ public class OpenWindowScript : MonoBehaviour
     public Sprite openWindow;
 
     public GameObject fieldGlass2;
+
+    int compteurWindow;
     void Start()
     {
         window = windowGO.GetComponent<SpriteRenderer>();
@@ -30,11 +32,13 @@ public class OpenWindowScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(window.sprite == closedWindowAndSeagull)
+        compteurWindow++;
+        if (window.sprite == closedWindowAndSeagull && compteurWindow == 1)
         {
             window.sprite = openedWindowAndSeagull;
+            
         }
-        if (window.sprite == openedWindowAndSeagull)
+        if (window.sprite == openedWindowAndSeagull && compteurWindow == 2)
         {
             window.sprite = openWindow;    
             fieldGlass2.SetActive(true);

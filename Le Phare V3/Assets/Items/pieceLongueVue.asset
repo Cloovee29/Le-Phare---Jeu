@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53b8b365ed1a05a47a634eefdb53127e, type: 3}
-  m_Name: longueVue
+  m_Name: pieceLongueVue
   m_EditorClassIdentifier: 
-  image: {fileID: -1583573835174962115, guid: 8b2d848b8813db34f917d5e4767da0ce, type: 3}
-  idName: 9
+  image: {fileID: 8974944937154645212, guid: f0a5d2ac49bcaf1498d9a157d456149d, type: 3}
+  idName: 10
   audioClip: {fileID: 0}

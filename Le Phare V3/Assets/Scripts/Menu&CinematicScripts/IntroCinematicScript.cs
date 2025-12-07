@@ -33,6 +33,6 @@ public class IntroCinematic : MonoBehaviour
             yield return StartCoroutine(fadeController.FadeOut());  // et le fade out là
         }
 
-        SceneManager.LoadScene(Level1);
+        SceneManager.LoadScene("01 - HouseScene");
     }
 }

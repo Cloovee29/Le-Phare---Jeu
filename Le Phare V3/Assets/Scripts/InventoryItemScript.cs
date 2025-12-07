@@ -36,6 +36,10 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public PortraitsInstanciateScript portraitsInstanciate;
 
+    public fieldGlassInstanciateScript fieldGlassInstanciate;
+
+    public GameManagerScript gameManager;
+    
     public Vector3 targetObjectPos; // remettre public static si prob
 
     //public Vector3 posPlacePortrait1;
@@ -53,7 +57,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     public Sprite oldDiplomeSurbriSprite;
     public Sprite oldDiplomeSprite;
 
-    //public AudioClip musicCoquillage;
+    public Sprite fieldGlassComplete;
 
     void Start()
     {
@@ -112,6 +116,11 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             targetGameObject = hit.transform.gameObject;
 
             // SCENE 1
+
+            //if (targetObject.targetName != CurrentItemIdName)
+            //{
+            //    transform.SetParent(parentAfterDrag);
+            //}
 
             if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Diplome)
             {
@@ -181,13 +190,18 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             audioSourceMusic.Play();
             print("coquillage utilisé");
         }
+        if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.PieceLongueVue)
+        {
+            print("longue-vue complétée");
+            fieldGlassInstanciate.InstantiateCompleteFieldglass();
+            inventoryManager.DeleteItem(this);
+            Object.Destroy(targetObject);
+        }
+
         if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.LongueVue)
         {
-            print("longue-vue utilisée");
-        }
-        else
-        {
-            Debug.DrawRay(mouseWorldPosition, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+            print("vue dehors");
+            gameManager.windowView();
         }
 
     }

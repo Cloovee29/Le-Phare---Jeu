@@ -3189,17 +3189,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &824994409 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3723309529440693714, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
-  m_PrefabInstance: {fileID: 1479075317587061295}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &871626305
 GameObject:
   m_ObjectHideFlags: 0
@@ -3643,6 +3632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   journalScript: {fileID: 1290704066}
+  windowViewGO: {fileID: 0}
 --- !u!1001 &1016281150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4492,17 +4482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1150634500 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3390873464978400349, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
-  m_PrefabInstance: {fileID: 1479075317587061295}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1208749168
 GameObject:
   m_ObjectHideFlags: 0
@@ -5308,17 +5287,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428778498}
   m_CullTransparentMesh: 1
---- !u!114 &1563588597 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 231820392497673560, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
-  m_PrefabInstance: {fileID: 1479075317587061295}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1627595620
 GameObject:
   m_ObjectHideFlags: 0
@@ -5684,17 +5652,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 0}
---- !u!114 &1741213776 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5866110495667885079, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
-  m_PrefabInstance: {fileID: 1479075317587061295}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1771847726
 GameObject:
   m_ObjectHideFlags: 0
@@ -6430,17 +6387,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1918214499 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2727311303295567748, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
-  m_PrefabInstance: {fileID: 1479075317587061295}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1966188914 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1256034983169195623, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
@@ -6563,17 +6509,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2086994946 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8698779285332748926, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
-  m_PrefabInstance: {fileID: 1479075317587061295}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2102459816 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5859461775448578166, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
@@ -6972,7 +6907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2407727358179418902, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1100
+      value: 368
       objectReference: {fileID: 0}
     - target: {fileID: 2407727358179418902, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_SizeDelta.y
@@ -7546,27 +7481,27 @@ PrefabInstance:
     - target: {fileID: 2978058265001133317, guid: d47bc41e4856c4d42bcf6d0ad7256f64, type: 3}
       propertyPath: 'inventorySlots.Array.data[3]'
       value: 
-      objectReference: {fileID: 1918214499}
+      objectReference: {fileID: 0}
     - target: {fileID: 2978058265001133317, guid: d47bc41e4856c4d42bcf6d0ad7256f64, type: 3}
       propertyPath: 'inventorySlots.Array.data[4]'
       value: 
-      objectReference: {fileID: 2086994946}
+      objectReference: {fileID: 0}
     - target: {fileID: 2978058265001133317, guid: d47bc41e4856c4d42bcf6d0ad7256f64, type: 3}
       propertyPath: 'inventorySlots.Array.data[5]'
       value: 
-      objectReference: {fileID: 824994409}
+      objectReference: {fileID: 0}
     - target: {fileID: 2978058265001133317, guid: d47bc41e4856c4d42bcf6d0ad7256f64, type: 3}
       propertyPath: 'inventorySlots.Array.data[6]'
       value: 
-      objectReference: {fileID: 1741213776}
+      objectReference: {fileID: 0}
     - target: {fileID: 2978058265001133317, guid: d47bc41e4856c4d42bcf6d0ad7256f64, type: 3}
       propertyPath: 'inventorySlots.Array.data[7]'
       value: 
-      objectReference: {fileID: 1150634500}
+      objectReference: {fileID: 0}
     - target: {fileID: 2978058265001133317, guid: d47bc41e4856c4d42bcf6d0ad7256f64, type: 3}
       propertyPath: 'inventorySlots.Array.data[8]'
       value: 
-      objectReference: {fileID: 1563588597}
+      objectReference: {fileID: 0}
     - target: {fileID: 6511959144518553510, guid: d47bc41e4856c4d42bcf6d0ad7256f64, type: 3}
       propertyPath: m_Name
       value: InventoryManager
