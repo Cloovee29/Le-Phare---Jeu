@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      porte_phare_surbri_0: -324942578282475242
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

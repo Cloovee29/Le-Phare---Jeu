@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tonneaux1_0: 2130657442068303612
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

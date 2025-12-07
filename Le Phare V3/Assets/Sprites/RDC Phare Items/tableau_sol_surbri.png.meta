@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tableau_sol_surbri_0: -6189583000477507224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

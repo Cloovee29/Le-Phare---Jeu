@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      coffre_open_surbrillance_0: 8405196368849427089
+      coffre_open_surbrillance_1: 6409176863516399996
+      coffre_open_surbrillance_2: -5094776951993509716
+      coffre_open_surbrillance_3: -2060281511943553736
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

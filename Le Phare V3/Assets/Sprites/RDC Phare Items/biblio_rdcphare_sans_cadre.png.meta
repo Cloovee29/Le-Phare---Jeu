@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      biblio_rdcphare_sans_cadre_0: -7929325775500453748
+      biblio_rdcphare_sans_cadre_1: -5470154731956031939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

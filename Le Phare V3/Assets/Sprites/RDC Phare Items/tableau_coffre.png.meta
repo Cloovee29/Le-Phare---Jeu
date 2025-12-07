@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tableau_coffre_0: -732704679485473536
+      tableau_coffre_1: 2746297164802944968
+      tableau_coffre_2: -1336597751761459855
+      tableau_coffre_3: -4764966050529706910
+      tableau_coffre_4: -3919793413662236887
+      tableau_coffre_5: 5668972019831885839
+      tableau_coffre_6: -2331049023572217804
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

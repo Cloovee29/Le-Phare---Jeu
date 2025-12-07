@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "coffre_ferm\xE9_surbri_0": 5894133684967500486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

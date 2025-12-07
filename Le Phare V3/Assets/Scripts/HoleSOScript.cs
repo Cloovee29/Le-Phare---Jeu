@@ -13,8 +13,3 @@ public class HoleSOScript : ScriptableObject
     public string answer;
 }
 
-public enum Holes
-{
-    Hole_101,
-    Hole_102,
-}

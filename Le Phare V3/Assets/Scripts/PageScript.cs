@@ -6,8 +6,8 @@ using UnityEngine;
 public class PageScript : MonoBehaviour
 {
 
-    private List<HoleSOScript> listHoles; //liste de trous associés à une page
-    public GameObject Hole; //un seul trou pour tester avant d'étendre à la liste
+    private List<GameObject> listHoles; //liste de trous associés à une page
+    public GameObject hole; //un seul trou pour tester avant d'étendre à la liste
 
     private List<GameObject> listWordsToDrag; //liste des mots à placer dans le journal
 
@@ -19,6 +19,7 @@ public class PageScript : MonoBehaviour
     void Awake()
     {
         listWordsToDrag = new List<GameObject>();
+        listHoles = new List<GameObject>();
     }
 
 
@@ -39,6 +40,22 @@ public class PageScript : MonoBehaviour
 
            float newY = 60f - i * 20f;
             listWordsToDrag[i].GetComponent<WordScript>().CreateWord(pageContent.listWords[i], newY);
+        }
+
+        //crée une liste de trous
+        for (int i = 0; i < pageContent.listHoles.Count; i++)
+        {
+            GameObject newHole = Instantiate(hole);
+            newHole.transform.SetParent(page.transform, false);
+            listHoles.Add(newHole);
+
+            HoleSOScript holeData = pageContent.listHoles[i];
+
+            string answer = holeData.answer;
+            float posX = holeData.posX;
+            float posY = holeData.posY;
+
+            listHoles[i].GetComponent<HoleScript>().GenerateHole(answer, posX, posY);
         }
     }
 

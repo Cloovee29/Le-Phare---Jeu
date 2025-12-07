@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      poussiere_0: 7594484220077160937
+      poussiere_1: -4169051943900091770
+      poussiere_2: -7939238609771407061
+      poussiere_3: 2329740353352810760
+      poussiere_4: 4043729357965402640
+      poussiere_5: 1966840393111247289
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

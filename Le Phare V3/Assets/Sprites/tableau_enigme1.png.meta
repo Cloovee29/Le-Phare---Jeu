@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tableau_enigme1_0: 199406398317640402
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

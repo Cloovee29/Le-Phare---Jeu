@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      coffre_open_sans tableau_0: 1299264453277340189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
