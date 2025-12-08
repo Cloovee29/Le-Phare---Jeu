@@ -9,6 +9,8 @@ public class JournalScript : MonoBehaviour
 {
     public bool journalOpened;
 
+    public GameObject character;
+
     public GameObject journal;
     public GameObject page;
 
@@ -79,6 +81,15 @@ public class JournalScript : MonoBehaviour
     public void ActiveJournal()
     {
         //Affiche le journal et les mots associés à l'écran
+        
+       SpriteRenderer sr = character.GetComponent<SpriteRenderer>();
+
+        if (!journalOpened)
+            character.SetActive(false);
+
+        if (journalOpened)
+            character.SetActive(true);
+
 
         journalOpened = !journalOpened;
         journal.SetActive(journalOpened);

@@ -5028,6 +5028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   journalOpened: 0
+  character: {fileID: 2102459816}
   journal: {fileID: 1290704064}
   page: {fileID: 1062033229}
   bgJournal: {fileID: 1428778498}
