@@ -82,7 +82,6 @@ public class JournalScript : MonoBehaviour
     {
         //Affiche le journal et les mots associés à l'écran
         
-       SpriteRenderer sr = character.GetComponent<SpriteRenderer>();
 
         if (!journalOpened)
             character.SetActive(false);
