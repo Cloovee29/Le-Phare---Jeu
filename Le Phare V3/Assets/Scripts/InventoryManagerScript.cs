@@ -13,7 +13,10 @@ public class InventoryManagerScript : MonoBehaviour
 
     public Item diplomeMarie;
 
-    
+    public ItemName? CurrentItemIdName { get; set; }
+
+    [HideInInspector] public ChangeDiplomeScript changeDiplome;
+    public DoorLevel1Zoom doorLevel1Zoom;
     private void Awake()
     {
         instance = this;
@@ -42,9 +45,9 @@ public class InventoryManagerScript : MonoBehaviour
 
     void SpawnNewItem(Item item, InventoryItemScript inventoryItemScript)
     {
-        //inventoryItemScript.GetComponent<Image>().sprite = item.image;
         inventoryItemScript.CurrentItemIdName = item.idName;
         inventoryItemScript.InitialiseItem(item);
+        print(item.idName);
     }
 
     public void DeleteItem (InventoryItemScript inventoryItemScript)
@@ -52,4 +55,23 @@ public class InventoryManagerScript : MonoBehaviour
         inventoryItemScript.GetComponent<Image>().sprite = null;
         inventoryItemScript.CurrentItemIdName = null;
     }
+
+    public void InventoryUseCorrespondance(InventoryItemScript usedItem)
+    {
+        print("Item utilisé : " + usedItem);
+
+        if (usedItem.targetObject.targetName == ItemName.Diplome)
+        {
+            print("corres diplome");
+            //DeleteItem(usedItem);
+            changeDiplome.ChangeDiplome();
+        }
+
+        if (usedItem.targetObject.targetName == ItemName.Key)
+        {
+            print("corres cles");
+            doorLevel1Zoom.OpenDoor();
+        }
+    }
 }
+
