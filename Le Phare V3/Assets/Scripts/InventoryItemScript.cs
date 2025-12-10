@@ -26,16 +26,16 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public InventoryManagerScript inventoryManager;
 
-    public Sprite portrait1OnWall;
-    public Sprite portrait3OnWall;
-    public Sprite portrait4OnWall;
-    public Sprite portrait5OnWall;
+    //public Sprite portrait1OnWall;
+    //public Sprite portrait3OnWall;
+    //public Sprite portrait4OnWall;
+    //public Sprite portrait5OnWall;
 
     public PortraitsInstanciateScript portraitsInstanciate;
 
-    public fieldGlassInstanciateScript fieldGlassInstanciate;
+    //public fieldGlassInstanciateScript fieldGlassInstanciate;
 
-    public GameManagerScript gameManager;
+    //public GameManagerScript gameManager;
     
     public Vector3 targetObjectPos; // remettre public static si prob
 
@@ -47,6 +47,8 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     public Sprite doorSurbri;
 
     public Sprite fieldGlassComplete;
+
+    public bool onDragDiplome = false;
 
     void Start()
     {
@@ -73,6 +75,12 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         if (CurrentItemIdName != null)
         {
             transform.position = Input.mousePosition;
+        }
+
+        if (CurrentItemIdName == ItemName.Diplome)
+        {
+            inventoryManager.changeDiplome.SurbriDiplome();
+            onDragDiplome = true;
         }
     }
 
@@ -105,13 +113,13 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             }
             else
             {
-                // ne rien faire / à coder
+                // ne rien faire si pas de correspondance / à coder
 
                 //if (targetObject.targetName != CurrentItemIdName)
                 //{
                 //    transform.SetParent(parentAfterDrag);
                 //}
-                transform.SetParent(parentAfterDrag);
+                //transform.SetParent(parentAfterDrag);
             }
 
             if (targetObject.targetName != CurrentItemIdName)
@@ -121,7 +129,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 transform.SetParent(parentAfterDrag);
             }
 
-            // SCENE 2 - LES PORTRAITS
+            // SCENE 2 - LES PORTRAITS à garder car rendre pas dans la condition globale
 
             if (CurrentItemIdName == ItemName.Portrait1 && targetObject.targetName == ItemName.Portrait)
             {
@@ -143,26 +151,26 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 portraitsInstanciate.InstanciatePortrait5();
                 //targetObjectPos = posPlacePortrait5;
             }
+
+            // surbrillance
+
+            if (CurrentItemIdName == ItemName.Diplome)
+            {
+                //inventoryManager.changeDiplome.SurbriDiplome();
+                onDragDiplome = false;
+            }
         }
         
-        if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.Coquillage)
-        {
-            AudioSource audioSourceMusic = targetObject.GetComponent<ClickMove2D>().characterFeedback;
+        //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.PieceLongueVue)
+        //{
+        //    fieldGlassInstanciate.InstantiateCompleteFieldglass();
+        //    inventoryManager.DeleteItem(this);
+        //}
 
-            audioSourceMusic.clip = item.audioClip;
-            audioSourceMusic.Play();
-        }
-        if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.PieceLongueVue)
-        {
-            fieldGlassInstanciate.InstantiateCompleteFieldglass();
-            inventoryManager.DeleteItem(this);
-        }
-
-        if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.LongueVue)
-        {
-            gameManager.windowView();
-        }
-
+        //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.LongueVue)
+        //{
+        //    gameManager.windowView();
+        //}
     }
 
     public void InitialiseItem(Item newItem)

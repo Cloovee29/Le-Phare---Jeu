@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class ChangeDiplomeScript : MonoBehaviour
 {
-    InventoryItemScript inventoryItem;
+    public InventoryItemScript inventoryItem;
     InventoryManagerScript inventoryManager;
     public Sprite newDiplome;
     SpriteRenderer spriteRenderer;
 
     //public GameObject oldDiplome;
-    //public Sprite oldDiplomeSurbriSprite;
-    //public Sprite oldDiplomeSprite;
+    public Sprite oldDiplomeSurbriSprite;
+    public Sprite oldDiplomeSprite;
+    //public bool surbriDiplome = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,23 +21,40 @@ public class ChangeDiplomeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //print(surbriDiplome);
     }
 
     public void ChangeDiplome()
     {
         print("change diplome trouvé");
         spriteRenderer.sprite = newDiplome;
-
+        //surbriDiplome = true;
         //inventoryManager.DeleteItem(Item);
     }
 
-    //test surbrillance
+    public void SurbriDiplome()
+    {
+        //spriteRenderer.sprite = oldDiplomeSurbriSprite;
+        //surbriDiplome = true;
 
-    //if (CurrentItemIdName == ItemName.Key)
+        if (inventoryItem.onDragDiplome == true)
+        {
+            spriteRenderer.sprite = oldDiplomeSurbriSprite;
+        }
+        else
+        {
+            spriteRenderer.sprite = oldDiplomeSprite;
+            inventoryItem.onDragDiplome = false;
+        }
+    }
+
+    //public void StopSurbriDiplome()
     //{
-    //    doorGO.GetComponent<SpriteRenderer>().sprite = doorSurbri;
+    //    spriteRenderer.sprite = oldDiplomeSprite;
+    //    inventoryItem.onDragDiplome = false;
     //}
+
+    //test surbrillance
 
     //if (CurrentItemIdName == ItemName.Diplome)
     //{

@@ -25,7 +25,6 @@ public class fieldGlassInstanciateScript : MonoBehaviour
         GameObject newFieldglass = Instantiate(completeFieldglass);
         newFieldglass.SetActive(true);
         newFieldglass.transform.SetParent(decors.transform, true);
-        Destroy(fieldGlassPiece2);
-
+        //Destroy(fieldGlassPiece2);
     }
 }

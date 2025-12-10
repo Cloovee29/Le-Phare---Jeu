@@ -1,3 +1,4 @@
+using DG.Tweening.Core.Easing;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,6 +18,9 @@ public class InventoryManagerScript : MonoBehaviour
 
     [HideInInspector] public ChangeDiplomeScript changeDiplome;
     public DoorLevel1Zoom doorLevel1Zoom;
+    public fieldGlassInstanciateScript fieldGlassInstanciate;
+    public GameManagerScript gameManager;
+    public OpenWindowScript openWindow;
     private void Awake()
     {
         instance = this;
@@ -58,7 +62,7 @@ public class InventoryManagerScript : MonoBehaviour
 
     public void InventoryUseCorrespondance(InventoryItemScript usedItem)
     {
-        print("Item utilisé : " + usedItem);
+        //print("Item utilisé : " + usedItem);
 
         if (usedItem.targetObject.targetName == ItemName.Diplome)
         {
@@ -72,6 +76,26 @@ public class InventoryManagerScript : MonoBehaviour
             print("corres cles");
             doorLevel1Zoom.OpenDoor();
         }
+
+        if (usedItem.targetObject.targetName == ItemName.Coquillage)
+        {
+            AudioSource audioSourceMusic = usedItem.targetObject.GetComponent<ClickMove2D>().characterFeedback;
+            audioSourceMusic.clip = usedItem.item.audioClip;
+            audioSourceMusic.Play();
+        }
+
+        if (usedItem.targetObject.targetName == ItemName.PieceLongueVue)
+        {           
+            //fieldGlassInstanciate.InstantiateCompleteFieldglass();
+
+            //DeleteItem(this);
+        }
+
+        if (usedItem.targetObject.targetName == ItemName.LongueVue)
+        {
+            gameManager.windowView();
+        }
+
     }
 }
 

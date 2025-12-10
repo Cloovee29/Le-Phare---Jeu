@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b8b365ed1a05a47a634eefdb53127e, type: 3}
   m_Name: pieceLongueVue
   m_EditorClassIdentifier: 
-  image: {fileID: 8974944937154645212, guid: f0a5d2ac49bcaf1498d9a157d456149d, type: 3}
+  image: {fileID: -1547112351443929320, guid: b47990aee5b27c34683261dfaebf65b6, type: 3}
   idName: 10
   audioClip: {fileID: 0}
