@@ -18,15 +18,16 @@ public class IntroCinematicScript : MonoBehaviour
     [Header("Sound")]
     public AudioSource doorAudio;  // jsp pourquoi ça veut pas fonctionner sans, je pensais pouvoir utiliser que l'audioclip comme des exemples vu sur internet mais marche pas
     public AudioClip doorClip;
-    public float blackScreenDuration = 5f;
     public AudioSource audioSource;
+
+    public ClickIndicator clickIndicator;
 
     void Start()
     {
         StartCoroutine(PlayCinematic());
     }
 
-    IEnumerator PlayCinematic()
+    IEnumerator PlayCinematic()  // ---- POUR LE COUP CA FAIT PASSER TOUTES LES FRAMES  ------
     {
         // boucle sur les images
         for (int i = 0; i < images.Length; i++)
@@ -35,37 +36,46 @@ public class IntroCinematicScript : MonoBehaviour
 
             yield return StartCoroutine(fadeController.FadeIn());
 
-            // attente skippable
-            float elapsed = 0f;
-            bool skip = false;
-            while (elapsed < delay && !skip)
+            // si c'est les deux premières images, attendre le clic
+            if (i < 2)
             {
-                if (Input.GetMouseButtonDown(0))
-                    skip = true;
+                clickIndicator.Show();
+                bool clicked = false;
+                while (!clicked)
+                {
+                    if (Input.GetMouseButtonDown(0))
+                        clicked = true;
 
-                elapsed += Time.deltaTime;
-                yield return null;
+                    yield return null;
+                }
+            }
+            else
+            {
+                // pour les autres images, le ptit fade auto
+                clickIndicator.Hide();
+                float elapsed = 0f;
+                while (elapsed < delay)
+                {
+                    elapsed += Time.deltaTime;
+                    yield return null;
+                }
             }
 
             yield return StartCoroutine(fadeController.FadeOut());
         }
 
-        // ---- Écran noir ----
-        // ici on peut garder le noir affiché pendant blackScreenDuration
+        // --------ECRAN NOIR ----
         Color temp = displayImage.color;
-        temp.a = 1f; // s'assurer que l'écran est noir
+        temp.a = 1f; 
         displayImage.color = temp;
 
-        // jouer le son de la porte
         if (doorAudio != null && doorClip != null)
         {
             doorAudio.PlayOneShot(doorClip);
         }
 
-        // attendre la durée du noir
-        yield return new WaitForSeconds(blackScreenDuration);
+        yield return new WaitForSeconds(5f);
 
-        // charger la scène
         SceneManager.LoadScene("01 - HouseScene");
     }
 }
