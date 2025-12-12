@@ -18,7 +18,7 @@ public class ClickEndGame : MonoBehaviour
 
     void OnMouseDown()
     {
-        if ( )
+        
         print("fin du jeu");
     }
 }

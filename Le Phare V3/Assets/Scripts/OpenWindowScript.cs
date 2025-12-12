@@ -36,7 +36,6 @@ public class OpenWindowScript : MonoBehaviour
     {
         print("fenetre ouverte");
         window.sprite = closedWindowAndSeagull;
-        buttonEndGame.SetActive(true);
     }
 
     private void OnMouseDown()
