@@ -20,8 +20,6 @@ public class IntroCinematicScript : MonoBehaviour
     public AudioClip doorClip;
     public AudioSource audioSource;
 
-    public ClickIndicator clickIndicator;
-
     void Start()
     {
         StartCoroutine(PlayCinematic());
@@ -39,7 +37,6 @@ public class IntroCinematicScript : MonoBehaviour
             // si c'est les deux premières images, attendre le clic
             if (i < 2)
             {
-                clickIndicator.Show();
                 bool clicked = false;
                 while (!clicked)
                 {
@@ -52,7 +49,6 @@ public class IntroCinematicScript : MonoBehaviour
             else
             {
                 // pour les autres images, le ptit fade auto
-                clickIndicator.Hide();
                 float elapsed = 0f;
                 while (elapsed < delay)
                 {
