@@ -5,7 +5,8 @@ public class GameManagerScript : MonoBehaviour
 {
     public JournalScript journalScript;
     public GameObject windowViewGO;
-   
+
+    public GameObject buttonEndGame;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +27,7 @@ public class GameManagerScript : MonoBehaviour
     {
         print("fenetreouverteVue");
         windowViewGO.SetActive(true);
+        buttonEndGame.SetActive(true);
     }
 
 

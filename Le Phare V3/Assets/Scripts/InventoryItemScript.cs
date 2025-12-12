@@ -50,6 +50,8 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public bool onDragDiplome = false;
 
+    public MarieSurbriScript marieSurbriScript;
+
     void Start()
     {
         image = GetComponent<Image>();
@@ -119,7 +121,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             }
 
             // SCENE 2 - LES PORTRAITS à garder car rentre pas dans la condition globale
-            print(CurrentItemIdName);
+            //print(CurrentItemIdName);
             if (CurrentItemIdName == ItemName.Portrait1 && targetObject.targetName == ItemName.Portrait)
             {
                 print("portrait 1 detecté");
@@ -145,6 +147,11 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         if (CurrentItemIdName == ItemName.Diplome)
         {
             inventoryManager.changeDiplome.SurbriDiplome(false);
+        }
+
+        if (CurrentItemIdName == ItemName.Coquillage)
+        {
+            marieSurbriScript.SurbriMarie(false);
         }
     }
 

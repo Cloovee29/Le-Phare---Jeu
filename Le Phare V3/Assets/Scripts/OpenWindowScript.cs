@@ -16,7 +16,7 @@ public class OpenWindowScript : MonoBehaviour
 
     public GameObject decors;
 
-    public bool windowOpen;
+    public GameObject buttonEndGame;
 
     int compteurWindow;
     void Start()
@@ -51,13 +51,4 @@ public class OpenWindowScript : MonoBehaviour
             fieldGlass2.SetActive(true);
         }
     }
-
-    //public void InstantiateCompleteFieldglass()
-    //{
-    //    print("instancie longue-vue");
-    //    GameObject newFieldglass = Instantiate(completeFieldglass);
-    //    newFieldglass.SetActive(true);
-    //    newFieldglass.transform.SetParent(decors.transform, true);
-    //    //Destroy(fieldGlassPiece2);
-    //}
 }
