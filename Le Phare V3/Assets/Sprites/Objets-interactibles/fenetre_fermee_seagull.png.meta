@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fenetre_fermee_seagull_0: -8017002958508723237
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
