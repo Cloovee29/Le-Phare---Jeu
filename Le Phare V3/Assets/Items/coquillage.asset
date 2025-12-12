@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b8b365ed1a05a47a634eefdb53127e, type: 3}
   m_Name: coquillage
   m_EditorClassIdentifier: 
-  image: {fileID: -6857052098410394146, guid: 990e27ac48d7b0e4f88774800dd9ca6a, type: 3}
+  image: {fileID: -6857052098410394146, guid: 46071a4587b2e904da95e8367d546533, type: 3}
   idName: 11
   audioClip: {fileID: 8300000, guid: ecd076d67f5452d418564dcbac484f2a, type: 3}
