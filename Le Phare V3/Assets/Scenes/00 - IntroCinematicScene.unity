@@ -273,7 +273,6 @@ GameObject:
   - component: {fileID: 410897714}
   - component: {fileID: 410897713}
   - component: {fileID: 410897712}
-  - component: {fileID: 410897716}
   - component: {fileID: 410897717}
   - component: {fileID: 410897718}
   m_Layer: 5
@@ -368,18 +367,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &410897716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410897711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc8bf8765e95a1418e50791951a2b57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &410897717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,7 +759,6 @@ GameObject:
   - component: {fileID: 1269285660}
   - component: {fileID: 1269285662}
   - component: {fileID: 1269285661}
-  - component: {fileID: 1269285663}
   - component: {fileID: 1269285664}
   m_Layer: 5
   m_Name: BlackOverlayFade
@@ -838,18 +824,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269285659}
   m_CullTransparentMesh: 1
---- !u!114 &1269285663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269285659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07256ab6cbc86844495bf65f98e5d4bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1269285664
 MonoBehaviour:
   m_ObjectHideFlags: 0
