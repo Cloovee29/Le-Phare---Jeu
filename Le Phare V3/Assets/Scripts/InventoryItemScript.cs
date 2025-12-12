@@ -32,10 +32,6 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     //public Sprite portrait5OnWall;
 
     public PortraitsInstanciateScript portraitsInstanciate;
-
-    //public fieldGlassInstanciateScript fieldGlassInstanciate;
-
-    //public GameManagerScript gameManager;
     
     public Vector3 targetObjectPos; // remettre public static si prob
 
@@ -51,7 +47,9 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     public bool onDragDiplome = false;
 
     public MarieSurbriScript marieSurbriScript;
-
+    public OpenWindowScript openWindowScript;
+    public FieldGlassInstanciateScript fieldGlassInstanciate;
+    public DoorLevel1Zoom doorLevel1Zoom;
     void Start()
     {
         image = GetComponent<Image>();
@@ -82,6 +80,26 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         if (CurrentItemIdName == ItemName.Diplome)
         {
             inventoryManager.changeDiplome.SurbriDiplome(true);
+        }
+
+        if (CurrentItemIdName == ItemName.Coquillage)
+        {
+            marieSurbriScript.SurbriMarie(true);
+        }
+
+        if (CurrentItemIdName == ItemName.PieceLongueVue)
+        {
+            openWindowScript.PieceFieldGlassSurbri(true);
+        }
+
+        if (CurrentItemIdName == ItemName.LongueVue)
+        {
+            fieldGlassInstanciate.FieldGlassSurbri(true);
+        }
+
+        if (CurrentItemIdName == ItemName.Key)
+        {
+            doorLevel1Zoom.DoorSurbri(true);
         }
     }
 
@@ -152,6 +170,21 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         if (CurrentItemIdName == ItemName.Coquillage)
         {
             marieSurbriScript.SurbriMarie(false);
+        }
+
+        if (CurrentItemIdName == ItemName.PieceLongueVue)
+        {
+            openWindowScript.PieceFieldGlassSurbri(false);
+        }
+
+        if (CurrentItemIdName == ItemName.LongueVue)
+        {
+            fieldGlassInstanciate.FieldGlassSurbri(false);
+        }
+
+        if (CurrentItemIdName == ItemName.Key)
+        {
+            doorLevel1Zoom.DoorSurbri(false);
         }
     }
 

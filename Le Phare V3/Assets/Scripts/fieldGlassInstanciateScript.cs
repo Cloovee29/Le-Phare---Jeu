@@ -8,17 +8,11 @@ public class FieldGlassInstanciateScript : MonoBehaviour
     public GameObject window;
 
     public GameObject fieldGlassPiece2;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    SpriteRenderer spriteRenderer;
+
+    public Sprite windowSpriteSurbri;
+    public Sprite windowSprite;
 
     public void InstantiateCompleteFieldglass()
     {
@@ -28,5 +22,17 @@ public class FieldGlassInstanciateScript : MonoBehaviour
         newFieldglass.transform.SetParent(decors.transform, true);
         newFieldglass.transform.position = window.transform.position;
         Destroy(fieldGlassPiece2);
+    }
+
+    public void FieldGlassSurbri(bool newState)
+    {
+        if (newState)
+        {
+            spriteRenderer.sprite = windowSpriteSurbri;
+        }
+        else
+        {
+            spriteRenderer.sprite = windowSprite;
+        }
     }
 }

@@ -718,6 +718,8 @@ MonoBehaviour:
   decors: {fileID: 1790203481}
   window: {fileID: 1584705275}
   fieldGlassPiece2: {fileID: 1274066651}
+  windowSpriteSurbri: {fileID: 0}
+  windowSprite: {fileID: -5322443981601127174, guid: b757eb1d8b2abeb419ac0db83e35d885, type: 3}
 --- !u!1 &252803289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2610,6 +2612,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1892445898}
     - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: openWindowScript
+      value: 
+      objectReference: {fileID: 1584705279}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: marieSurbriScript
       value: 
       objectReference: {fileID: 1289624846}
@@ -2818,6 +2824,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1892445898}
     - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: openWindowScript
+      value: 
+      objectReference: {fileID: 1584705279}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: marieSurbriScript
       value: 
       objectReference: {fileID: 1289624846}
@@ -3065,6 +3075,10 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 1892445898}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: openWindowScript
+      value: 
+      objectReference: {fileID: 1584705279}
     - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: marieSurbriScript
       value: 
@@ -3858,7 +3872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1274066652
 Transform:
   m_ObjectHideFlags: 0
@@ -4728,6 +4742,8 @@ MonoBehaviour:
   completeFieldglass: {fileID: 221472995}
   decors: {fileID: 1790203481}
   buttonEndGame: {fileID: 433046147}
+  pieceFGSpriteSurbri: {fileID: -322360738021117859, guid: f05a1955129478243abfd492bafb442d, type: 3}
+  pieceFGSprite: {fileID: 935683453505650346, guid: c14e7feb1f6b738469e11294f51ae0d7, type: 3}
 --- !u!114 &1584705280
 MonoBehaviour:
   m_ObjectHideFlags: 0

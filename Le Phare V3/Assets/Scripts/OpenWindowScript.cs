@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem.LowLevel;
 using static UnityEngine.InputSystem.LowLevel.InputStateHistory;
 
 public class OpenWindowScript : MonoBehaviour
@@ -18,12 +19,17 @@ public class OpenWindowScript : MonoBehaviour
 
     public GameObject buttonEndGame;
 
+    SpriteRenderer spriteRenderer;
+
+    public Sprite pieceFGSpriteSurbri;
+    public Sprite pieceFGSprite;
+
     int compteurWindow;
     void Start()
     {
         window = windowGO.GetComponent<SpriteRenderer>();
         fieldGlass2.SetActive(false);
-        
+        spriteRenderer = fieldGlass2.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -49,6 +55,18 @@ public class OpenWindowScript : MonoBehaviour
         {
             window.sprite = openWindow;  
             fieldGlass2.SetActive(true);
+        }
+    }
+
+    public void PieceFieldGlassSurbri(bool newState)
+    {
+        if (newState)
+        {
+            spriteRenderer.sprite = pieceFGSpriteSurbri;
+        }
+        else
+        {
+            spriteRenderer.sprite = pieceFGSprite;
         }
     }
 }

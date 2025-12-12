@@ -3712,6 +3712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   journalScript: {fileID: 1290704066}
   windowViewGO: {fileID: 0}
+  buttonEndGame: {fileID: 0}
 --- !u!1001 &1016281150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4990,6 +4991,8 @@ MonoBehaviour:
   zoomSerrure: {fileID: 2060885981}
   character: {fileID: 2102459816}
   arrows: {fileID: 1966188914}
+  doorSprite: {fileID: -777906690759968213, guid: f6973fad6fc568845befda3b2259bb92, type: 3}
+  doorSpriteSurbri: {fileID: -324942578282475242, guid: da704ba15916e8747abee4727dab3f25, type: 3}
 --- !u!114 &1208749174
 MonoBehaviour:
   m_ObjectHideFlags: 0
