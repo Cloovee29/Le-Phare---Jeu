@@ -35,7 +35,6 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     
      public void OnBeginDrag(PointerEventData eventData)
     {
-        print("oui");
         if (isLocked) return;
         canvasGroup.alpha = 0.6f; 
         canvasGroup.blocksRaycasts = false;
