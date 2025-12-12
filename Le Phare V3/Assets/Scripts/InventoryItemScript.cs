@@ -118,11 +118,12 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 transform.SetParent(parentAfterDrag);
             }
 
-            // SCENE 2 - LES PORTRAITS à garder car rendre pas dans la condition globale
-
+            // SCENE 2 - LES PORTRAITS à garder car rentre pas dans la condition globale
+            print(CurrentItemIdName);
             if (CurrentItemIdName == ItemName.Portrait1 && targetObject.targetName == ItemName.Portrait)
             {
-                inventoryManager.DeleteItem(this);
+                print("portrait 1 detecté");
+                //inventoryManager.DeleteItem(this);
                 portraitsInstanciate.InstanciatePortrait1();
                 //targetObjectPos = posPlacePortrait1;
             }

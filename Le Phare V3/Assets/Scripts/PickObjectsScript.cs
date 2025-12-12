@@ -9,7 +9,6 @@ public class PickObjectsScript : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        print("pickup");
         PickupItem();
         Destroy(gameObject);
     }

@@ -57,8 +57,7 @@ public class PortraitsScript : MonoBehaviour
         {
             //print("bien placé");
             countGoodPositionPortrait++;
-            print(countGoodPositionPortrait);
-            
+            print(countGoodPositionPortrait);          
         }
 
         if (collision.gameObject.tag == "Portrait1" ||
