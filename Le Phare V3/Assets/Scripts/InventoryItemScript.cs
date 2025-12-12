@@ -39,12 +39,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     //public Vector3 posPlacePortrait3;
     //public Vector3 posPlacePortrait5; 
 
-    public GameObject doorGO;
-    public Sprite doorSurbri;
-
     public Sprite fieldGlassComplete;
-
-    public bool onDragDiplome = false;
 
     public MarieSurbriScript marieSurbriScript;
     public OpenWindowScript openWindowScript;
@@ -126,10 +121,28 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             if (targetObject == null)
             {
                 transform.SetParent(parentAfterDrag);
-            } 
+            }
             else if (targetObject.targetName == CurrentItemIdName)
             {
                 inventoryManager.InventoryUseCorrespondance(this);
+            }
+            else if (CurrentItemIdName == ItemName.Portrait1 && targetObject.targetName == ItemName.Portrait)
+            {
+                Vector3 pos = targetObject.transform.position;
+                inventoryManager.DeleteItem(this);
+                portraitsInstanciate.InstanciatePortrait1(pos);
+            }
+            else if (CurrentItemIdName == ItemName.Portrait3 && targetObject.targetName == ItemName.Portrait)
+            {
+                Vector3 pos = targetObject.transform.position;
+                inventoryManager.DeleteItem(this);
+                portraitsInstanciate.InstanciatePortrait3(pos);;
+            }
+            else if (CurrentItemIdName == ItemName.Portrait5 && targetObject.targetName == ItemName.Portrait)
+            {
+                Vector3 pos = targetObject.transform.position;
+                inventoryManager.DeleteItem(this);
+                portraitsInstanciate.InstanciatePortrait5(pos);
             }
             else
             {
@@ -137,31 +150,10 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 targetGameObject = null;
                 transform.SetParent(parentAfterDrag);
             }
-
-            // SCENE 2 - LES PORTRAITS à garder car rentre pas dans la condition globale
-            //print(CurrentItemIdName);
-            if (CurrentItemIdName == ItemName.Portrait1 && targetObject.targetName == ItemName.Portrait)
-            {
-                print("portrait 1 detecté");
-                //inventoryManager.DeleteItem(this);
-                portraitsInstanciate.InstanciatePortrait1();
-                //targetObjectPos = posPlacePortrait1;
-            }
-
-            if (CurrentItemIdName == ItemName.Portrait3 && targetObject.targetName == ItemName.Portrait)
-            {
-                inventoryManager.DeleteItem(this);
-                portraitsInstanciate.InstanciatePortrait3();
-                //targetObjectPos = posPlacePortrait3;
-            }
-
-            if (CurrentItemIdName == ItemName.Portrait5 && targetObject.targetName == ItemName.Portrait)
-            {
-                inventoryManager.DeleteItem(this);
-                portraitsInstanciate.InstanciatePortrait5();
-                //targetObjectPos = posPlacePortrait5;
-            }
         }
+
+        // ACTIVATION SURBRILLANCE
+
         if (CurrentItemIdName == ItemName.Diplome)
         {
             inventoryManager.changeDiplome.SurbriDiplome(false);
