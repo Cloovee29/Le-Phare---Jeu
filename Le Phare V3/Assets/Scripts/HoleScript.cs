@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System.Collections;
+
 
 public class HoleScript : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class HoleScript : MonoBehaviour
 
 
     //position du trou
-     public void GenerateHole(HoleSOScript hole)
+    public void GenerateHole(HoleSOScript hole)
     {
         answer = hole.answer;
     GetComponent<RectTransform>().anchoredPosition = new Vector2(hole.posY,hole.posY);

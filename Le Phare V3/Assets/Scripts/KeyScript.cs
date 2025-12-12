@@ -2,11 +2,15 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
+
 public class KeyScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
 
     Transform key;
     public GameObject zoomSerrure;
+    [Header("Sound")]
+    public AudioSource doorAudio;   // AudioSource pour le son de la porte
+    public AudioClip doorClip;      // clip à jouer
 
     // pour son de la porte LVL1
     //public AudioSource doorAudio;
@@ -66,5 +70,7 @@ public void OnTriggerEnter2D(Collider2D collision)
 
         }
     }
+
+
 }
 
