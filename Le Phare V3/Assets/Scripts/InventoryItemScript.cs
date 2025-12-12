@@ -79,8 +79,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
 
         if (CurrentItemIdName == ItemName.Diplome)
         {
-            inventoryManager.changeDiplome.SurbriDiplome();
-            onDragDiplome = true;
+            inventoryManager.changeDiplome.SurbriDiplome(true);
         }
     }
 
@@ -95,10 +94,6 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, transform.TransformDirection(Vector3.forward));
 
-        if (targetObject = null)
-        {
-            transform.SetParent(parentAfterDrag);
-        }
 
         if (hit)
         {
@@ -107,7 +102,12 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             targetGameObject = hit.transform.gameObject;
 
             //CODE GLOBAL DE CORRESPONDANCE
-            if (targetObject.targetName == CurrentItemIdName)
+
+            if (targetObject == null)
+            {
+                transform.SetParent(parentAfterDrag);
+            } 
+            else if (targetObject.targetName == CurrentItemIdName)
             {
                 inventoryManager.InventoryUseCorrespondance(this);
             }
@@ -117,13 +117,6 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 targetGameObject = null;
                 transform.SetParent(parentAfterDrag);
             }
-
-            //if (targetObject.targetName != CurrentItemIdName)
-            //{
-            //    targetObject = null;
-            //    targetGameObject = null;
-            //    transform.SetParent(parentAfterDrag);
-            //}
 
             // SCENE 2 - LES PORTRAITS à garder car rendre pas dans la condition globale
 
@@ -147,14 +140,10 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 portraitsInstanciate.InstanciatePortrait5();
                 //targetObjectPos = posPlacePortrait5;
             }
-
-            // surbrillance
-
-            if (CurrentItemIdName == ItemName.Diplome)
-            {
-                //inventoryManager.changeDiplome.SurbriDiplome();
-                onDragDiplome = false;
-            }
+        }
+        if (CurrentItemIdName == ItemName.Diplome)
+        {
+            inventoryManager.changeDiplome.SurbriDiplome(false);
         }
     }
 
