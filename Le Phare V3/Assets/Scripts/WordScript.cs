@@ -31,12 +31,11 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         YBasic = newY;
         GetComponent<RectTransform>().anchoredPosition = new Vector2(120,newY);
     }
-    
-
+  
     
      public void OnBeginDrag(PointerEventData eventData)
     {
-
+        print("oui");
         if (isLocked) return;
         canvasGroup.alpha = 0.6f; 
         canvasGroup.blocksRaycasts = false;
@@ -50,24 +49,30 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnEndDrag(PointerEventData eventData)
     {
+      
         if (isLocked) return;
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
         transform.position = Input.mousePosition; // nouveau code = si je mets pas ca il se place bizarrement à la fin du drag
+       
     }
 
     private void OnTriggerEnter2D (Collider2D collision){
+        
+
         HoleScript hole = collision.GetComponent<HoleScript>();
+        
 
         if (hole != null)
         {
+            
             if (word.text == hole.answer)
             {
                 isLocked = true;
                 canvasGroup.alpha = 1f;
             }
         }
-            
+
     }
 
 }

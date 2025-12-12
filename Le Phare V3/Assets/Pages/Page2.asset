@@ -17,7 +17,8 @@ MonoBehaviour:
   - Curry
   - miam
   numbPage: 2
-  listHoles: 0000000001000000
+  listHoles:
+  - {fileID: 11400000, guid: db667a56754ea774fb6ea6a6a0529b99, type: 2}
   textPage1: "(Texte brouillon, non d\xE9finitif)  1ere journ\xE9e. Rien \xE0 signaler.
     ..., le dernier gardien, a bien nettoy\xE9.  Mer calme. Aucun b\xE2teau.   Fortes
     bourrasques et orage. J'ai entendu quelques cris. Mouettes ?"

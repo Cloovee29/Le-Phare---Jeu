@@ -40,6 +40,7 @@ public class JournalScript : MonoBehaviour
             listPages.Add(newPage);
             listPages[i].GetComponent<PageScript>().CreatePage(i, pagesContent[i]);
         }
+        page.transform.SetAsFirstSibling();
 
     }
 
