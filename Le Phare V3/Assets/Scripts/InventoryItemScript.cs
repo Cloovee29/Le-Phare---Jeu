@@ -160,17 +160,6 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 onDragDiplome = false;
             }
         }
-        
-        //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.PieceLongueVue)
-        //{
-        //    fieldGlassInstanciate.InstantiateCompleteFieldglass();
-        //    inventoryManager.DeleteItem(this);
-        //}
-
-        //if (targetObject.targetName == CurrentItemIdName && targetObject.targetName == ItemName.LongueVue)
-        //{
-        //    gameManager.windowView();
-        //}
     }
 
     public void InitialiseItem(Item newItem)

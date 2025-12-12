@@ -18,7 +18,7 @@ public class InventoryManagerScript : MonoBehaviour
 
     [HideInInspector] public ChangeDiplomeScript changeDiplome;
     public DoorLevel1Zoom doorLevel1Zoom;
-    public fieldGlassInstanciateScript fieldGlassInstanciate;
+    public FieldGlassInstanciateScript fieldGlassInstanciate;
     public GameManagerScript gameManager;
     public OpenWindowScript openWindow;
     private void Awake()
@@ -33,6 +33,7 @@ public class InventoryManagerScript : MonoBehaviour
             AddItem(diplomeMarie);
         }
     }
+
     public void AddItem(Item item)
     {
         for (int i = 0; i < inventorySlots.Length; i++)
@@ -67,7 +68,7 @@ public class InventoryManagerScript : MonoBehaviour
         if (usedItem.targetObject.targetName == ItemName.Diplome)
         {
             print("corres diplome");
-            //DeleteItem(usedItem);
+            DeleteItem(usedItem);
             changeDiplome.ChangeDiplome();
         }
 
@@ -85,14 +86,15 @@ public class InventoryManagerScript : MonoBehaviour
         }
 
         if (usedItem.targetObject.targetName == ItemName.PieceLongueVue)
-        {           
-            //fieldGlassInstanciate.InstantiateCompleteFieldglass();
-
-            //DeleteItem(this);
+        {
+            fieldGlassInstanciate.InstantiateCompleteFieldglass();
+            DeleteItem(usedItem);
         }
 
+        print(usedItem.targetObject.targetName);
         if (usedItem.targetObject.targetName == ItemName.LongueVue)
         {
+            print("trouve inventory manager");
             gameManager.windowView();
         }
 

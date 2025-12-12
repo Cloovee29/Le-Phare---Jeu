@@ -1,10 +1,11 @@
 using UnityEngine;
 
-public class fieldGlassInstanciateScript : MonoBehaviour
+public class FieldGlassInstanciateScript : MonoBehaviour
 {
 
     public GameObject completeFieldglass;
     public GameObject decors;
+    public GameObject window;
 
     public GameObject fieldGlassPiece2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,6 +26,7 @@ public class fieldGlassInstanciateScript : MonoBehaviour
         GameObject newFieldglass = Instantiate(completeFieldglass);
         newFieldglass.SetActive(true);
         newFieldglass.transform.SetParent(decors.transform, true);
-        //Destroy(fieldGlassPiece2);
+        newFieldglass.transform.position = window.transform.position;
+        Destroy(fieldGlassPiece2);
     }
 }
