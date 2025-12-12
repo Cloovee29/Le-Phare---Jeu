@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fenetre_ouverte_seagull_0: 3095208446261867466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
