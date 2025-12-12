@@ -1,7 +1,9 @@
 using UnityEngine;
 
-public class onClickWindwViewScript : MonoBehaviour
+public class ClickEndGame : MonoBehaviour
 {
+
+    OpenWindowScript openWindowScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,8 +16,9 @@ public class onClickWindwViewScript : MonoBehaviour
         
     }
 
-    public void ClickOnPlace()
+    void OnMouseDown()
     {
-        print("findujeu");
+        
+        print("fin du jeu");
     }
 }

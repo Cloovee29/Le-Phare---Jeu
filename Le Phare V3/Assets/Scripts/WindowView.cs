@@ -15,4 +15,9 @@ public class WindowView : MonoBehaviour
         
     }
 
+   public void CloseWindow()
+    {
+        windowViewGO.SetActive(false);
+    }
+
 }

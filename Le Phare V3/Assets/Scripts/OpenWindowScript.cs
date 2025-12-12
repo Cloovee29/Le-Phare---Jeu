@@ -16,11 +16,14 @@ public class OpenWindowScript : MonoBehaviour
 
     public GameObject decors;
 
+    public bool windowOpen;
+
     int compteurWindow;
     void Start()
     {
         window = windowGO.GetComponent<SpriteRenderer>();
         fieldGlass2.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -40,12 +43,11 @@ public class OpenWindowScript : MonoBehaviour
         compteurWindow++;
         if (window.sprite == closedWindowAndSeagull && compteurWindow == 1)
         {
-            window.sprite = openedWindowAndSeagull;
-            
+            window.sprite = openedWindowAndSeagull;            
         }
         if (window.sprite == openedWindowAndSeagull && compteurWindow == 2)
         {
-            window.sprite = openWindow;    
+            window.sprite = openWindow;  
             fieldGlass2.SetActive(true);
         }
     }
