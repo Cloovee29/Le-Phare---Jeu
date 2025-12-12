@@ -113,21 +113,17 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
             }
             else
             {
-                // ne rien faire si pas de correspondance / à coder
-
-                //if (targetObject.targetName != CurrentItemIdName)
-                //{
-                //    transform.SetParent(parentAfterDrag);
-                //}
-                //transform.SetParent(parentAfterDrag);
-            }
-
-            if (targetObject.targetName != CurrentItemIdName)
-            {
                 targetObject = null;
                 targetGameObject = null;
                 transform.SetParent(parentAfterDrag);
             }
+
+            //if (targetObject.targetName != CurrentItemIdName)
+            //{
+            //    targetObject = null;
+            //    targetGameObject = null;
+            //    transform.SetParent(parentAfterDrag);
+            //}
 
             // SCENE 2 - LES PORTRAITS à garder car rendre pas dans la condition globale
 
