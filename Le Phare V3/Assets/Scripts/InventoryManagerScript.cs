@@ -52,7 +52,6 @@ public class InventoryManagerScript : MonoBehaviour
     {
         inventoryItemScript.CurrentItemIdName = item.idName;
         inventoryItemScript.InitialiseItem(item);
-        print(item.idName);
     }
 
     public void DeleteItem (InventoryItemScript inventoryItemScript)
@@ -63,18 +62,14 @@ public class InventoryManagerScript : MonoBehaviour
 
     public void InventoryUseCorrespondance(InventoryItemScript usedItem)
     {
-        //print("Item utilisé : " + usedItem);
-
         if (usedItem.targetObject.targetName == ItemName.Diplome)
         {
-            print("corres diplome");
             DeleteItem(usedItem);
             changeDiplome.ChangeDiplome();
         }
 
         if (usedItem.targetObject.targetName == ItemName.Key)
         {
-            print("corres cles");
             doorLevel1Zoom.OpenDoor();
         }
 
@@ -90,11 +85,8 @@ public class InventoryManagerScript : MonoBehaviour
             fieldGlassInstanciate.InstantiateCompleteFieldglass();
             DeleteItem(usedItem);
         }
-
-        print(usedItem.targetObject.targetName);
         if (usedItem.targetObject.targetName == ItemName.LongueVue)
         {
-            print("trouve inventory manager");
             gameManager.windowView();
         }
 
