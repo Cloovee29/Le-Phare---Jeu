@@ -557,6 +557,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 0}
+  doorAudio: {fileID: 0}
+  doorClip: {fileID: 0}
 --- !u!1 &65237366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,6 +3458,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 0}
+  doorAudio: {fileID: 0}
+  doorClip: {fileID: 0}
 --- !u!1 &906732576
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,6 +3692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 745158382}
+  doorAudio: {fileID: 0}
+  doorClip: {fileID: 8300000, guid: 0ef61bc190d7ad14ba6b143ef30f63a9, type: 3}
 --- !u!61 &946166872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6371,6 +6377,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 0}
+  doorAudio: {fileID: 0}
+  doorClip: {fileID: 0}
 --- !u!1 &1771847726
 GameObject:
   m_ObjectHideFlags: 0
@@ -6461,6 +6469,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSerrure: {fileID: 0}
+  doorAudio: {fileID: 0}
+  doorClip: {fileID: 0}
 --- !u!1 &1790176396
 GameObject:
   m_ObjectHideFlags: 0

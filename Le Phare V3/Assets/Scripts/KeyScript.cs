@@ -8,10 +8,10 @@ public class KeyScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     Transform key;
     public GameObject zoomSerrure;
-    [Header("Sound")]
+       [Header("Sound")]
     public AudioSource doorAudio;   // AudioSource pour le son de la porte
     public AudioClip doorClip;      // clip à jouer
-
+ 
     // pour son de la porte LVL1
     //public AudioSource doorAudio;
     //public AudioClip openingClip;
