@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ChangeDiplomeScript : MonoBehaviour
 {
-    public InventoryItemScript inventoryItem;
-    InventoryManagerScript inventoryManager;
+    //public InventoryItemScript inventoryItem;
+    //InventoryManagerScript inventoryManager;
     public Sprite newDiplome;
     SpriteRenderer spriteRenderer;
 
@@ -32,19 +32,16 @@ public class ChangeDiplomeScript : MonoBehaviour
         //inventoryManager.DeleteItem(Item);
     }
 
-    public void SurbriDiplome()
+    public void SurbriDiplome(bool newState)
     {
-        //spriteRenderer.sprite = oldDiplomeSurbriSprite;
-        //surbriDiplome = true;
-
-        if (inventoryItem.onDragDiplome == true)
+        print(newState);
+        if (newState)
         {
             spriteRenderer.sprite = oldDiplomeSurbriSprite;
         }
         else
         {
             spriteRenderer.sprite = oldDiplomeSprite;
-            inventoryItem.onDragDiplome = false;
         }
     }
 
