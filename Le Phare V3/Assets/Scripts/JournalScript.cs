@@ -36,6 +36,7 @@ public class JournalScript : MonoBehaviour
         {
             GameObject newPage = Instantiate(page);
             newPage.transform.SetParent(journal.transform, false);
+            newPage.transform.SetAsFirstSibling();
             listPages.Add(newPage);
             listPages[i].GetComponent<PageScript>().CreatePage(i, pagesContent[i]);
         }
@@ -64,10 +65,11 @@ public class JournalScript : MonoBehaviour
             //permet de changer de page du carnet
             //afficher la nouvelle page du carnet et cacher la précédente
         }
-    }
+    } 
 
     public void ChangePage()
     {
+
         for (int i = 0; i < listPages.Count; i++)
             listPages[i].SetActive(i == currentPage);
 
@@ -77,6 +79,28 @@ public class JournalScript : MonoBehaviour
         }
     }
 
+    public void ChangePageNext()
+    {
+        if(currentPage + 1 < pagesContent.Count)
+        {
+            currentPage = currentPage + 1;
+            ChangePage();
+        }
+       
+        //permet de changer de page du carnet
+        //afficher la nouvelle page du carnet et cacher la précédente
+
+    }
+
+    public void ChangePagePrevious()
+    {
+        if (currentPage - 1 > -1)
+        {
+            currentPage = currentPage - 1;
+            ChangePage();
+        }
+
+    }
 
     public void ActiveJournal()
     {

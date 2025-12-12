@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      longue_vue_part2_0: 935683453505650346
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

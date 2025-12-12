@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      longue_vue_part1_inventaire_0: -6641667394827109479
+      longue_vue_part1_inventaire_1: -1547112351443929320
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
