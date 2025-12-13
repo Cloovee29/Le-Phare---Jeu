@@ -482,8 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5079245216b25dd40925b11eb9691f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 20
-  endPositionY: 2000
+  scrollSpeed: 35
 --- !u!1 &911797447
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,7 +795,6 @@ GameObject:
   - component: {fileID: 1086048734}
   - component: {fileID: 1086048733}
   - component: {fileID: 1086048732}
-  - component: {fileID: 1086048737}
   - component: {fileID: 1086048736}
   m_Layer: 5
   m_Name: Canvas
@@ -987,18 +985,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!225 &1086048737
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086048731}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1328790974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1629517525}
   - component: {fileID: 1629517526}
+  - component: {fileID: 1629517527}
   m_Layer: 0
   m_Name: CreditsDrawings
   m_TagString: Untagged
@@ -1203,8 +1190,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5079245216b25dd40925b11eb9691f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 20
-  endPositionY: 2000
+  scrollSpeed: 35
+--- !u!225 &1629517527
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629517524}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2034972291
 GameObject:
   m_ObjectHideFlags: 0

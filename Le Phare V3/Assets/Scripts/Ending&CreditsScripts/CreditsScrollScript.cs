@@ -2,12 +2,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class CreditsScript : MonoBehaviour
+public class CreditsScrollScript : MonoBehaviour
 {
 
     public float scrollSpeed = 10f;
-    public float endPositionY = 2000f;   // j'ai voulu faire en end time mais ça colle pas avec la musique, du coup je jo
-
+    public float endPositionY = 1900f; // quand la musique se finissait, j'y arrivais pas, je fais avec la position mnt
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,7 +19,7 @@ public class CreditsScript : MonoBehaviour
     {
         transform.Translate(Vector3.up * scrollSpeed * Time.deltaTime);
 
-        if (transform.position.y > endPositionY)
+        if (transform.position.y >= endPositionY)
         {
             SceneManager.LoadScene("00 - GameMenu");
         }
