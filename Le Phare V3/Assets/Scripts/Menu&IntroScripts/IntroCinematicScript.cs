@@ -72,7 +72,7 @@ public class IntroCinematicScript : MonoBehaviour
             yield return StartCoroutine(fadeController.FadeOut());
         }
 
-        // --------ECRAN NOIR ----
+        // -------- ECRAN NOIR ----
         Color temp = displayImage.color;
         temp.a = 1f; 
         displayImage.color = temp;
