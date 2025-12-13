@@ -389,6 +389,7 @@ MonoBehaviour:
   delay: 3
   Level1: 
   fadeController: {fileID: 1269285664}
+  clickIndicator: {fileID: 860465626}
   doorAudio: {fileID: 250342687}
   doorClip: {fileID: 8300000, guid: 7132ad946fe53f647b3798cebba29d84, type: 3}
   audioSource: {fileID: 410897718}

@@ -14,6 +14,9 @@ public class IntroCinematicScript : MonoBehaviour
 
     public FadeController fadeController;
 
+    [Header("Cursor")]
+    public GameObject clickIndicator;
+
     // --- AUDIOOOO ---
     [Header("Sound")]
     public AudioSource doorAudio;  // jsp pourquoi ça veut pas fonctionner sans, je pensais pouvoir utiliser que l'audioclip comme des exemples vu sur internet mais marche pas
@@ -22,7 +25,10 @@ public class IntroCinematicScript : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(PlayCinematic());
+            if (clickIndicator != null)
+                clickIndicator.SetActive(false);
+
+            StartCoroutine(PlayCinematic());
     }
 
     IEnumerator PlayCinematic()  // ---- POUR LE COUP CA FAIT PASSER TOUTES LES FRAMES  ------
@@ -37,6 +43,9 @@ public class IntroCinematicScript : MonoBehaviour
             // si c'est les deux premières images, attendre le clic
             if (i < 2)
             {
+                if (clickIndicator != null)   // pour mon curseur
+                    clickIndicator.SetActive(true);
+
                 bool clicked = false;
                 while (!clicked)
                 {
@@ -45,6 +54,9 @@ public class IntroCinematicScript : MonoBehaviour
 
                     yield return null;
                 }
+
+                if (clickIndicator != null)   // pour mon curseur à désafficher
+                    clickIndicator.SetActive(false);
             }
             else
             {
