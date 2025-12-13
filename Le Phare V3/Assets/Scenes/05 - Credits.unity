@@ -483,6 +483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 35
+  endPositionY: 1900
 --- !u!1 &911797447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,6 +1192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 35
+  endPositionY: 1900
 --- !u!225 &1629517527
 CanvasGroup:
   m_ObjectHideFlags: 0
