@@ -132,11 +132,11 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
                 inventoryManager.DeleteItem(this);
                 portraitsInstanciate.InstanciatePortrait1(pos);
             }
-            else if (CurrentItemIdName == ItemName.Portrait3 && targetObject.targetName == ItemName.Portrait)
+            else if (CurrentItemIdName == ItemName.Portrait4 && targetObject.targetName == ItemName.Portrait)
             {
                 Vector3 pos = targetObject.transform.position;
                 inventoryManager.DeleteItem(this);
-                portraitsInstanciate.InstanciatePortrait3(pos);;
+                portraitsInstanciate.InstanciatePortrait4(pos);
             }
             else if (CurrentItemIdName == ItemName.Portrait5 && targetObject.targetName == ItemName.Portrait)
             {

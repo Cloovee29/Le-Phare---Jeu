@@ -15,11 +15,8 @@ public class Item : ScriptableObject
 public enum ItemName
 {
     Key,
-    Radio,
-    Light, 
     Diplome,
     Portrait1,
-    Portrait3,
     Portrait4,
     Portrait5,
     Portrait,

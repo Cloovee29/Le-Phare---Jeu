@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 822f744f6fdc737408cf317cd1aea7d9
+guid: 19712e925dd22dc4ea3e09f0b7fc93e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4476259159479429285
-    second: recif-vue-fenetre_0
+      213: -3497705377561342267
+    second: Arrow 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: recif-vue-fenetre_0
+      name: Arrow 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 800
-        height: 531
+        x: 2
+        y: 5
+        width: 128
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a82c534dfdde1e30800000000000000
-      internalID: 4476259159479429285
+      spriteID: 5ce8b71ad77a57fc0800000000000000
+      internalID: -3497705377561342267
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      recif-vue-fenetre_0: 4476259159479429285
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

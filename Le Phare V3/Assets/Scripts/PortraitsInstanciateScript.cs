@@ -6,7 +6,7 @@ public class PortraitsInstanciateScript : MonoBehaviour
 {
 
     public GameObject portrait1Drag;
-    public GameObject portrait3Drag;
+    public GameObject portrait4Drag;
     public GameObject portrait5Drag;
     public GameObject portraitParent;
 
@@ -39,9 +39,9 @@ public class PortraitsInstanciateScript : MonoBehaviour
 
     }
 
-    public void InstanciatePortrait3(Vector3 position)
+    public void InstanciatePortrait4(Vector3 position)
     {
-        GameObject newPortrait = Instantiate(portrait3Drag);
+        GameObject newPortrait = Instantiate(portrait4Drag);
         newPortrait.SetActive(true);
         newPortrait.transform.SetParent(portraitParent.transform, true);
         newPortrait.transform.position = position;

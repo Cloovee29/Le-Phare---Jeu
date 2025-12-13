@@ -2626,7 +2626,7 @@ PrefabInstance:
     - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: fieldGlassInstanciate
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 221473001}
     - target: {fileID: 2199298554002923613, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2838,7 +2838,7 @@ PrefabInstance:
     - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: fieldGlassInstanciate
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 221473001}
     - target: {fileID: 4427833692976593796, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: canvas
       value: 
@@ -3090,7 +3090,7 @@ PrefabInstance:
     - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: fieldGlassInstanciate
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 221473001}
     - target: {fileID: 6920897178620560237, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4001,7 +4001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e748b123aea473a4c9672b2719165432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetName: 10
+  targetName: 7
 --- !u!1001 &1289624837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4159,7 +4159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e748b123aea473a4c9672b2719165432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetName: 11
+  targetName: 8
 --- !u!114 &1289624846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4756,7 +4756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e748b123aea473a4c9672b2719165432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetName: 9
+  targetName: 6
 --- !u!1001 &1629940805
 PrefabInstance:
   m_ObjectHideFlags: 0

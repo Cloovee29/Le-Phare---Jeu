@@ -10,11 +10,15 @@ public class PortraitsScript : MonoBehaviour
     public static int countGoodPositionPortrait = 0;
 
     public Sprite portrait1;
-    public Sprite portrait3;
+    public Sprite portrait4;
     public Sprite portrait5;
 
     Vector3 targetPosition;
     bool isOnTarget = false;
+
+    public LadderScript ladderScript;
+
+    public bool portraitEnigmaSolved = false;
 
     void Start()
     {
@@ -61,7 +65,7 @@ public class PortraitsScript : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "Portrait1" ||
-            collision.gameObject.tag == "Portrait3" ||
+            collision.gameObject.tag == "Portrait4" ||
             collision.gameObject.tag == "Portrait5")
         {
             isOnTarget = true;
@@ -80,7 +84,7 @@ public class PortraitsScript : MonoBehaviour
         }
 
         if (collision.gameObject.CompareTag("Portrait1") ||
-            collision.gameObject.CompareTag("Portrait3") ||
+            collision.gameObject.CompareTag("Portrait4") ||
             collision.gameObject.CompareTag("Portrait5"))
         {
             isOnTarget = false;
@@ -90,7 +94,7 @@ public class PortraitsScript : MonoBehaviour
     void SolvedEnigma()
     {
         print("enigmeresolue");
-        SceneManager.LoadScene("03 - Lighthouse2");
+        portraitEnigmaSolved = true;
     }
 }
 

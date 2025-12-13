@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.TextCore.Text;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class CameraScript : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class CameraScript : MonoBehaviour
 
     public GameObject arrowLeft;
     public GameObject arrowRight;
+
+    public PortraitsScript portraitsScript;
+    public LadderScript ladderScript;
 
    void Start()
     {
@@ -56,6 +60,14 @@ public class CameraScript : MonoBehaviour
 
             character.ShowCharacter();
 
+            if (portraitsScript.portraitEnigmaSolved)
+            {
+                print("trouvé");
+                ladderScript.PlayLadderTween();
+            }
+
         });
+
+
     }
 }

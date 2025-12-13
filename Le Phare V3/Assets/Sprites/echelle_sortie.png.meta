@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4a4f1b8791891a4499988822a1256a11
+guid: 25100e173d1039642ab944e48e148181
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4368964936396428253
-    second: clic-souris-sprite_0
+      213: 452010104412503371
+    second: echelle_sortie_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clic-souris-sprite_0
+      name: echelle_sortie_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 600
-        height: 600
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 36
+        y: 62
+        width: 523
+        height: 938
+      alignment: 9
+      pivot: {x: 0.5, y: 1.0014226}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32c24f1c9815e53c0800000000000000
-      internalID: -4368964936396428253
+      spriteID: b4df46c8bccd54600800000000000000
+      internalID: 452010104412503371
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cc528b935e8f97f4492247758b5e67b4
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      clic-souris-sprite_0: -4368964936396428253
+      echelle_sortie_0: 452010104412503371
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

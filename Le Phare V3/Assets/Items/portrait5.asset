@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: portrait5
   m_EditorClassIdentifier: 
   image: {fileID: 2422606481503027303, guid: 98d9a8b63c6629c478269d996a6fc5f0, type: 3}
-  idName: 7
+  idName: 4
+  audioClip: {fileID: 0}

@@ -26,13 +26,13 @@ public class FieldGlassInstanciateScript : MonoBehaviour
 
     public void FieldGlassSurbri(bool newState)
     {
-        if (newState)
-        {
-            spriteRenderer.sprite = windowSpriteSurbri;
-        }
-        else
-        {
-            spriteRenderer.sprite = windowSprite;
-        }
+        //if (newState)
+        //{
+        //    spriteRenderer.sprite = windowSpriteSurbri;
+        //}
+        //else
+        //{
+        //    spriteRenderer.sprite = windowSprite;
+        //}
     }
 }

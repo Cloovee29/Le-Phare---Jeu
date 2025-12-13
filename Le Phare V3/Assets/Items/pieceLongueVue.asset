@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: pieceLongueVue
   m_EditorClassIdentifier: 
   image: {fileID: -1547112351443929320, guid: b47990aee5b27c34683261dfaebf65b6, type: 3}
-  idName: 10
+  idName: 7
   audioClip: {fileID: 0}

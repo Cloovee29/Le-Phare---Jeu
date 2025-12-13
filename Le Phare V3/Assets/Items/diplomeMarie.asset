@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: diplomeMarie
   m_EditorClassIdentifier: 
   image: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
-  idName: 3
+  idName: 1
+  audioClip: {fileID: 0}

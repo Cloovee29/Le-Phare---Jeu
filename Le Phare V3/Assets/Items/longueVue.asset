@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: longueVue
   m_EditorClassIdentifier: 
   image: {fileID: 2087480256863027210, guid: 44b86b38ec0c3cf459880fceb9766a70, type: 3}
-  idName: 9
+  idName: 6
   audioClip: {fileID: 0}
