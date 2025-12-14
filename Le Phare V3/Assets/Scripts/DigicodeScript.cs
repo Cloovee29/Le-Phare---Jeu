@@ -11,15 +11,33 @@ public class DigicodeScript : MonoBehaviour
     public GameObject chestOpen;
     public GameObject chestClose;
 
+    public bool ravenOk;
+    public bool waveOk;
+    public bool shellOk;
+
     public int goodAnswers;
 
     public void ButtonPressed(string tagNote)
     {
         EnigmaEnd();
 
-        if (tagNote == "raven" || tagNote == "wave" || tagNote == "shell")
+        if (tagNote == "shell" && !shellOk)
         {
-            
+            shellOk = true;
+            goodAnswers = goodAnswers + 1;
+            print("bouton ok");
+            EnigmaEnd();
+        }
+        else if (tagNote == "raven" && !ravenOk)
+        {
+            ravenOk = true;
+            goodAnswers = goodAnswers + 1;
+            print("bouton ok");
+            EnigmaEnd();
+        }
+        else if ( tagNote == "wave" && !waveOk)
+        {
+            waveOk = true;
             goodAnswers = goodAnswers + 1;
             print("bouton ok");
             EnigmaEnd();
@@ -27,6 +45,10 @@ public class DigicodeScript : MonoBehaviour
         else
         {
             Debug.Log("Mauvaise touche");
+            goodAnswers = 0;
+            shellOk = false;
+            waveOk = false;
+            ravenOk = false;
         }
     }
 

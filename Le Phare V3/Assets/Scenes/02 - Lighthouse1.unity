@@ -526,7 +526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomDigicode: {fileID: 602818073}
   character: {fileID: 1368921682}
-  uiArrows: {fileID: 366534073}
+  uiArrows: {fileID: 1551134860}
   logoJournal: {fileID: 1580559504}
   chestOpen: {fileID: 2070302757}
   chestClose: {fileID: 52910916}
@@ -6268,7 +6268,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2070302758}
   - component: {fileID: 2070302761}
-  - component: {fileID: 2070302760}
   - component: {fileID: 2070302759}
   m_Layer: 0
   m_Name: coffre_ouvert
@@ -6338,25 +6337,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.07, y: 3.11}
   m_EdgeRadius: 0
---- !u!114 &2070302760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070302757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beb6c184be8389f46bd8ae0a395da849, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zoomDigicode: {fileID: 602818073}
-  character: {fileID: 1368921682}
-  uiArrows: {fileID: 366534073}
-  logoJournal: {fileID: 1580559504}
-  chestOpen: {fileID: 0}
-  chestClose: {fileID: 0}
-  goodAnswers: 0
 --- !u!212 &2070302761
 SpriteRenderer:
   m_ObjectHideFlags: 0
