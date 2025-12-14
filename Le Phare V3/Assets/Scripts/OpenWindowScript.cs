@@ -49,7 +49,7 @@ public class OpenWindowScript : MonoBehaviour
         compteurWindow++;
         if (window.sprite == closedWindowAndSeagull && compteurWindow == 1)
         {
-            window.sprite = openedWindowAndSeagull;            
+            window.sprite = openedWindowAndSeagull;
         }
         if (window.sprite == openedWindowAndSeagull && compteurWindow == 2)
         {

@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 64156713}
   - component: {fileID: 64156712}
   - component: {fileID: 64156714}
+  - component: {fileID: 64156715}
   m_Layer: 5
   m_Name: Key4
   m_TagString: Untagged
@@ -556,9 +557,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177992003b787c348955ca17a7005d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomSerrure: {fileID: 0}
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
+--- !u!61 &64156715
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64156710}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &65237366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3380,6 +3426,7 @@ GameObject:
   - component: {fileID: 871626308}
   - component: {fileID: 871626307}
   - component: {fileID: 871626309}
+  - component: {fileID: 871626310}
   m_Layer: 5
   m_Name: Key1
   m_TagString: Untagged
@@ -3457,9 +3504,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177992003b787c348955ca17a7005d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomSerrure: {fileID: 0}
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
+--- !u!61 &871626310
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871626305}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &906732576
 GameObject:
   m_ObjectHideFlags: 0
@@ -3691,7 +3783,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177992003b787c348955ca17a7005d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomSerrure: {fileID: 745158382}
   doorAudio: {fileID: 0}
   doorClip: {fileID: 8300000, guid: 0ef61bc190d7ad14ba6b143ef30f63a9, type: 3}
 --- !u!61 &946166872
@@ -3728,7 +3819,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -48.1, y: -62.4}
+  m_Offset: {x: 0.5551224, y: 0.38078308}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3738,7 +3829,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 122.4, y: 97.2}
+  m_Size: {x: 219.71025, y: 222.76157}
   m_EdgeRadius: 0
 --- !u!50 &946166873
 Rigidbody2D:
@@ -6299,6 +6390,7 @@ GameObject:
   - component: {fileID: 1713680728}
   - component: {fileID: 1713680727}
   - component: {fileID: 1713680729}
+  - component: {fileID: 1713680730}
   m_Layer: 5
   m_Name: Key3
   m_TagString: Untagged
@@ -6376,9 +6468,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177992003b787c348955ca17a7005d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomSerrure: {fileID: 0}
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
+--- !u!61 &1713680730
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713680725}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1771847726
 GameObject:
   m_ObjectHideFlags: 0
@@ -6391,6 +6528,7 @@ GameObject:
   - component: {fileID: 1771847729}
   - component: {fileID: 1771847728}
   - component: {fileID: 1771847730}
+  - component: {fileID: 1771847731}
   m_Layer: 5
   m_Name: Key5
   m_TagString: Untagged
@@ -6468,9 +6606,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177992003b787c348955ca17a7005d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomSerrure: {fileID: 0}
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
+--- !u!61 &1771847731
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771847726}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1790176396
 GameObject:
   m_ObjectHideFlags: 0
@@ -7279,7 +7462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2060885982
 RectTransform:
   m_ObjectHideFlags: 0

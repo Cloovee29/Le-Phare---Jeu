@@ -1,35 +1,66 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 
-public class KeyScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class KeyScript : MonoBehaviour, IDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
     Transform key;
-    public GameObject zoomSerrure;
+    //public GameObject zoomSerrure;
        [Header("Sound")]
     public AudioSource doorAudio;   // AudioSource pour le son de la porte
     public AudioClip doorClip;      // clip à jouer
- 
+
+    Vector3 scaleInitiale;
+    float duration = 0.5f;
+
+    RectTransform rectTransform;
+    Tween scaleTween;
+    Tween flipTween;
+    bool flipped = false;
     // pour son de la porte LVL1
     //public AudioSource doorAudio;
     //public AudioClip openingClip;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    void Awake()
+    {
+        rectTransform = GetComponent<RectTransform>();
+        scaleInitiale = rectTransform.localScale;
+    }
+
+    //void OnEnable()
+    //{
+    //    rectTransform.localScale = scaleInitiale;
+    //}
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnPointerEnter(PointerEventData eventData)
     {
+        print("mouse enter");
+        //scaleTween?.Kill();
+        Vector3 targetScale = rectTransform.localScale * 1.3f;
 
+        scaleTween = rectTransform.DOScale(targetScale, duration)
+                                 .SetEase(Ease.OutCubic);
     }
-    public void OnBeginDrag(PointerEventData eventData)
+
+    public void OnPointerExit(PointerEventData eventData)
     {
+        Vector3 targetScale = new Vector3(
+            Mathf.Abs(scaleInitiale.x) * (flipped ? -1f : 1f),
+            scaleInitiale.y,
+            scaleInitiale.z
+            );
+        scaleTween = rectTransform.DOScale(targetScale, duration)
+                                 .SetEase(Ease.OutCubic);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -37,17 +68,18 @@ public class KeyScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         transform.position = Input.mousePosition;
     }
 
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        
-    }
-
     public void TurnKey()
-    {
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
-        //float scaleX = transform.localScale.x;
+    
+        //Vector3 scale = transform.localScale;
+        //scale.x *= -1;
+        //transform.localScale = scale;
+        {
+        // Inverse l'échelle X pour flip horizontal
+        rectTransform.DOScaleX(rectTransform.localScale.x * -1, duration)
+                     .SetEase(Ease.OutBounce);
+
+        // Inverser l'état flip pour le hover
+        flipped = !flipped;
     }
 public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -65,12 +97,9 @@ public void OnTriggerEnter2D(Collider2D collision)
             //    }
             //}
 
-            //zoomSerrure.SetActive(false);
             SceneManager.LoadScene("02 - Lighthouse1");
 
         }
     }
-
-
 }
 

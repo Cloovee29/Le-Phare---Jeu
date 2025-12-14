@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickEndGame : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class ClickEndGame : MonoBehaviour
         if (openWindowScript.openWindow == true)
         {
             print("fin du jeu");
+            //SceneManager.LoadScene("04 - End Cinematic");
         }
         
     }
