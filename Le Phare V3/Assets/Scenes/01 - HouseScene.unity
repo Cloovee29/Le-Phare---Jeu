@@ -233,7 +233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6933398263586011889, guid: 2f8a8fc3aebbea343b5f255ebaacab9f, type: 3}
+  m_Sprite: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -559,6 +559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
+  mouseAspect: {fileID: 66876370}
 --- !u!61 &64156715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -759,6 +760,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &66876370 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6698103716590991203, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+  m_PrefabInstance: {fileID: 1545921740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &70067856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,6 +1484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryManagerScript: {fileID: 933263916}
   itemToPickup: {fileID: 11400000, guid: 47d02a9d18116df409f7e05def5dd15a, type: 2}
+  mouseAspect: {fileID: 0}
 --- !u!114 &235297803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3506,6 +3519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
+  mouseAspect: {fileID: 66876370}
 --- !u!61 &871626310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3785,6 +3799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 0}
   doorClip: {fileID: 8300000, guid: 0ef61bc190d7ad14ba6b143ef30f63a9, type: 3}
+  mouseAspect: {fileID: 66876370}
 --- !u!61 &946166872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3916,7 +3931,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6933398263586011889, guid: 2f8a8fc3aebbea343b5f255ebaacab9f, type: 3}
+  m_Sprite: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4374,7 +4389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6933398263586011889, guid: 2f8a8fc3aebbea343b5f255ebaacab9f, type: 3}
+  m_Sprite: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4506,7 +4521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6933398263586011889, guid: 2f8a8fc3aebbea343b5f255ebaacab9f, type: 3}
+  m_Sprite: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4989,7 +5004,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6933398263586011889, guid: 2f8a8fc3aebbea343b5f255ebaacab9f, type: 3}
+  m_Sprite: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5030,6 +5045,7 @@ GameObject:
   - component: {fileID: 1142313484}
   - component: {fileID: 1142313483}
   - component: {fileID: 1142313482}
+  - component: {fileID: 1142313485}
   m_Layer: 5
   m_Name: LogoJournal
   m_TagString: Untagged
@@ -5150,6 +5166,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142313480}
   m_CullTransparentMesh: 1
+--- !u!114 &1142313485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142313480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48bd0b00d3ad3834f8f7f3066c749bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1208749168
 GameObject:
   m_ObjectHideFlags: 0
@@ -5971,6 +5999,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428778498}
   m_CullTransparentMesh: 1
+--- !u!1001 &1545921740
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3956851069320445619, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_Name
+      value: MouseAspectManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.950202
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.513203
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.052539278
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
 --- !u!1 &1627595620
 GameObject:
   m_ObjectHideFlags: 0
@@ -6470,6 +6555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
+  mouseAspect: {fileID: 66876370}
 --- !u!61 &1713680730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6608,6 +6694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
+  mouseAspect: {fileID: 66876370}
 --- !u!61 &1771847731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7039,6 +7126,7 @@ GameObject:
   - component: {fileID: 1894481019}
   - component: {fileID: 1894481020}
   - component: {fileID: 1894481021}
+  - component: {fileID: 1894481022}
   m_Layer: 0
   m_Name: TrousseauKeys
   m_TagString: Untagged
@@ -7176,6 +7264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryManagerScript: {fileID: 933263916}
   itemToPickup: {fileID: 11400000, guid: 038db189aeb1b63438c53e36d85ad36e, type: 2}
+  mouseAspect: {fileID: 66876370}
 --- !u!114 &1894481021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7196,6 +7285,23 @@ MonoBehaviour:
   objectDescribed: {fileID: 1894481016}
   positionAboveObject: -1
   positionSideObject: 0
+--- !u!114 &1894481022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894481016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!114 &1897905409 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3090079281526891969, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
@@ -7462,7 +7568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2060885982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7816,6 +7922,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
     - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: mouseAspectScript
+      value: 
+      objectReference: {fileID: 66876370}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: oldDiplomeSurbriSprite
       value: 
       objectReference: {fileID: -7797115855328607649, guid: cb1501f80c248c440b5dbef91484d806, type: 3}
@@ -8047,6 +8157,10 @@ PrefabInstance:
       propertyPath: oldDiplomeSprite
       value: 
       objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: mouseAspectScript
+      value: 
+      objectReference: {fileID: 66876370}
     - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: oldDiplomeSurbriSprite
       value: 
@@ -8387,6 +8501,10 @@ PrefabInstance:
       propertyPath: oldDiplomeSprite
       value: 
       objectReference: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: mouseAspectScript
+      value: 
+      objectReference: {fileID: 66876370}
     - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: oldDiplomeSurbriSprite
       value: 
@@ -8799,6 +8917,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5601854329751382041, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
     - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: duration
       value: 1.5
@@ -8811,6 +8933,18 @@ PrefabInstance:
       propertyPath: background
       value: 
       objectReference: {fileID: 1627595621}
+    - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: screenLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: screenRight
+      value: -17.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654174148161820120, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9024,3 +9158,4 @@ SceneRoots:
   - {fileID: 1627595621}
   - {fileID: 1016281150}
   - {fileID: 906732578}
+  - {fileID: 1545921740}

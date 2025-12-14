@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.TextCore.Text;
 using static UnityEditor.Experimental.GraphView.GraphView;
+using UnityEngine.EventSystems;
 
 public class CameraScript : MonoBehaviour
 {
@@ -21,17 +22,11 @@ public class CameraScript : MonoBehaviour
     public PortraitsScript portraitsScript;
     public LadderScript ladderScript;
 
-   void Start()
+    void Start()
     {
         arrowLeft.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;
     }
-
-    void Update()
-    {
-
-    }
-
     public void ButtonLeft()
     {
         character.HideAndResetCharacter();
@@ -42,12 +37,9 @@ public class CameraScript : MonoBehaviour
             arrowRight.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
 
-            character.ShowCharacter(); // pour remettre le personnage
-
-
+            character.ShowCharacter();
         });
     }
-
     public void ButtonRight()
     {
         character.HideAndResetCharacter();
@@ -65,9 +57,6 @@ public class CameraScript : MonoBehaviour
                 print("trouvé");
                 ladderScript.PlayLadderTween();
             }
-
         });
-
-
     }
 }

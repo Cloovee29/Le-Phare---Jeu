@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -41,7 +42,6 @@ public class JournalScript : MonoBehaviour
             listPages[i].GetComponent<PageScript>().CreatePage(i, pagesContent[i]);
         }
         page.transform.SetAsFirstSibling();
-
     }
 
     // Update is called once per frame

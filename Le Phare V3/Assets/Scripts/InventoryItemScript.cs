@@ -1,11 +1,13 @@
+using DG.Tweening;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static UnityEngine.InputSystem.UI.VirtualMouseInput;
 
-public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("UI")]
 
@@ -21,23 +23,14 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Canvas canvas;
 
-    public targetObjectToUseScript targetObject; //enlever public static si problemes
-    public GameObject targetGameObject; // enlever public si prob
+    public targetObjectToUseScript targetObject;
+    public GameObject targetGameObject;
 
     public InventoryManagerScript inventoryManager;
 
-    //public Sprite portrait1OnWall;
-    //public Sprite portrait3OnWall;
-    //public Sprite portrait4OnWall;
-    //public Sprite portrait5OnWall;
-
     public PortraitsInstanciateScript portraitsInstanciate;
     
-    public Vector3 targetObjectPos; // remettre public static si prob
-
-    //public Vector3 posPlacePortrait1;
-    //public Vector3 posPlacePortrait3;
-    //public Vector3 posPlacePortrait5; 
+    public Vector3 targetObjectPos;
 
     public Sprite fieldGlassComplete;
 
@@ -45,6 +38,12 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     public OpenWindowScript openWindowScript;
     public FieldGlassInstanciateScript fieldGlassInstanciate;
     public DoorLevel1Zoom doorLevel1Zoom;
+
+    float duration = 0.5f;
+    RectTransform rectTransform;
+    Vector3 initialScale;
+
+    public MouseAspectScript mouseAspectScript;
     void Start()
     {
         image = GetComponent<Image>();
@@ -53,6 +52,23 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     void Awake()
     {        
         image = GetComponent<Image>();
+        rectTransform = GetComponent<RectTransform>();
+        initialScale = rectTransform.localScale;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (CurrentItemIdName != null)
+        {
+            print("mouse enter");
+            rectTransform.DOScale(initialScale * 1.3f, duration).SetEase(Ease.OutCubic);
+        }
+
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        rectTransform.DOScale(initialScale, duration).SetEase(Ease.OutCubic);
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -96,10 +112,12 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         {
             doorLevel1Zoom.DoorSurbri(true);
         }
+        Cursor.SetCursor(mouseAspectScript.grabCursor, mouseAspectScript.hotSpot, mouseAspectScript.cursorMode);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        Cursor.SetCursor(mouseAspectScript.defaultCursor, mouseAspectScript.hotSpot, mouseAspectScript.cursorMode);
 
         if (CurrentItemIdName != null)
         {
@@ -109,6 +127,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, transform.TransformDirection(Vector3.forward));
 
+    
 
         if (hit)
         {

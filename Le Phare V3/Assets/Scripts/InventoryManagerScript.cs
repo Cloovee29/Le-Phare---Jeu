@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
+using static UnityEngine.InputSystem.UI.VirtualMouseInput;
 
 public class InventoryManagerScript : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class InventoryManagerScript : MonoBehaviour
     public FieldGlassInstanciateScript fieldGlassInstanciate;
     public GameManagerScript gameManager;
     public OpenWindowScript openWindow;
+
+
     private void Awake()
     {
         instance = this;

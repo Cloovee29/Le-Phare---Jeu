@@ -10,6 +10,7 @@ public class DigicodeScript : MonoBehaviour
 
     public GameObject chestOpen;
     public GameObject chestClose;
+    public GameObject portrait5;
 
     public bool ravenOk;
     public bool waveOk;
@@ -64,6 +65,7 @@ public class DigicodeScript : MonoBehaviour
 
             print("énigme finito pipo");
             chestOpen.SetActive(true);
+            portrait5.SetActive(true);
             chestClose.SetActive(false);
 
         }

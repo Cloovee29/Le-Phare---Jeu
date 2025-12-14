@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 
-public class KeyScript : MonoBehaviour, IDragHandler, IPointerEnterHandler, IPointerExitHandler
+public class KeyScript : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
     Transform key;
@@ -20,6 +20,8 @@ public class KeyScript : MonoBehaviour, IDragHandler, IPointerEnterHandler, IPoi
     Tween scaleTween;
     Tween flipTween;
     bool flipped = false;
+
+    public MouseAspectScript mouseAspect;
     // pour son de la porte LVL1
     //public AudioSource doorAudio;
     //public AudioClip openingClip;
@@ -66,6 +68,12 @@ public class KeyScript : MonoBehaviour, IDragHandler, IPointerEnterHandler, IPoi
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition;
+        Cursor.SetCursor(mouseAspect.grabCursor, mouseAspect.hotSpot, mouseAspect.cursorMode);
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        Cursor.SetCursor(mouseAspect.defaultCursor, mouseAspect.hotSpot, mouseAspect.cursorMode);
     }
 
     public void TurnKey()

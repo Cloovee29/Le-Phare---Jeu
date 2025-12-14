@@ -51,12 +51,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 0}
-  screenLeft: 0
-  screenRight: -17.8
+  screenLeft: 3.9
+  screenRight: -13.7
   duration: 2
-  character: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
+  character: {fileID: 0}
   arrowLeft: {fileID: 1979085001188756740}
   arrowRight: {fileID: 6630565078864303158}
+  portraitsScript: {fileID: 0}
+  ladderScript: {fileID: 0}
 --- !u!1 &1979085001188756740
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,6 +71,7 @@ GameObject:
   - component: {fileID: 8540251072217719331}
   - component: {fileID: 5601854329751382041}
   - component: {fileID: 2198720653628865409}
+  - component: {fileID: 3730126304047640767}
   m_Layer: 5
   m_Name: ArrowLeft
   m_TagString: Untagged
@@ -123,7 +126,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6933398263586011889, guid: 2f8a8fc3aebbea343b5f255ebaacab9f, type: 3}
+  m_Sprite: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -156,7 +159,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9625455, g: 0.9716981, b: 0.7837753, a: 1}
-    m_PressedColor: {r: 0.8962264, g: 0.6236479, b: 0.2494215, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -189,6 +192,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3730126304047640767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979085001188756740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f80b6de5ea8eae4388c1ddfe322344f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6630565078864303158
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +216,7 @@ GameObject:
   - component: {fileID: 8911730111436097718}
   - component: {fileID: 8654174148161820120}
   - component: {fileID: 2929237942917139321}
+  - component: {fileID: 5152947202735605432}
   m_Layer: 5
   m_Name: ArrowRight
   m_TagString: Untagged
@@ -255,7 +271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6933398263586011889, guid: 2f8a8fc3aebbea343b5f255ebaacab9f, type: 3}
+  m_Sprite: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -321,3 +337,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5152947202735605432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6630565078864303158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f80b6de5ea8eae4388c1ddfe322344f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

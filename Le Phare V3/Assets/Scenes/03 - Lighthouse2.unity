@@ -539,6 +539,8 @@ GameObject:
   - component: {fileID: 221472997}
   - component: {fileID: 221473000}
   - component: {fileID: 221473001}
+  - component: {fileID: 221473003}
+  - component: {fileID: 221473002}
   m_Layer: 0
   m_Name: completefieldglass
   m_TagString: longue-vue
@@ -555,7 +557,7 @@ Transform:
   m_GameObject: {fileID: 221472995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.49, y: 0.11, z: 0}
+  m_LocalPosition: {x: 20.55, y: 0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -575,6 +577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryManagerScript: {fileID: 1892445898}
   itemToPickup: {fileID: 11400000, guid: 7874f780cec703b4cad06476e1dbfc69, type: 2}
+  mouseAspect: {fileID: 1038532613}
 --- !u!212 &221472998
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -720,6 +723,69 @@ MonoBehaviour:
   fieldGlassPiece2: {fileID: 1274066651}
   windowSpriteSurbri: {fileID: 0}
   windowSprite: {fileID: -5322443981601127174, guid: b757eb1d8b2abeb419ac0db83e35d885, type: 3}
+--- !u!114 &221473002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221472995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
+--- !u!61 &221473003
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221472995}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9, y: 1.08}
+    newSize: {x: 17.42, y: 9.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.9, y: 1.08}
+  m_EdgeRadius: 0
 --- !u!1 &252803289
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +799,7 @@ GameObject:
   - component: {fileID: 252803292}
   - component: {fileID: 252803295}
   - component: {fileID: 252803296}
+  - component: {fileID: 252803297}
   m_Layer: 0
   m_Name: note-music1
   m_TagString: Note1
@@ -966,6 +1033,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 171825751}
+--- !u!114 &252803297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252803289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &344461034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,6 +1565,7 @@ GameObject:
   - component: {fileID: 532910031}
   - component: {fileID: 532910033}
   - component: {fileID: 532910034}
+  - component: {fileID: 532910035}
   m_Layer: 0
   m_Name: note-music4
   m_TagString: Note4
@@ -1714,6 +1799,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 171825751}
+--- !u!114 &532910035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532910028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &544064779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,6 +2190,7 @@ GameObject:
   - component: {fileID: 643857837}
   - component: {fileID: 643857836}
   - component: {fileID: 643857835}
+  - component: {fileID: 643857839}
   m_Layer: 0
   m_Name: coquillage_0
   m_TagString: Coquillage
@@ -2109,6 +2212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryManagerScript: {fileID: 1892445898}
   itemToPickup: {fileID: 11400000, guid: 83193aaef70bd60459b7797250edd0d9, type: 2}
+  mouseAspect: {fileID: 1038532613}
 --- !u!61 &643857836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2225,6 +2329,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1790203482}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &643857839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643857834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &805617134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,6 +2358,8 @@ GameObject:
   - component: {fileID: 805617137}
   - component: {fileID: 805617135}
   - component: {fileID: 805617139}
+  - component: {fileID: 805617141}
+  - component: {fileID: 805617140}
   m_Layer: 0
   m_Name: longue-vue1
   m_TagString: pieceLongueVue
@@ -2258,6 +2381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryManagerScript: {fileID: 1892445898}
   itemToPickup: {fileID: 11400000, guid: df389818e22d51149808bb07b0b0939b, type: 2}
+  mouseAspect: {fileID: 1038532613}
 --- !u!212 &805617137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2387,6 +2511,69 @@ PolygonCollider2D:
       - {x: 0.265, y: 0.06}
       - {x: 0.325, y: 0.13}
   m_UseDelaunayMesh: 0
+--- !u!114 &805617140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805617134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
+--- !u!61 &805617141
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805617134}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.71, y: 0.84}
+    newSize: {x: 6.12, y: 4.69}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.71, y: 0.84}
+  m_EdgeRadius: 0
 --- !u!1001 &835743306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2620,6 +2807,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1289624846}
     - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: mouseAspectScript
+      value: 
+      objectReference: {fileID: 1038532613}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: fieldGlassComplete
       value: 
       objectReference: {fileID: -1583573835174962115, guid: 8b2d848b8813db34f917d5e4767da0ce, type: 3}
@@ -2832,6 +3023,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1289624846}
     - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: mouseAspectScript
+      value: 
+      objectReference: {fileID: 1038532613}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: fieldGlassComplete
       value: 
       objectReference: {fileID: -1583573835174962115, guid: 8b2d848b8813db34f917d5e4767da0ce, type: 3}
@@ -3083,6 +3278,10 @@ PrefabInstance:
       propertyPath: marieSurbriScript
       value: 
       objectReference: {fileID: 1289624846}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: mouseAspectScript
+      value: 
+      objectReference: {fileID: 1038532613}
     - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: fieldGlassComplete
       value: 
@@ -3585,6 +3784,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1038532612
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3956851069320445619, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_Name
+      value: MouseAspectManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.950202
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.513203
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.052539278
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323509104496540902, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+--- !u!114 &1038532613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6698103716590991203, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+  m_PrefabInstance: {fileID: 1038532612}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1064281921
 GameObject:
   m_ObjectHideFlags: 0
@@ -3729,6 +3996,7 @@ GameObject:
   - component: {fileID: 1170730369}
   - component: {fileID: 1170730368}
   - component: {fileID: 1170730367}
+  - component: {fileID: 1170730370}
   m_Layer: 5
   m_Name: LogoJournal
   m_TagString: Untagged
@@ -3849,6 +4117,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170730365}
   m_CullTransparentMesh: 1
+--- !u!114 &1170730370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170730365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48bd0b00d3ad3834f8f7f3066c749bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1212116784 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: -6097754267870976536, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
@@ -4341,6 +4621,7 @@ GameObject:
   - component: {fileID: 1432252835}
   - component: {fileID: 1432252838}
   - component: {fileID: 1432252839}
+  - component: {fileID: 1432252840}
   m_Layer: 0
   m_Name: note-music2
   m_TagString: Note2
@@ -4574,6 +4855,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 171825751}
+--- !u!114 &1432252840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432252834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!114 &1575554214 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4755481561254092858, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
@@ -4598,6 +4896,7 @@ GameObject:
   - component: {fileID: 1584705278}
   - component: {fileID: 1584705279}
   - component: {fileID: 1584705280}
+  - component: {fileID: 1584705281}
   m_Layer: 0
   m_Name: window
   m_TagString: longue-vue
@@ -4757,6 +5056,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetName: 6
+--- !u!114 &1584705281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584705275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1001 &1629940805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4857,14 +5173,6 @@ PrefabInstance:
       propertyPath: background
       value: 
       objectReference: {fileID: 1790203482}
-    - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
-      propertyPath: screenLeft
-      value: 3.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
-      propertyPath: screenRight
-      value: -13.7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5127,6 +5435,7 @@ GameObject:
   - component: {fileID: 1939681485}
   - component: {fileID: 1939681487}
   - component: {fileID: 1939681488}
+  - component: {fileID: 1939681489}
   m_Layer: 0
   m_Name: note-music3
   m_TagString: Note3
@@ -5360,6 +5669,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 171825751}
+--- !u!114 &1939681489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939681482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &2015410701
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,3 +5833,4 @@ SceneRoots:
   - {fileID: 1289624837}
   - {fileID: 1790203482}
   - {fileID: 40871984}
+  - {fileID: 1038532612}

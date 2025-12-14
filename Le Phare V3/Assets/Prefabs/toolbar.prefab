@@ -332,6 +332,10 @@ PrefabInstance:
       propertyPath: newDiplome
       value: 
       objectReference: {fileID: -6807855386030664175, guid: edae90eff7d095044a2303aec029b1bb, type: 3}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -587,6 +591,10 @@ PrefabInstance:
       propertyPath: newDiplome
       value: 
       objectReference: {fileID: -6807855386030664175, guid: edae90eff7d095044a2303aec029b1bb, type: 3}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1263705361383832024, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -841,6 +849,10 @@ PrefabInstance:
     - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: targetName
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 59727352448070647, guid: bac685edc57687c4e8a690df91227975, type: 3}
+      propertyPath: inventoryManager
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 819007863235448581, guid: bac685edc57687c4e8a690df91227975, type: 3}
       propertyPath: m_Sprite
