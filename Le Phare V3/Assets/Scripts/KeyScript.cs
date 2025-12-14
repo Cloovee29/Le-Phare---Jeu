@@ -84,7 +84,7 @@ public class KeyScript : MonoBehaviour, IDragHandler, IPointerEnterHandler, IPoi
 public void OnTriggerEnter2D(Collider2D collision)
     {
         float scaleX = transform.localScale.x;
-        if (collision.CompareTag("Serrure") && scaleX == -1f)
+        if (collision.CompareTag("Serrure") && flipped)
         {
             //partie amelie si questions !c'est pour faire jouer le son de la porte; ça a pas fonctionné
             //if (dooraudio != null && openingclip != null)
