@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 19712e925dd22dc4ea3e09f0b7fc93e5
+guid: e295e9562c836d94fb2222b3a057d130
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3497705377561342267
-    second: Arrow 1_0
+      213: 6044136958485533821
+    second: coffre_open_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arrow 1_0
+      name: coffre_open_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 5
-        width: 128
-        height: 79
+        x: 118
+        y: 16
+        width: 512
+        height: 383
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ce8b71ad77a57fc0800000000000000
-      internalID: -3497705377561342267
+      spriteID: d7417506a8611e350800000000000000
+      internalID: 6044136958485533821
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Arrow 1_0: -3497705377561342267
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
