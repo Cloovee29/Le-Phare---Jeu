@@ -13,16 +13,32 @@ MonoBehaviour:
   m_Name: Page1
   m_EditorClassIdentifier: 
   listWords:
-  - Pomme
-  - Poire
-  - Souris
+  - phare
+  - retourner
+  - "r\xE9serves"
+  - bateau
+  - Ankou
+  - seul
+  - silhouette
+  - veines
+  - coeur
   numbPage: 1
   listHoles:
   - {fileID: 11400000, guid: db667a56754ea774fb6ea6a6a0529b99, type: 2}
   - {fileID: 11400000, guid: 00ec99d0990351547855fa9d63c27c6c, type: 2}
-  textPage1: Back in the 90's  I was in a very famous TV show  I'm BoJack the Horse
-    (BoJack)  BoJack the Horse  Don't act like you don't know  And I'm trying to
-    hold on to my past  It's been so long  I don't think I'm gonna last  I guess
-    I'll just try  And make you understand  That I'm more horse than a man  Or I'm
-    more man than a horse  BoJack!
-  textPage2: 
+  - {fileID: 11400000, guid: cb0be095e14fe9244a5c1a1b09191ce1, type: 2}
+  - {fileID: 11400000, guid: 51db720e38389f742976a32908a81f6a, type: 2}
+  - {fileID: 11400000, guid: 9d6e819ccba0f0545974718e3efac40e, type: 2}
+  - {fileID: 11400000, guid: 36848fb98c2f7c9489e10134670c8bac, type: 2}
+  - {fileID: 11400000, guid: b84be694c2d498c48bad3184b08d30a1, type: 2}
+  - {fileID: 11400000, guid: 11153cf443f1c3043a9c73b2ac70bbae, type: 2}
+  - {fileID: 11400000, guid: 2440799b6bcaa3642bc328c267799331, type: 2}
+  textPage1: "<br><br> Premier jour. RAS. Gwaggen (dernier gardien) a bien nettoy\xE9
+    la maison avant sa disparition. <br> <br>  Mer calme. Aucun bateau. <br><br>
+    Cl\xE9s \xE9tranges pour [phare]. Penser \xE0 [retourner] pour la serrure.  <br><br>
+    Lumi\xE8re entretenue.  <br><br> Commence \xE0 manquer de [r\xE9serves]. Plus
+    que 2j avant [bateau]. "
+  textPage2: "<br><br> Bourrasques et orages. Cris dehors. Go\xE9land ? [Ankou] ?   
+    <br><br> Vis seul. Mange seul. Dors [seul].  <br><br> [Silhouette] par la fen\xEAtre
+    ? Ai-je r\xEAv\xE9 ?  <br><br> Fissures du mur comme des [veines]. Maison comme
+    mon [c\u0153ur]. "

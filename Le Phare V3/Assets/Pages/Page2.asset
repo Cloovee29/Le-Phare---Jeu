@@ -19,7 +19,8 @@ MonoBehaviour:
   numbPage: 2
   listHoles:
   - {fileID: 11400000, guid: db667a56754ea774fb6ea6a6a0529b99, type: 2}
-  textPage1: "(Texte brouillon, non d\xE9finitif)  1ere journ\xE9e. Rien \xE0 signaler.
-    ..., le dernier gardien, a bien nettoy\xE9.  Mer calme. Aucun b\xE2teau.   Fortes
-    bourrasques et orage. J'ai entendu quelques cris. Mouettes ?"
+  textPage1: "<br><br> Bran a \xE9crit toutes les instructions \xE0 l\u2019origine
+    du phare. Ancien marin un peu bourru: tout est en breton. Pas encore traduit
+    par le service. Je suis rouill\xE9 mais j\u2019ai pu d\xE9duire quelques mots
+    :"
   textPage2: 

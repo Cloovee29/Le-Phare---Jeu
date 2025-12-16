@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 58984112b7938b544aeed065524adc84
+guid: b1e93ecc9ed79c14fadff94a57369682
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Learning Curve
+  - Gerald Script
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
