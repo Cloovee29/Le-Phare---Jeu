@@ -1101,7 +1101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_fontSize
-      value: 72
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_margin.y
@@ -1118,6 +1118,14 @@ PrefabInstance:
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_fontStyle
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_fontSizeBase
@@ -1317,7 +1325,7 @@ MonoBehaviour:
     deux ans avant moi."
   readingTime: 3
   objectDescribed: {fileID: 207986362}
-  positionAboveObject: 1
+  positionAboveObject: -1
   positionSideObject: 0
 --- !u!114 &207986368
 MonoBehaviour:
@@ -2961,7 +2969,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f4b5f7ba518dcc44842486e2571cd04, type: 2}
-  m_sharedMaterial: {fileID: -8640122073310835331, guid: 1eec4c36e7b862948bea6fe5b8a799f6, type: 2}
+  m_sharedMaterial: {fileID: -1432216871049619347, guid: 8f4b5f7ba518dcc44842486e2571cd04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4156,8 +4164,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: -130}
-  m_SizeDelta: {x: 0.702, y: 0.666}
+  m_AnchoredPosition: {x: -145.73651, y: -125.91668}
+  m_SizeDelta: {x: 0.3866, y: 0.4209}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1032350081
 MonoBehaviour:
@@ -4173,7 +4181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posX: -150
   posY: -130
-  answer: poussin
+  answer: trou
 --- !u!61 &1032350082
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4208,7 +4216,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0549141, y: -0.040599875}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4218,7 +4226,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.09667743, y: 0.24180575}
   m_EdgeRadius: 0
 --- !u!212 &1032350083
 SpriteRenderer:
@@ -5848,7 +5856,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f4b5f7ba518dcc44842486e2571cd04, type: 2}
-  m_sharedMaterial: {fileID: -8640122073310835331, guid: 1eec4c36e7b862948bea6fe5b8a799f6, type: 2}
+  m_sharedMaterial: {fileID: -1432216871049619347, guid: 8f4b5f7ba518dcc44842486e2571cd04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6793,8 +6801,8 @@ MonoBehaviour:
     \xE9tonnant qu'ils aient pris la poussi\xE8re."
   readingTime: 3
   objectDescribed: {fileID: 1790176396}
-  positionAboveObject: 1.5
-  positionSideObject: 0
+  positionAboveObject: 2
+  positionSideObject: -2
 --- !u!212 &1790176399
 SpriteRenderer:
   m_ObjectHideFlags: 0

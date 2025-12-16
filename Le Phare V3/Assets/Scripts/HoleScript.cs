@@ -15,7 +15,7 @@ public class HoleScript : MonoBehaviour
     public void GenerateHole(HoleSOScript hole)
     {
         answer = hole.answer;
-    GetComponent<RectTransform>().anchoredPosition = new Vector2(hole.posY,hole.posY);
+    GetComponent<RectTransform>().anchoredPosition = new Vector2(hole.posX,hole.posY);
     }
 
 
