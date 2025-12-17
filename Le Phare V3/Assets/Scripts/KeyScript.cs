@@ -21,7 +21,7 @@ public class KeyScript : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerE
     Tween flipTween;
     bool flipped = false;
 
-    public MouseAspectScript mouseAspect;
+    public MouseAspectManagerScript mouseAspectManager;
     // pour son de la porte LVL1
     //public AudioSource doorAudio;
     //public AudioClip openingClip;
@@ -68,12 +68,12 @@ public class KeyScript : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerE
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition;
-        Cursor.SetCursor(mouseAspect.grabCursor, mouseAspect.hotSpot, mouseAspect.cursorMode);
+        Cursor.SetCursor(mouseAspectManager.grabCursor, mouseAspectManager.hotSpot, mouseAspectManager.cursorMode);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Cursor.SetCursor(mouseAspect.defaultCursor, mouseAspect.hotSpot, mouseAspect.cursorMode);
+        Cursor.SetCursor(mouseAspectManager.defaultCursor, mouseAspectManager.hotSpot, mouseAspectManager.cursorMode);
     }
 
     public void TurnKey()

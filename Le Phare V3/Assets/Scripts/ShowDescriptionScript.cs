@@ -14,8 +14,7 @@ public class ShowDescriptionScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //GameObject newDescription = Instantiate(uiDescription);
-        //uiDescription.SetActive(false); //désactive la description lorsqu'elle n'est pas active
+
     }
 
     // Update is called once per frame
@@ -24,7 +23,6 @@ public class ShowDescriptionScript : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             newDescription = Instantiate(uiDescription, uiDescription.transform.parent);
-            //uiDescription.SetActive(true);
             textDescriptionPosition();
             Debug.Log("print" + objectDescribed.transform.position);
             textDescription = newDescription.GetComponentInChildren<TextMeshProUGUI>();
@@ -43,16 +41,13 @@ public class ShowDescriptionScript : MonoBehaviour
 
     void Update()
     {
-        //if (Input.GetMouseButton(0))
-        //{
-        //   uiDescription.SetActive(false);
-        //}
+
     }
     
     public void textDescriptionPosition()
     {
         Vector3 newUiDescriptionPosition = objectDescribed.transform.position + new Vector3(positionSideObject, positionAboveObject, 0);
-        newDescription.transform.position = Camera.main.WorldToScreenPoint(newUiDescriptionPosition);
+        newDescription.transform.position = Camera.main.WorldToScreenPoint(newUiDescriptionPosition); //transpose vers l'UI
         Debug.Log("Function has been called");
     }
 }

@@ -43,7 +43,7 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
     RectTransform rectTransform;
     Vector3 initialScale;
 
-    public MouseAspectScript mouseAspectScript;
+    public MouseAspectManagerScript mouseAspectManagerScript;
     void Start()
     {
         image = GetComponent<Image>();
@@ -112,12 +112,12 @@ public class InventoryItemScript : MonoBehaviour, IBeginDragHandler, IDragHandle
         {
             doorLevel1Zoom.DoorSurbri(true);
         }
-        Cursor.SetCursor(mouseAspectScript.grabCursor, mouseAspectScript.hotSpot, mouseAspectScript.cursorMode);
+        Cursor.SetCursor(mouseAspectManagerScript.grabCursor, mouseAspectManagerScript.hotSpot, mouseAspectManagerScript.cursorMode);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Cursor.SetCursor(mouseAspectScript.defaultCursor, mouseAspectScript.hotSpot, mouseAspectScript.cursorMode);
+        Cursor.SetCursor(mouseAspectManagerScript.defaultCursor, mouseAspectManagerScript.hotSpot, mouseAspectManagerScript.cursorMode);
 
         if (CurrentItemIdName != null)
         {
