@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 53579094}
   - component: {fileID: 53579093}
   - component: {fileID: 53579092}
+  - component: {fileID: 53579095}
   m_Layer: 0
   m_Name: PaintingLighthouse
   m_TagString: Untagged
@@ -467,6 +468,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &53579095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53579090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &64156710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1202,7 @@ GameObject:
   - component: {fileID: 207986366}
   - component: {fileID: 207986367}
   - component: {fileID: 207986368}
+  - component: {fileID: 207986369}
   m_Layer: 0
   m_Name: "DiplomaAndr\xE9"
   m_TagString: Untagged
@@ -1353,6 +1374,25 @@ MonoBehaviour:
   newDiplome: {fileID: -7311468251057098373, guid: 8680a01a79837524b851570c4bdb32d6, type: 3}
   oldDiplomeSurbriSprite: {fileID: -7797115855328607649, guid: b0f790f33b080e0458288172d385d775, type: 3}
   oldDiplomeSprite: {fileID: -1904704914469204854, guid: 3e8d5a04a9c9dbf479ae2f3687db16ab, type: 3}
+--- !u!114 &207986369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207986362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &235297798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,6 +1406,7 @@ GameObject:
   - component: {fileID: 235297801}
   - component: {fileID: 235297802}
   - component: {fileID: 235297803}
+  - component: {fileID: 235297804}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: InventoryObject
@@ -1524,6 +1565,25 @@ MonoBehaviour:
   objectDescribed: {fileID: 235297798}
   positionAboveObject: 0.5
   positionSideObject: 0
+--- !u!114 &235297804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235297798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &255887354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,6 +1891,7 @@ GameObject:
   - component: {fileID: 346509421}
   - component: {fileID: 346509420}
   - component: {fileID: 346509419}
+  - component: {fileID: 346509422}
   m_Layer: 0
   m_Name: Entrance Door
   m_TagString: Untagged
@@ -1973,6 +2034,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &346509422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346509417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &347720693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,6 +2065,7 @@ GameObject:
   - component: {fileID: 347720697}
   - component: {fileID: 347720696}
   - component: {fileID: 347720695}
+  - component: {fileID: 347720698}
   m_Layer: 0
   m_Name: FurnitureLeft
   m_TagString: Untagged
@@ -2127,6 +2208,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &347720698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347720693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &457254797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,6 +2239,7 @@ GameObject:
   - component: {fileID: 457254801}
   - component: {fileID: 457254800}
   - component: {fileID: 457254799}
+  - component: {fileID: 457254802}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -2284,6 +2385,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &457254802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457254797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,6 +2570,7 @@ GameObject:
   - component: {fileID: 567024802}
   - component: {fileID: 567024801}
   - component: {fileID: 567024800}
+  - component: {fileID: 567024803}
   m_Layer: 0
   m_Name: FurnitureRight
   m_TagString: Untagged
@@ -2592,6 +2713,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &567024803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567024798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &570302251
 GameObject:
   m_ObjectHideFlags: 0
@@ -2604,6 +2744,7 @@ GameObject:
   - component: {fileID: 570302255}
   - component: {fileID: 570302254}
   - component: {fileID: 570302253}
+  - component: {fileID: 570302256}
   m_Layer: 0
   m_Name: Wardrobe
   m_TagString: Untagged
@@ -2746,6 +2887,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &570302256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570302251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &575654171
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,6 +2918,7 @@ GameObject:
   - component: {fileID: 575654176}
   - component: {fileID: 575654174}
   - component: {fileID: 575654173}
+  - component: {fileID: 575654177}
   m_Layer: 0
   m_Name: Frames
   m_TagString: Untagged
@@ -2901,6 +3062,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &575654177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575654171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &590714994 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1289667469402129285, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
@@ -3378,6 +3558,7 @@ GameObject:
   - component: {fileID: 774570049}
   - component: {fileID: 774570048}
   - component: {fileID: 774570050}
+  - component: {fileID: 774570051}
   m_Layer: 0
   m_Name: "Hat Andr\xE9"
   m_TagString: Untagged
@@ -3521,6 +3702,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &774570051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774570046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &871626305
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,6 +4910,7 @@ GameObject:
   - component: {fileID: 1066902223}
   - component: {fileID: 1066902222}
   - component: {fileID: 1066902224}
+  - component: {fileID: 1066902225}
   m_Layer: 0
   m_Name: Lifebelt
   m_TagString: Untagged
@@ -4852,6 +5053,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1066902225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066902220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1079459572
 GameObject:
   m_ObjectHideFlags: 0
@@ -5480,6 +5700,7 @@ GameObject:
   - component: {fileID: 1208749172}
   - component: {fileID: 1208749173}
   - component: {fileID: 1208749174}
+  - component: {fileID: 1208749175}
   m_Layer: 0
   m_Name: DoorNextLevel
   m_TagString: Untagged
@@ -5647,11 +5868,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDescription: {fileID: 1990228115}
   textDescription: {fileID: 0}
-  objectDescription: Ceci est une vraie porte
+  objectDescription: "La porte qui m\xE8ne au phare. Elle est ferm\xE9e \xE0 cl\xE9..."
   readingTime: 3
   objectDescribed: {fileID: 1208749168}
   positionAboveObject: 1
   positionSideObject: -2
+--- !u!114 &1208749175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208749168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!114 &1210946402 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
@@ -5675,6 +5915,7 @@ GameObject:
   - component: {fileID: 1212290308}
   - component: {fileID: 1212290307}
   - component: {fileID: 1212290306}
+  - component: {fileID: 1212290309}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -5758,7 +5999,7 @@ MonoBehaviour:
   uiDescription: {fileID: 1990228115}
   textDescription: {fileID: 0}
   objectDescription: "Il est fait avec soin. Je peux presque encore sentir la pr\xE9sence
-    d'Andr\xE9"
+    d'Andr\xE9."
   readingTime: 3
   objectDescribed: {fileID: 1212290304}
   positionAboveObject: 2
@@ -5818,6 +6059,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1212290309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212290304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1214660731
 GameObject:
   m_ObjectHideFlags: 0
@@ -5830,6 +6090,7 @@ GameObject:
   - component: {fileID: 1214660735}
   - component: {fileID: 1214660734}
   - component: {fileID: 1214660733}
+  - component: {fileID: 1214660736}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Untagged
@@ -5973,6 +6234,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1214660736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214660731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1290704064
 GameObject:
   m_ObjectHideFlags: 0
@@ -6620,6 +6900,7 @@ GameObject:
   - component: {fileID: 1703512183}
   - component: {fileID: 1703512182}
   - component: {fileID: 1703512184}
+  - component: {fileID: 1703512185}
   m_Layer: 0
   m_Name: Book ground
   m_TagString: Untagged
@@ -6763,6 +7044,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1703512185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703512180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1713680725
 GameObject:
   m_ObjectHideFlags: 0
@@ -7290,6 +7590,7 @@ GameObject:
   - component: {fileID: 1837599915}
   - component: {fileID: 1837599914}
   - component: {fileID: 1837599913}
+  - component: {fileID: 1837599916}
   m_Layer: 0
   m_Name: Notes floor
   m_TagString: Untagged
@@ -7433,6 +7734,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1837599916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837599911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1894481016
 GameObject:
   m_ObjectHideFlags: 0
