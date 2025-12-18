@@ -6,13 +6,13 @@ public class PickObjectsScript : MonoBehaviour, IPointerClickHandler
 {
     public InventoryManagerScript InventoryManagerScript;
     public Item itemToPickup;
-    public MouseAspectManagerScript mouseAspectManager;
+    public MouseAspectManagerScript mouseAspectManagerScript;
 
     public void OnPointerClick(PointerEventData eventData)
     {
         PickupItem();
         Destroy(gameObject);
-        Cursor.SetCursor(mouseAspectManager.defaultCursor, mouseAspectManager.hotSpot, mouseAspectManager.cursorMode);
+        Cursor.SetCursor(mouseAspectManagerScript.defaultCursor, mouseAspectManagerScript.hotSpot, mouseAspectManagerScript.cursorMode);
     }
 
     public void PickupItem()

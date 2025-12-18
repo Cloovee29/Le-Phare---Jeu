@@ -577,7 +577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryManagerScript: {fileID: 1892445898}
   itemToPickup: {fileID: 11400000, guid: 7874f780cec703b4cad06476e1dbfc69, type: 2}
-  mouseAspect: {fileID: 1038532613}
+  mouseAspectManagerScript: {fileID: 0}
 --- !u!212 &221472998
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -738,6 +738,8 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 0}
+  containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!61 &221473003
@@ -1048,6 +1050,8 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 0}
+  containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1 &344461034
@@ -1814,6 +1818,8 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 0}
+  containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1 &544064779
@@ -2212,7 +2218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryManagerScript: {fileID: 1892445898}
   itemToPickup: {fileID: 11400000, guid: 83193aaef70bd60459b7797250edd0d9, type: 2}
-  mouseAspect: {fileID: 1038532613}
+  mouseAspectManagerScript: {fileID: 1038532613}
 --- !u!61 &643857836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2344,6 +2350,8 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 0}
+  containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1 &805617134
@@ -2381,7 +2389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryManagerScript: {fileID: 1892445898}
   itemToPickup: {fileID: 11400000, guid: df389818e22d51149808bb07b0b0939b, type: 2}
-  mouseAspect: {fileID: 1038532613}
+  mouseAspectManagerScript: {fileID: 1038532613}
 --- !u!212 &805617137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2526,6 +2534,8 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 0}
+  containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!61 &805617141
@@ -2818,6 +2828,10 @@ PrefabInstance:
       propertyPath: fieldGlassInstanciate
       value: 
       objectReference: {fileID: 221473001}
+    - target: {fileID: 1999741987069754403, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: mouseAspectManagerScript
+      value: 
+      objectReference: {fileID: 1038532613}
     - target: {fileID: 2199298554002923613, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3034,6 +3048,10 @@ PrefabInstance:
       propertyPath: fieldGlassInstanciate
       value: 
       objectReference: {fileID: 221473001}
+    - target: {fileID: 3557606495225030541, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: mouseAspectManagerScript
+      value: 
+      objectReference: {fileID: 1038532613}
     - target: {fileID: 4427833692976593796, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: canvas
       value: 
@@ -3290,6 +3308,10 @@ PrefabInstance:
       propertyPath: fieldGlassInstanciate
       value: 
       objectReference: {fileID: 221473001}
+    - target: {fileID: 6736289508361903662, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
+      propertyPath: mouseAspectManagerScript
+      value: 
+      objectReference: {fileID: 1038532613}
     - target: {fileID: 6920897178620560237, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3836,6 +3858,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6698103716590991203, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: descriptionCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4870,6 +4896,8 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 0}
+  containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!114 &1575554214 stripped
@@ -5071,6 +5099,8 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 0}
+  containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1001 &1629940805
@@ -5684,6 +5714,8 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 0}
+  containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1 &2015410701
