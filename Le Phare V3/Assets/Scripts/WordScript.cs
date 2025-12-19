@@ -15,6 +15,7 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     [SerializeField] private Camera mainCamera;
 
     public bool isLocked;
+    public GameObject page;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -68,6 +69,7 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             if (word.text == hole.answer)
             {
                 isLocked = true;
+                page.GetComponent<PageScript>().CompletePage();
                 canvasGroup.alpha = 1f;
             }
         }

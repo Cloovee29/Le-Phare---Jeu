@@ -58,7 +58,7 @@ public class PageScript : MonoBehaviour
 
     public void CompletePage()
     {
-        bool pageNotComplete = false;
+        bool pageNotComplete = true;
 
         
 
@@ -67,9 +67,9 @@ public class PageScript : MonoBehaviour
             print(listWordsToDrag[i].GetComponent<WordScript>().isLocked);
             if (listWordsToDrag[i].GetComponent<WordScript>().isLocked == true)
             {
-                pageNotComplete = true;
-            }
-           
+                pageNotComplete = false;
+                print("oui");
+            }  
         }
 
 

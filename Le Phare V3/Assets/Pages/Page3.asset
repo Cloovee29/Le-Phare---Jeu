@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listWords: []
   numbPage: 3
-  listHoles: 
+  listHoles: []
   textPage1: coucou c'est sacha
-  textPage2: re coucou c'est toujours moi, anto prends moi stp
+  textPage2: hello

@@ -68,7 +68,6 @@ public class JournalScript : MonoBehaviour
             //afficher la nouvelle page du carnet et cacher la précédente
         }
 
-        listPages[currentPage-1].GetComponent<PageScript>().CompletePage();
       
     } 
 
@@ -76,11 +75,16 @@ public class JournalScript : MonoBehaviour
     {
 
         for (int i = 0; i < listPages.Count; i++)
-            listPages[i].SetActive(i == currentPage);
+        {
+        listPages[i].SetActive(i == currentPage);
+        listPages[i].transform.Find("ValidationDrawing").gameObject.SetActive(false);
+        }
+         
 
         for (int i = 0; i < listPages[currentPage].transform.childCount; i++)
         {
             listPages[currentPage].transform.GetChild(i).gameObject.SetActive(journalOpened);
+            listPages[currentPage].transform.Find("ValidationDrawing").gameObject.SetActive(false);
         }
     }
 
@@ -122,10 +126,7 @@ public class JournalScript : MonoBehaviour
         journalOpened = !journalOpened;
         journal.SetActive(journalOpened);
         bgJournal.SetActive(journalOpened);
-        page.transform.GetChild(0).gameObject.SetActive(journalOpened);
-        transform.GetChild(0).gameObject.SetActive(journalOpened);
-
-        page.transform.Find("ValidationDrawing").gameObject.SetActive(false);
+       
 
         ChangePage();
 

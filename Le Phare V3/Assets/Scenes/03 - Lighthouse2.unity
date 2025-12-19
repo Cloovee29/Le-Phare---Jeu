@@ -1483,6 +1483,8 @@ MonoBehaviour:
   canvas: {fileID: 344461037}
   word: {fileID: 512715983}
   mainCamera: {fileID: 1324654644}
+  isLocked: 0
+  page: {fileID: 0}
 --- !u!61 &512715986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3447,6 +3449,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425056237937022246, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: page
+      value: 
+      objectReference: {fileID: 903440097}
+    - target: {fileID: 5425056237937022246, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 344461037}
+    - target: {fileID: 5425056237937022246, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1324654644}
     - target: {fileID: 7522337901277996814, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: Hole
       value: 
@@ -3471,7 +3485,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Page
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5585221190261451067, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4936342674496662843, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
