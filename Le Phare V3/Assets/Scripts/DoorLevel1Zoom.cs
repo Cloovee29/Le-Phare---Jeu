@@ -6,6 +6,7 @@ public class DoorLevel1Zoom : MonoBehaviour
     public GameObject character;
     public GameObject arrows;
     public GameObject descriptionText;
+    public GameObject decors;
 
     SpriteRenderer spriteRenderer;
     public Sprite doorSprite;
@@ -22,6 +23,7 @@ public class DoorLevel1Zoom : MonoBehaviour
         character.SetActive(false);
         arrows.SetActive(false);
         descriptionText.SetActive(false);
+        decors.SetActive(false);
     }
 
     public void DoorSurbri(bool newState)

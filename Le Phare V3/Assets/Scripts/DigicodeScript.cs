@@ -81,5 +81,13 @@ public class DigicodeScript : MonoBehaviour
         uiArrows.SetActive(false);
         
     }
+
+    public void CloseDigicode()
+    {
+        zoomDigicode.SetActive(false);
+        character.SetActive(true);
+        logoJournal.SetActive(true);
+        uiArrows.SetActive(true);
+    }
   
 }
