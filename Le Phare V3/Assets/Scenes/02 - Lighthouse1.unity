@@ -1789,7 +1789,7 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
-  descriptionCursor: {fileID: 0}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
   containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
@@ -2082,7 +2082,7 @@ PrefabInstance:
     - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: portraitsScript
       value: 
-      objectReference: {fileID: 1913184764}
+      objectReference: {fileID: 0}
     - target: {fileID: 8654174148161820120, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2375,7 +2375,6 @@ GameObject:
   - component: {fileID: 483941969}
   - component: {fileID: 483941970}
   - component: {fileID: 483941971}
-  - component: {fileID: 483941972}
   m_Layer: 0
   m_Name: PortraitSexySailor
   m_TagString: Untagged
@@ -2464,25 +2463,6 @@ MonoBehaviour:
   positionAboveObject: 1
   positionSideObject: 0
 --- !u!114 &483941971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483941967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
-  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
-  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
-  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
-  containsDescription: 1
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
---- !u!114 &483941972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2733,7 +2713,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -8422205185745501778, guid: 6c1ca66705290ec42ae85f03dc58a45c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3720,7 +3700,7 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
-  descriptionCursor: {fileID: 0}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
   containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
@@ -3995,6 +3975,7 @@ GameObject:
   - component: {fileID: 972617118}
   - component: {fileID: 972617120}
   - component: {fileID: 972617121}
+  - component: {fileID: 972617122}
   m_Layer: 0
   m_Name: portrait4_0
   m_TagString: Portrait4
@@ -4133,6 +4114,25 @@ MonoBehaviour:
   InventoryManagerScript: {fileID: 2012151116}
   itemToPickup: {fileID: 11400000, guid: 9fae709896a35fd45a630366f005090b, type: 2}
   mouseAspectManagerScript: {fileID: 649672320}
+--- !u!114 &972617122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972617116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 0
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &997946673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4350,7 +4350,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -8422205185745501778, guid: 6c1ca66705290ec42ae85f03dc58a45c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4519,7 +4519,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -8422205185745501778, guid: 6c1ca66705290ec42ae85f03dc58a45c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4938,7 +4938,7 @@ MonoBehaviour:
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
-  descriptionCursor: {fileID: 0}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
   containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
@@ -5372,6 +5372,7 @@ GameObject:
   - component: {fileID: 1385813251}
   - component: {fileID: 1385813254}
   - component: {fileID: 1385813256}
+  - component: {fileID: 1385813257}
   m_Layer: 0
   m_Name: portrait5_0
   m_TagString: Portrait5
@@ -5578,6 +5579,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.37, y: 1.5}
   m_EdgeRadius: 0
+--- !u!114 &1385813257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385813249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 0
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1392294858
 GameObject:
   m_ObjectHideFlags: 0
@@ -6717,7 +6737,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1913184762}
   - component: {fileID: 1913184763}
-  - component: {fileID: 1913184764}
   - component: {fileID: 1913184766}
   - component: {fileID: 1913184765}
   m_Layer: 0
@@ -6797,23 +6816,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1913184764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913184761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34e23c046fe781645b8356f25b24d5f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  portrait1: {fileID: 0}
-  portrait4: {fileID: 0}
-  portrait5: {fileID: 0}
-  ladderScript: {fileID: 0}
-  portraitEnigmaSolved: 0
 --- !u!114 &1913184765
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,7 +16,6 @@ public class HoverArrowsUIScript : MonoBehaviour, IPointerEnterHandler, IPointer
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        print("mouse enter");
         rectTransform.DOScale(initialScale * 1.3f, durationHover).SetEase(Ease.OutCubic);
     }
 

@@ -18,11 +18,6 @@ public class PortraitsScript : MonoBehaviour
 
     public bool portraitEnigmaSolved = false;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if(countGoodPositionPortrait == 3)
