@@ -579,7 +579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
-  mouseAspectManager: {fileID: 0}
+  mouseAspectManager: {fileID: 66876370}
 --- !u!61 &64156715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3813,7 +3813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
-  mouseAspectManager: {fileID: 0}
+  mouseAspectManager: {fileID: 66876370}
 --- !u!61 &871626310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4093,7 +4093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 0}
   doorClip: {fileID: 8300000, guid: 0ef61bc190d7ad14ba6b143ef30f63a9, type: 3}
-  mouseAspectManager: {fileID: 0}
+  mouseAspectManager: {fileID: 66876370}
 --- !u!61 &946166872
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7155,7 +7155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
-  mouseAspectManager: {fileID: 0}
+  mouseAspectManager: {fileID: 66876370}
 --- !u!61 &1713680730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7294,7 +7294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 0}
   doorClip: {fileID: 0}
-  mouseAspectManager: {fileID: 0}
+  mouseAspectManager: {fileID: 66876370}
 --- !u!61 &1771847731
 BoxCollider2D:
   m_ObjectHideFlags: 0
