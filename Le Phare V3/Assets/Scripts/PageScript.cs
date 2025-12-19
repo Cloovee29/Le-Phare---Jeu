@@ -17,6 +17,8 @@ public class PageScript : MonoBehaviour
 
     public GameObject validationDrawing; //image validation page
 
+    public float spaceY; //interligne des mots
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -41,7 +43,7 @@ public class PageScript : MonoBehaviour
             newWord.transform.SetParent(page.transform, false);
             listWordsToDrag.Add(newWord);
 
-           float newY = 60f - i * 20f;
+           float newY = 60f - i * spaceY;
             listWordsToDrag[i].GetComponent<WordScript>().CreateWord(pageContent.listWords[i], newY);
         }
 
@@ -71,7 +73,6 @@ public class PageScript : MonoBehaviour
                 print("oui");
             }  
         }
-
 
         if (!pageNotComplete)
         {
