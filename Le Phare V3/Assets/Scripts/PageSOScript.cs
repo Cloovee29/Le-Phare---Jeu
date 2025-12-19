@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 [CreateAssetMenu(menuName = "Scriptable object/Pages")]
 public class PageSOScript : ScriptableObject
@@ -14,5 +15,7 @@ public class PageSOScript : ScriptableObject
 
     public string textPage1;
     public string textPage2;
+
+    public Sprite imageValidation;
 }
 
