@@ -58,16 +58,16 @@ public class PageScript : MonoBehaviour
 
     public void CompletePage()
     {
-        bool pageNotComplete = true;
+        bool pageNotComplete = false;
 
         
 
         for (int i = 0; i < listWordsToDrag.Count; i++)
         {
             print(listWordsToDrag[i].GetComponent<WordScript>().isLocked);
-            if (listWordsToDrag[i].GetComponent<WordScript>().isLocked == true)
+            if (listWordsToDrag[i].GetComponent<WordScript>().isLocked == false)
             {
-                pageNotComplete = false;
+                pageNotComplete = true;
                 print("oui");
             }  
         }
