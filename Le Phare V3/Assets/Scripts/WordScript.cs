@@ -14,7 +14,7 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     Vector3 mouseWorldPosition;
     [SerializeField] private Camera mainCamera;
 
-    private bool isLocked;
+    public bool isLocked;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

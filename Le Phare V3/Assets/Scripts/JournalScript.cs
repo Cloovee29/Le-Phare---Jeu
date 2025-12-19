@@ -41,7 +41,8 @@ public class JournalScript : MonoBehaviour
             listPages.Add(newPage);
             listPages[i].GetComponent<PageScript>().CreatePage(i, pagesContent[i]);
         }
-        page.transform.SetAsFirstSibling();
+      
+        
     }
 
     // Update is called once per frame
@@ -66,6 +67,9 @@ public class JournalScript : MonoBehaviour
             //permet de changer de page du carnet
             //afficher la nouvelle page du carnet et cacher la précédente
         }
+
+        listPages[currentPage-1].GetComponent<PageScript>().CompletePage();
+      
     } 
 
     public void ChangePage()
@@ -120,6 +124,8 @@ public class JournalScript : MonoBehaviour
         bgJournal.SetActive(journalOpened);
         page.transform.GetChild(0).gameObject.SetActive(journalOpened);
         transform.GetChild(0).gameObject.SetActive(journalOpened);
+
+        page.transform.Find("ValidationDrawing").gameObject.SetActive(false);
 
         ChangePage();
 

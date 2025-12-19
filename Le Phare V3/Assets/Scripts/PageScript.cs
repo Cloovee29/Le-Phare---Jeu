@@ -15,6 +15,9 @@ public class PageScript : MonoBehaviour
     public GameObject word;
     public GameObject page;
 
+    public GameObject validationDrawing; //image validation page
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -53,5 +56,28 @@ public class PageScript : MonoBehaviour
         }
     }
 
+    public void CompletePage()
+    {
+        bool pageNotComplete = false;
+
+        
+
+        for (int i = 0; i < listWordsToDrag.Count; i++)
+        {
+            print(listWordsToDrag[i].GetComponent<WordScript>().isLocked);
+            if (listWordsToDrag[i].GetComponent<WordScript>().isLocked == true)
+            {
+                pageNotComplete = true;
+            }
+           
+        }
+
+
+        if (!pageNotComplete)
+        {
+            validationDrawing.SetActive(true);
+        }
+
+    }
 
 }
