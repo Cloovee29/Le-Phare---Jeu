@@ -5,6 +5,7 @@ public class DoorLevel1Zoom : MonoBehaviour
     public GameObject zoomSerrure;
     public GameObject character;
     public GameObject arrows;
+    public GameObject descriptionText;
 
     SpriteRenderer spriteRenderer;
     public Sprite doorSprite;
@@ -20,6 +21,7 @@ public class DoorLevel1Zoom : MonoBehaviour
         zoomSerrure.SetActive(true);
         character.SetActive(false);
         arrows.SetActive(false);
+        descriptionText.SetActive(false);
     }
 
     public void DoorSurbri(bool newState)

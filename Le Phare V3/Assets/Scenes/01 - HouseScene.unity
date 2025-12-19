@@ -5852,6 +5852,7 @@ MonoBehaviour:
   zoomSerrure: {fileID: 2060885981}
   character: {fileID: 2102459816}
   arrows: {fileID: 1966188914}
+  descriptionText: {fileID: 1990228115}
   doorSprite: {fileID: -777906690759968213, guid: f6973fad6fc568845befda3b2259bb92, type: 3}
   doorSpriteSurbri: {fileID: -324942578282475242, guid: da704ba15916e8747abee4727dab3f25, type: 3}
 --- !u!114 &1208749174
