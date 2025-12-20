@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cle5_surbri-V2_0: 1060445053209779952
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -354,7 +354,7 @@ MonoBehaviour:
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
   descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
-  containsDescription: 1
+  containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1 &33292139
@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 33292140}
   - component: {fileID: 33292143}
   - component: {fileID: 33292142}
+  - component: {fileID: 33292144}
   m_Layer: 0
   m_Name: echelle_fermee_0
   m_TagString: Untagged
@@ -512,6 +513,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.25, y: 0.7110622}
   m_EdgeRadius: 0
+--- !u!114 &33292144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33292139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &52910916
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +544,8 @@ GameObject:
   - component: {fileID: 52910917}
   - component: {fileID: 52910921}
   - component: {fileID: 52910922}
-  - component: {fileID: 52910923}
+  - component: {fileID: 52910924}
+  - component: {fileID: 52910925}
   m_Layer: 0
   m_Name: "coffre_ferm\xE9_0"
   m_TagString: Untagged
@@ -671,7 +692,27 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.07, y: 3.11}
   m_EdgeRadius: 0
---- !u!114 &52910923
+--- !u!114 &52910924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52910916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDescription: {fileID: 560326755}
+  textDescription: {fileID: 0}
+  objectDescription: "Le coffre est verrouill\xE9 par des symboles marins. Est-ce
+    qu\u2019Andr\xE9 a laiss\xE9 des indices ?"
+  readingTime: 3
+  objectDescribed: {fileID: 52910916}
+  positionAboveObject: 1
+  positionSideObject: 0
+--- !u!114 &52910925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -685,11 +726,130 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
-  grabCursor: {fileID: 0}
-  descriptionCursor: {fileID: 0}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
   containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
+--- !u!1 &130321022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130321023}
+  - component: {fileID: 130321026}
+  - component: {fileID: 130321025}
+  - component: {fileID: 130321024}
+  m_Layer: 0
+  m_Name: PaintingShelf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &130321023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130321022}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.11, y: -0.21, z: -0.018920867}
+  m_LocalScale: {x: 1.0990735, y: 1.0990735, z: 1.0990735}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2021351350}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &130321024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130321022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
+--- !u!61 &130321025
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130321022}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.5907848, y: -0.17954631}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.2317438, y: 1.2644697}
+  m_EdgeRadius: 0
+--- !u!114 &130321026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130321022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDescription: {fileID: 560326755}
+  textDescription: {fileID: 0}
+  objectDescription: "Je crois que c\u2019est l\u2019Ankou parmi les arbres. Il hanterait
+    Distremen depuis des si\xE8cles. "
+  readingTime: 3
+  objectDescribed: {fileID: 130321022}
+  positionAboveObject: 1
+  positionSideObject: 0
 --- !u!1001 &146025440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2326,6 +2486,125 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &444720166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 444720167}
+  - component: {fileID: 444720170}
+  - component: {fileID: 444720169}
+  - component: {fileID: 444720168}
+  m_Layer: 0
+  m_Name: FramesWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &444720167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444720166}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.369569, y: 2.3372803, z: -0.018920867}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2021351350}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &444720168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444720166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
+--- !u!114 &444720169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444720166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDescription: {fileID: 560326755}
+  textDescription: {fileID: 0}
+  objectDescription: "Des dizaines de croquis de Distremen \xE0 toutes les \xE9poques.
+    Est-ce que tous les gardiens en dessinaient ?  "
+  readingTime: 3
+  objectDescribed: {fileID: 444720166}
+  positionAboveObject: -1
+  positionSideObject: 0
+--- !u!61 &444720170
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444720166}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -2.4650183, y: -0.5319247}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 7.0198326, y: 4.39913}
+  m_EdgeRadius: 0
 --- !u!1 &483941967
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,6 +6319,126 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9337e0d366277f4bb70cbf65aed9e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1713274597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1713274598}
+  - component: {fileID: 1713274601}
+  - component: {fileID: 1713274600}
+  - component: {fileID: 1713274599}
+  m_Layer: 0
+  m_Name: BooksShelf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1713274598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713274597}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.94, y: 2, z: -0.018920867}
+  m_LocalScale: {x: 1.0990735, y: 1.0990735, z: 1.0990735}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2021351350}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1713274599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713274597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
+--- !u!61 &1713274600
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713274597}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 1.2650357, y: -0.41751683}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.6793993, y: 1.7404106}
+  m_EdgeRadius: 0
+--- !u!114 &1713274601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713274597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDescription: {fileID: 560326755}
+  textDescription: {fileID: 0}
+  objectDescription: "Une enqu\xEAte du Service des Phares : \u201CLa monotonie incite
+    \xE0 la d\xE9mission, l'alcoolisme voire \xE0 la folie\u201D. \xC7a explique
+    la t\xEAte des gardiens\u2026 "
+  readingTime: 5
+  objectDescribed: {fileID: 1713274597}
+  positionAboveObject: 1
+  positionSideObject: 0
 --- !u!114 &1722180998 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3090079281526891969, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}
@@ -6315,6 +6714,126 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851672935}
   m_CullTransparentMesh: 1
+--- !u!1 &1857034253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1857034254}
+  - component: {fileID: 1857034256}
+  - component: {fileID: 1857034258}
+  - component: {fileID: 1857034257}
+  m_Layer: 0
+  m_Name: PoemFloor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1857034254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857034253}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.91, y: -3.68, z: -0.018920867}
+  m_LocalScale: {x: 1.0990735, y: 1.0990735, z: 1.0990735}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2021351350}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1857034256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857034253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDescription: {fileID: 560326755}
+  textDescription: {fileID: 0}
+  objectDescription: "\u201CUn espace immense o\xF9 tremble le vertige. S\xE9pare
+    \xE0 tout jamais, l\u2019un de l\u2019autre incompris.\u201D Andr\xE9 n\u2019avait
+    pas l\u2019air de regretter le continent.. "
+  readingTime: 5
+  objectDescribed: {fileID: 1857034253}
+  positionAboveObject: 1
+  positionSideObject: 0
+--- !u!114 &1857034257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857034253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
+--- !u!61 &1857034258
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857034253}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.63908136, y: -0.10307759}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.2781625, y: 1.2886175}
+  m_EdgeRadius: 0
 --- !u!1 &1865360490
 GameObject:
   m_ObjectHideFlags: 0
@@ -6414,6 +6933,7 @@ GameObject:
   - component: {fileID: 1913184763}
   - component: {fileID: 1913184766}
   - component: {fileID: 1913184765}
+  - component: {fileID: 1913184767}
   m_Layer: 0
   m_Name: portrait3_0
   m_TagString: Untagged
@@ -6556,6 +7076,26 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.23, y: 2.27}
   m_EdgeRadius: 0
+--- !u!114 &1913184767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913184761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDescription: {fileID: 560326755}
+  textDescription: {fileID: 0}
+  objectDescription: "De l'alcool s\u2019est m\xE9lang\xE9 \xE0 la peinture... Konan
+    est m\xE9connaissable.  "
+  readingTime: 3
+  objectDescribed: {fileID: 1913184761}
+  positionAboveObject: 1
+  positionSideObject: 0
 --- !u!1001 &2012151115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6707,6 +7247,10 @@ Transform:
   - {fileID: 2070302758}
   - {fileID: 738764093}
   - {fileID: 33292141}
+  - {fileID: 444720167}
+  - {fileID: 1857034254}
+  - {fileID: 130321023}
+  - {fileID: 1713274598}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2029964523 stripped
@@ -6997,6 +7541,7 @@ GameObject:
   - component: {fileID: 2056366570}
   - component: {fileID: 2056366572}
   - component: {fileID: 2056366571}
+  - component: {fileID: 2056366573}
   m_Layer: 0
   m_Name: tonneaux1_0
   m_TagString: Untagged
@@ -7158,6 +7703,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.4965534, y: 3.2586439}
   m_EdgeRadius: 0
+--- !u!114 &2056366573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056366567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiDescription: {fileID: 0}
+  textDescription: {fileID: 0}
+  objectDescription: 
+  readingTime: 0
+  objectDescribed: {fileID: 0}
+  positionAboveObject: 0
+  positionSideObject: 0
 --- !u!1 &2070302757
 GameObject:
   m_ObjectHideFlags: 0
