@@ -17,10 +17,13 @@ public class ShowDescriptionScript : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    void Update()
+    {
+        
+    }
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && newDescription == null)
         {
             newDescription = Instantiate(uiDescription, uiDescription.transform.parent);
             textDescriptionPosition();
@@ -37,11 +40,6 @@ public class ShowDescriptionScript : MonoBehaviour
         {
             Destroy(newDescription);
         }   
-    }
-
-    void Update()
-    {
-
     }
     
     public void textDescriptionPosition()
