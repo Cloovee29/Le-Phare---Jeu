@@ -18,6 +18,15 @@ public class DigicodeScript : MonoBehaviour
 
     public int goodAnswers;
 
+    private BoxCollider2D[] decorsBoxCollider2D;
+    public GameObject decors;
+    public BoxCollider2D coffreBoxCollider2D;
+
+    public void Awake()
+    {
+        coffreBoxCollider2D = chestClose.GetComponent<BoxCollider2D>();
+    }
+
     public void ButtonPressed(string tagNote)
     {
         EnigmaEnd();
@@ -79,7 +88,14 @@ public class DigicodeScript : MonoBehaviour
         character.SetActive(false);
         logoJournal.SetActive(false);
         uiArrows.SetActive(false);
-        
+        //foreach (BoxCollider2D col in decorsBoxCollider2D)
+        //{
+
+        //    if (col.gameObject == coffreBoxCollider2D.gameObject)
+        //        continue;
+        //    col.enabled = false;
+
+        //}
     }
 
     public void CloseDigicode()
@@ -88,6 +104,8 @@ public class DigicodeScript : MonoBehaviour
         character.SetActive(true);
         logoJournal.SetActive(true);
         uiArrows.SetActive(true);
+        //foreach (BoxCollider2D col in decorsBoxCollider2D)
+        //    col.enabled = true;
     }
   
 }

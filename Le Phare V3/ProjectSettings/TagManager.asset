@@ -17,6 +17,7 @@ TagManager:
   - Note3
   - Note4
   - pieceLongueVue
+  - coffre
   layers:
   - Default
   - TransparentFX
