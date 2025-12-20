@@ -22,6 +22,7 @@ public class InventoryManagerScript : MonoBehaviour
     public FieldGlassInstanciateScript fieldGlassInstanciate;
     public GameManagerScript gameManager;
     public OpenWindowScript openWindow;
+    public WindowView WindowView;
 
 
     private void Awake()
@@ -90,7 +91,7 @@ public class InventoryManagerScript : MonoBehaviour
         }
         if (usedItem.targetObject.targetName == ItemName.LongueVue)
         {
-            gameManager.windowView();
+            WindowView.windowView();
         }
 
     }

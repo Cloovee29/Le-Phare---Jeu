@@ -40,7 +40,7 @@ public class OpenWindowScript : MonoBehaviour
 
     public void OpenWindow()
     {
-        print("fenetre ouverte");
+        print("mouette arrive");
         window.sprite = closedWindowAndSeagull;
     }
 

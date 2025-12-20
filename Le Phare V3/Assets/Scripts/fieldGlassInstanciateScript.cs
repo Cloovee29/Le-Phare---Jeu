@@ -14,6 +14,12 @@ public class FieldGlassInstanciateScript : MonoBehaviour
     public Sprite windowSpriteSurbri;
     public Sprite windowSprite;
 
+    public SpriteRenderer windowSpriteRenderer;
+
+    public void Start()
+    {
+        windowSpriteRenderer = window.GetComponent<SpriteRenderer>();
+    }
     public void InstantiateCompleteFieldglass()
     {
         print("instancie longue-vue");
@@ -26,13 +32,13 @@ public class FieldGlassInstanciateScript : MonoBehaviour
 
     public void FieldGlassSurbri(bool newState)
     {
-        //if (newState)
-        //{
-        //    spriteRenderer.sprite = windowSpriteSurbri;
-        //}
-        //else
-        //{
-        //    spriteRenderer.sprite = windowSprite;
-        //}
+        if (newState)
+        {
+            windowSpriteRenderer.sprite = windowSpriteSurbri;
+        }
+        else
+        {
+            windowSpriteRenderer.sprite = windowSprite;
+        }
     }
 }

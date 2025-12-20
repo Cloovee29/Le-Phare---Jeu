@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: afee2852131ad5c4f96a5f91a03997f8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4467880939480242590
+    second: "autour andr\xE9_0"
+  - first:
+      213: -8947881645942794802
+    second: "autour andr\xE9_1"
+  - first:
+      213: -6414904434072757014
+    second: "autour andr\xE9_2"
+  - first:
+      213: -488217352439742250
+    second: "autour andr\xE9_3"
+  - first:
+      213: 8355494730927173358
+    second: "autour andr\xE9_4"
+  - first:
+      213: -7695475228970647446
+    second: "autour andr\xE9_5"
+  - first:
+      213: 2286911654016563863
+    second: "autour andr\xE9_6"
+  - first:
+      213: 7573906220696620745
+    second: "autour andr\xE9_7"
+  - first:
+      213: -4641481023766902945
+    second: "autour andr\xE9_8"
+  - first:
+      213: 1455959238782188382
+    second: "autour andr\xE9_9"
+  - first:
+      213: 488293022273710890
+    second: "autour andr\xE9_10"
+  - first:
+      213: 7196401482477477073
+    second: "autour andr\xE9_11"
+  - first:
+      213: -7692149305298203563
+    second: "autour andr\xE9_12"
+  - first:
+      213: -6875197769278112656
+    second: "autour andr\xE9_13"
+  - first:
+      213: 2181550329444682856
+    second: "autour andr\xE9_14"
+  - first:
+      213: 8541753532416937670
+    second: "autour andr\xE9_15"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "autour andr\xE9_0"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 49
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e995578ea0a110e30800000000000000
+      internalID: 4467880939480242590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_1"
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 70
+        width: 71
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec597590d0db2d380800000000000000
+      internalID: -8947881645942794802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_2"
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 80
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aecd303a76ea9f6a0800000000000000
+      internalID: -6414904434072757014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_3"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 22
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0c5a697e08939f0800000000000000
+      internalID: -488217352439742250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_4"
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 43
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeeef8f303ea4f370800000000000000
+      internalID: 8355494730927173358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_5"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 25
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6003673d0e243590800000000000000
+      internalID: -7695475228970647446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_6"
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 30
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79abb52680ebcbf10800000000000000
+      internalID: 2286911654016563863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_7"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 9
+        width: 19
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce4eb6549beb1960800000000000000
+      internalID: 7573906220696620745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_8"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 56
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5748aab995269fb0800000000000000
+      internalID: -4641481023766902945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_9"
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 35
+        width: 13
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b7f03b63b943410800000000000000
+      internalID: 1455959238782188382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_10"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 14
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b2deaaae3c6c600800000000000000
+      internalID: 488293022273710890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_11"
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 5
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc1a282501ced360800000000000000
+      internalID: 7196401482477477073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_12"
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 10
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55cce6a26feff3590800000000000000
+      internalID: -7692149305298203563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_13"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 7
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cbe912e046690a0800000000000000
+      internalID: -6875197769278112656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_14"
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 0
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ccf2e577c664e10800000000000000
+      internalID: 2181550329444682856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "autour andr\xE9_15"
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce46a2e4976a8670800000000000000
+      internalID: 8541753532416937670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "autour andr\xE9_0": 4467880939480242590
+      "autour andr\xE9_1": -8947881645942794802
+      "autour andr\xE9_10": 488293022273710890
+      "autour andr\xE9_11": 7196401482477477073
+      "autour andr\xE9_12": -7692149305298203563
+      "autour andr\xE9_13": -6875197769278112656
+      "autour andr\xE9_14": 2181550329444682856
+      "autour andr\xE9_15": 8541753532416937670
+      "autour andr\xE9_2": -6414904434072757014
+      "autour andr\xE9_3": -488217352439742250
+      "autour andr\xE9_4": 8355494730927173358
+      "autour andr\xE9_5": -7695475228970647446
+      "autour andr\xE9_6": 2286911654016563863
+      "autour andr\xE9_7": 7573906220696620745
+      "autour andr\xE9_8": -4641481023766902945
+      "autour andr\xE9_9": 1455959238782188382
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

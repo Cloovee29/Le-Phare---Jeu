@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/03 - Lighthouse2.unity
     guid: 4fa0358fadfadc04fad56992188a6463
+  - enabled: 1
+    path: Assets/Scenes/04 - EndCinematic.unity
+    guid: 5c9cbb9a59061af4d9cc93b24ea80309
+  - enabled: 1
+    path: Assets/Scenes/05 - Credits.unity
+    guid: 32318eed97c92c74e873f662a54e4f29
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

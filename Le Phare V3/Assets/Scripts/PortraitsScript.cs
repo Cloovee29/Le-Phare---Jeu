@@ -26,11 +26,6 @@ public class PortraitsScript : MonoBehaviour
         }       
     }
 
-    private void OnMouseDown()
-    {
-
-    }
-
     private void OnMouseUp()
     {
         if (isOnTarget)
