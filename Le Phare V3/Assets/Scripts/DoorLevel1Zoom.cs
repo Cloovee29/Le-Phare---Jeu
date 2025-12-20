@@ -26,6 +26,15 @@ public class DoorLevel1Zoom : MonoBehaviour
         decors.SetActive(false);
     }
 
+    public void ExitDoor()
+    {
+        zoomSerrure.SetActive(false);
+        character.SetActive(true);
+        arrows.SetActive(true);
+        descriptionText.SetActive(true);
+        decors.SetActive(true);
+    }
+
     public void DoorSurbri(bool newState)
     {
         if (newState)

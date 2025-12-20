@@ -24,11 +24,13 @@ public class JournalScript : MonoBehaviour
     public List<PageSOScript> pagesContent;
     public int currentPage;
 
+    private BoxCollider2D[] decorsBoxCollider2D;
+    public GameObject decors;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-
         listPages = new List<GameObject>();
         currentPage = 0;
 
@@ -114,13 +116,31 @@ public class JournalScript : MonoBehaviour
     public void ActiveJournal()
     {
         //Affiche le journal et les mots associés à l'écran
-        
 
+        // ancien code qui affiche juste le journal
+        //if (!journalOpened)
+        //    character.SetActive(false);
+
+        //if (journalOpened)
+        //    character.SetActive(true);
+
+        // nouveau code qui affiche le journal et désactive le box collider des objets derrière
+        decorsBoxCollider2D = decors.GetComponentsInChildren<BoxCollider2D>();
         if (!journalOpened)
+        {
             character.SetActive(false);
 
+            foreach (BoxCollider2D col in decorsBoxCollider2D)
+                col.enabled = false;
+        }
+
         if (journalOpened)
+        {
             character.SetActive(true);
+
+            foreach (BoxCollider2D col in decorsBoxCollider2D)
+                col.enabled = true;
+        }
 
 
         journalOpened = !journalOpened;
