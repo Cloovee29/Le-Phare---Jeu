@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fenetre_ouverte_surbri_0: 4553200994401774423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      recif_lg_vue_0: -6302595902949148815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -383,9 +383,9 @@ MonoBehaviour:
   images:
   - {fileID: -2166760519345284411, guid: f130c41723e29b04094e8edcb1341d60, type: 3}
   - {fileID: -5655824507514328483, guid: 683bbcb8ccf711c4bb1d3d59ab03bfe0, type: 3}
-  - {fileID: -1768854372134492381, guid: d406fc5e54c2056489661bd2483ff15b, type: 3}
-  - {fileID: -8483731395159641348, guid: aa171c1e6d8d6ef43a4a518fc4c41902, type: 3}
-  - {fileID: -1641259752620419291, guid: 92b5a29475146364ba1d5e7b252f1604, type: 3}
+  - {fileID: 3518720516325624012, guid: 1c452b4ebc3e6c24490f30d6d970e341, type: 3}
+  - {fileID: -5815789002041459027, guid: 9644b52e9cfd0dc40a8f36d817687b55, type: 3}
+  - {fileID: -7449738884794880301, guid: 988290da44baa624d9ec2b84d0a901ac, type: 3}
   delay: 3
   Level1: 
   fadeController: {fileID: 1269285664}
