@@ -646,8 +646,8 @@ MonoBehaviour:
   waveOk: 0
   shellOk: 0
   goodAnswers: 0
-  decors: {fileID: 2021351349}
-  coffreBoxCollider2D: {fileID: 52910922}
+  imagesWallBoxCollider: {fileID: 444720170}
+  imagesWall: {fileID: 444720166}
 --- !u!61 &52910922
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1321,6 +1321,7 @@ GameObject:
   - component: {fileID: 227465413}
   - component: {fileID: 227465412}
   - component: {fileID: 227465415}
+  - component: {fileID: 227465416}
   m_Layer: 0
   m_Name: ladder
   m_TagString: Untagged
@@ -1457,6 +1458,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowRight: {fileID: 1416585857}
+  cameraScript: {fileID: 366534074}
+--- !u!114 &227465416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227465411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 0
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &229955611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,11 +1888,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e23c046fe781645b8356f25b24d5f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portrait1: {fileID: -6144841604792410135, guid: e38dbde6a6620b34b87dfd7796aeea54, type: 3}
-  portrait4: {fileID: 707887783255445628, guid: f35b5025fd1fb7c4b9b88b6a20694efd, type: 3}
-  portrait5: {fileID: 2422606481503027303, guid: 98d9a8b63c6629c478269d996a6fc5f0, type: 3}
-  ladderScript: {fileID: 227465415}
   portraitEnigmaSolved: 0
+  cameraScript: {fileID: 366534074}
+  ladderScript: {fileID: 227465415}
+  imagesWall: {fileID: 444720166}
 --- !u!50 &302873936
 Rigidbody2D:
   serializedVersion: 5
@@ -2180,7 +2200,7 @@ PrefabInstance:
     - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: portraitsScript
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 302873935}
     - target: {fileID: 8654174148161820120, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2200,6 +2220,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1256034983169195623, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
   m_PrefabInstance: {fileID: 366534071}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &366534074 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+  m_PrefabInstance: {fileID: 366534071}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366534073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e038b239023a2704c856c5882b71fcdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &393804825
 GameObject:
   m_ObjectHideFlags: 0
@@ -3168,8 +3199,8 @@ MonoBehaviour:
   waveOk: 0
   shellOk: 0
   goodAnswers: 0
-  decors: {fileID: 2021351349}
-  coffreBoxCollider2D: {fileID: 52910922}
+  imagesWallBoxCollider: {fileID: 444720170}
+  imagesWall: {fileID: 444720166}
 --- !u!61 &602818076
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3743,11 +3774,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e23c046fe781645b8356f25b24d5f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portrait1: {fileID: -6144841604792410135, guid: e38dbde6a6620b34b87dfd7796aeea54, type: 3}
-  portrait4: {fileID: 707887783255445628, guid: f35b5025fd1fb7c4b9b88b6a20694efd, type: 3}
-  portrait5: {fileID: 2422606481503027303, guid: 98d9a8b63c6629c478269d996a6fc5f0, type: 3}
-  ladderScript: {fileID: 227465415}
   portraitEnigmaSolved: 0
+  cameraScript: {fileID: 366534074}
+  ladderScript: {fileID: 227465415}
+  imagesWall: {fileID: 444720166}
 --- !u!61 &931944679
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5055,11 +5085,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e23c046fe781645b8356f25b24d5f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portrait1: {fileID: -6144841604792410135, guid: e38dbde6a6620b34b87dfd7796aeea54, type: 3}
-  portrait4: {fileID: 707887783255445628, guid: f35b5025fd1fb7c4b9b88b6a20694efd, type: 3}
-  portrait5: {fileID: 2422606481503027303, guid: 98d9a8b63c6629c478269d996a6fc5f0, type: 3}
-  ladderScript: {fileID: 227465415}
   portraitEnigmaSolved: 0
+  cameraScript: {fileID: 366534074}
+  ladderScript: {fileID: 227465415}
+  imagesWall: {fileID: 444720166}
 --- !u!50 &1226506984
 Rigidbody2D:
   serializedVersion: 5

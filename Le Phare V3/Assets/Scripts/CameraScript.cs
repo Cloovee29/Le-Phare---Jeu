@@ -26,6 +26,7 @@ public class CameraScript : MonoBehaviour
     {
         arrowLeft.SetActive(false);
         Cursor.lockState = CursorLockMode.Confined;
+        portraitsScript = GetComponent<PortraitsScript>();
     }
     public void ButtonLeft()
     {
@@ -51,12 +52,6 @@ public class CameraScript : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
 
             character.ShowCharacter();
-
-            if (portraitsScript.portraitEnigmaSolved)
-            {
-                print("trouvé");
-                ladderScript.PlayLadderTween();
-            }
         });
     }
 }

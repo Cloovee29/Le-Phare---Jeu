@@ -6,82 +6,115 @@ public class PortraitsScript : MonoBehaviour
 {
     private Vector3 offset;
     public static int countGoodPositionPortrait = 0;
-
-    public Sprite portrait1;
-    public Sprite portrait4;
-    public Sprite portrait5;
-
     Vector3 targetPosition;
-    bool isOnTarget = false;
+    //bool isOnTarget = false;
+    bool isCorrectlyPlaced = false;
+    public bool portraitEnigmaSolved = false;
+    Transform currentSlot = null;
 
+    public CameraScript cameraScript;
     public LadderScript ladderScript;
 
-    public bool portraitEnigmaSolved = false;
+    public GameObject imagesWall;
 
-    void Update()
+    private void OnMouseDown()
     {
-        if(countGoodPositionPortrait == 3)
-        {
-            SolvedEnigma();            
-        }       
-    }
-
-    private void OnMouseUp()
-    {
-        if (isOnTarget)
-        {
-            transform.position = targetPosition;
-        }
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorldPos.z = transform.position.z;
+        offset = transform.position - mouseWorldPos;
     }
 
     private void OnMouseDrag()
     {
-         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(
-         new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.WorldToScreenPoint(transform.position).z)
-         );
-         transform.position = mouseWorldPos + offset;
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorldPos.z = transform.position.z;
+        transform.position = mouseWorldPos + offset;
+    }
+
+    private void OnMouseUp()
+    {
+        if (currentSlot != null)
+        {
+            transform.position = currentSlot.position;
+            currentSlot.GetComponent<Collider2D>().enabled = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == gameObject.tag)
+        if (collision.CompareTag("Portrait1") ||
+            collision.CompareTag("Portrait4") ||
+            collision.CompareTag("Portrait5"))
         {
-            print("bien placé");
+            currentSlot = collision.transform;
+        }
+        // Le portrait entre dans SA bonne zone
+
+        if (collision.CompareTag(gameObject.tag) && !isCorrectlyPlaced)
+        {
+            isCorrectlyPlaced = true;
             countGoodPositionPortrait++;
-            print(countGoodPositionPortrait);          
+            Debug.Log($"{name} bien placé ({countGoodPositionPortrait})");
         }
 
-        if (collision.gameObject.tag == "Portrait1" ||
-            collision.gameObject.tag == "Portrait4" ||
-            collision.gameObject.tag == "Portrait5")
+        // Détection d'une zone cible pour le snap
+        if (collision.CompareTag("Portrait1") ||
+            collision.CompareTag("Portrait4") ||
+            collision.CompareTag("Portrait5"))
         {
-            isOnTarget = true;
+            //isOnTarget = true;
             targetPosition = collision.transform.position;
-            print("cible detectee");
         }
+        CheckSolved();
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == gameObject.tag)
+        if (currentSlot != null && collision.transform == currentSlot)
         {
-            print("bien puis mal placé");
+            currentSlot = null;
+        }
+        // Le portrait quitte SA bonne zone
+        if (collision.CompareTag(gameObject.tag) && isCorrectlyPlaced)
+        {
+            isCorrectlyPlaced = false;
             countGoodPositionPortrait--;
-            print(countGoodPositionPortrait);
+            Debug.Log($"{name} retiré ({countGoodPositionPortrait})");
         }
 
-        if (collision.gameObject.CompareTag("Portrait1") ||
-            collision.gameObject.CompareTag("Portrait4") ||
-            collision.gameObject.CompareTag("Portrait5"))
+        // Sortie d'une zone cible
+        if (collision.CompareTag("Portrait1") ||
+            collision.CompareTag("Portrait4") ||
+            collision.CompareTag("Portrait5"))
         {
-            isOnTarget = false;
-            print("Sorti de la cible");
+            //isOnTarget = false;
         }
     }
-    void SolvedEnigma()
+
+    //private void Update()
+    //{
+    //    if (countGoodPositionPortrait == 3 && !portraitEnigmaSolved)
+    //    {
+    //        SolvedEnigma();
+    //    }
+    //}
+
+    //void SolvedEnigma()
+    //{
+    //    portraitEnigmaSolved = true;
+    //    Debug.Log("Énigme résolue");
+    //}
+    void CheckSolved()
     {
-        print("enigmeresolue");
-        portraitEnigmaSolved = true;
+        if (!portraitEnigmaSolved && countGoodPositionPortrait == 3)
+        {
+            portraitEnigmaSolved = true;
+            Debug.Log("Énigme résolue");
+            //cameraScript.ButtonRight();
+            ladderScript.PlayLadderTween();
+            Destroy(imagesWall);
+            
+        }
     }
 }
 

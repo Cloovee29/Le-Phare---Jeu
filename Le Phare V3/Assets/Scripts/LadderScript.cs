@@ -13,6 +13,8 @@ public class LadderScript : MonoBehaviour
     //GameObject ladder;
     Tween ladderTween;
 
+    public CameraScript cameraScript;
+
     public void PlayLadderTween()
     {
 
@@ -23,6 +25,9 @@ public class LadderScript : MonoBehaviour
         //    {
 
         //    });
+
+
+        cameraScript.ButtonRight();
 
         ladderTween = transform.DOLocalRotate(
             new Vector3(0f, transform.localEulerAngles.y, transform.localEulerAngles.z),
