@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MusicManager : MonoBehaviour
+public class MusicManagerEnd : MonoBehaviour
 {
     private static MusicManager instance;
 
