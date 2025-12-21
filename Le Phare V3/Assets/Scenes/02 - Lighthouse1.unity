@@ -1955,6 +1955,9 @@ MonoBehaviour:
   blackOverlay: {fileID: 1857381243}
   blackDuration: 4.5
   fadeDuration: 1.5
+  character: {fileID: 2029964523}
+  decors: {fileID: 2021351349}
+  arrows: {fileID: 366534073}
 --- !u!114 &316799864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2025,19 +2028,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316799862}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.8879054, y: 1.8879054, z: 1.8879054}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1857381242}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1442741049}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 959.9999, y: 539.941}
+  m_SizeDelta: {x: 1017, y: 572}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &316799869
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6049,6 +6052,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 316799867}
   - {fileID: 560326754}
   - {fileID: 2146879305}
   - {fileID: 366534072}
@@ -6997,7 +7001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1857381242
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8568,7 +8572,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 316799867}
   - {fileID: 949260847}
   - {fileID: 2012151115}
   - {fileID: 1442741049}

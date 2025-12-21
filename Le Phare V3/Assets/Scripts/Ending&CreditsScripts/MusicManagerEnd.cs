@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MusicManagerEnd : MonoBehaviour
 {
-    private static MusicManager instance;
+    private static MusicManagerEnd instance;
 
     void Awake()
     {

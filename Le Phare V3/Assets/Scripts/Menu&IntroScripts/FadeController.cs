@@ -8,7 +8,6 @@ public class FadeController : MonoBehaviour
 
     public float fadeDuration = 1.5f;
 
-
     // ----LES LIGNES SUIVANTES NE FONCTIONNENT PAS MAIS JE GARDE AU CAS OU ---- //
 
     // private Image _sceneFadeImage;
