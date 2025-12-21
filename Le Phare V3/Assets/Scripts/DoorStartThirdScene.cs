@@ -12,6 +12,7 @@ public class DoorStartThirdScene : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        blackOverlay.gameObject.SetActive(true);
         if (startAudio != null)
             startAudio.Play();
 
