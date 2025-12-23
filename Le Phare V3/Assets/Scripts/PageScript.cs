@@ -23,6 +23,10 @@ public class PageScript : MonoBehaviour
     public int compteurMots = 0;
     public int totalMots = 9;
 
+    public bool textHolesSolve = false;
+
+    public PushTonneaux pushTonneaux;
+
     void Awake()
     {
         listWordsToDrag = new List<GameObject>();
@@ -74,7 +78,10 @@ public class PageScript : MonoBehaviour
     public void CompletePage()
     {
         print("enigme résolue, dessin apparait");
+        textHolesSolve = true;
+        print(textHolesSolve);
         validationDrawing.SetActive(true);
+        pushTonneaux.CanBePushed();
     }
 
 }

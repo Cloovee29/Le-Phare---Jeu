@@ -27,7 +27,7 @@ public class ShowDescriptionScript : MonoBehaviour
         {
             newDescription = Instantiate(uiDescription, uiDescription.transform.parent);
             textDescriptionPosition();
-            Debug.Log("print" + objectDescribed.transform.position);
+            //Debug.Log("print" + objectDescribed.transform.position);
             textDescription = newDescription.GetComponentInChildren<TextMeshProUGUI>();
             textDescription.text = objectDescription;
             Invoke("endDescription", readingTime); //permet de mettre une durée de lecture à la description
@@ -46,6 +46,6 @@ public class ShowDescriptionScript : MonoBehaviour
     {
         Vector3 newUiDescriptionPosition = objectDescribed.transform.position + new Vector3(positionSideObject, positionAboveObject, 0);
         newDescription.transform.position = Camera.main.WorldToScreenPoint(newUiDescriptionPosition); //transpose vers l'UI
-        Debug.Log("Function has been called");
+        //Debug.Log("Function has been called");
     }
 }
