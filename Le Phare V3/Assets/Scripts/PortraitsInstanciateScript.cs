@@ -4,29 +4,21 @@ using UnityEngine.UIElements;
 
 public class PortraitsInstanciateScript : MonoBehaviour
 {
-
     public GameObject portrait1Drag;
     public GameObject portrait4Drag;
     public GameObject portrait5Drag;
     public GameObject portraitParent;
 
-    public InventoryItemScript inventoryItemScript; // pas là avant car variable static depuis le script
+    public InventoryItemScript inventoryItemScript;
     Vector3 worldPos;
     Vector3 mousePos;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = 10f;
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
         worldPos.z = -5f;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void InstanciatePortrait1(Vector3 position)
@@ -36,7 +28,6 @@ public class PortraitsInstanciateScript : MonoBehaviour
         newPortrait.transform.SetParent(portraitParent.transform, true);
         //newPortrait.transform.position = inventoryItemScript.targetObjectPos;
         newPortrait.transform.position = position;
-
     }
 
     public void InstanciatePortrait4(Vector3 position)

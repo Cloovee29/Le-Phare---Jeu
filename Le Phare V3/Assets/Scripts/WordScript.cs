@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine.UI;
 
 public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -11,69 +12,77 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     public TextMeshProUGUI word;
     private float YBasic;
 
+    float XBasic;
+
     Vector3 mouseWorldPosition;
     [SerializeField] private Camera mainCamera;
 
-    public bool isLocked;
     public GameObject page;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    int compteurMots;
+
+    bool isCorrectlyPlaced = false;
+
+    public PageScript pageScript;
+
+    HoleScript currentCorrectHole = null;
+
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-        isLocked = false;
-}
-
-    //Y de 400 à -200
-     public void CreateWord(string newWord, float newY)
+    }
+    public void CreateWord(string newWord, float newX)
     {
         word.text = newWord;
-        YBasic = newY;
-        GetComponent<RectTransform>().anchoredPosition = new Vector2(120,newY);
+        XBasic = newX;
+        GetComponent<RectTransform>().anchoredPosition = new Vector2(newX, -156);
     }
-  
-    
-     public void OnBeginDrag(PointerEventData eventData)
+
+
+    public void OnBeginDrag(PointerEventData eventData)
     {
-        if (isLocked) return;
-        canvasGroup.alpha = 0.6f; 
+        if (isCorrectlyPlaced) return;
         canvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (isLocked) return;
-        transform.position = Input.mousePosition; // nouveau code = le mot suit bien l'image pendant le drag
+        if (isCorrectlyPlaced) return;
+        transform.position = Input.mousePosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-      
-        if (isLocked) return;
-        canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-        transform.position = Input.mousePosition; // nouveau code = si je mets pas ca il se place bizarrement à la fin du drag
-       
+        if (isCorrectlyPlaced) return;
+        if (currentCorrectHole != null && !isCorrectlyPlaced)
+        {
+            rectTransform.position = currentCorrectHole.transform.position;
+            isCorrectlyPlaced = true;
+            pageScript.MotCorrect();
+        }
     }
 
-    private void OnTriggerEnter2D (Collider2D collision){
-        
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (isCorrectlyPlaced) return;
 
         HoleScript hole = collision.GetComponent<HoleScript>();
-        
-
-        if (hole != null)
+        if (hole != null && word.text == hole.answer)
         {
-            
-            if (word.text == hole.answer)
-            {
-                isLocked = true;
-                page.GetComponent<PageScript>().CompletePage();
-                canvasGroup.alpha = 1f;
-            }
+            currentCorrectHole = hole;
         }
-
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (isCorrectlyPlaced) return;
+
+        HoleScript hole = collision.GetComponent<HoleScript>();
+        if (hole != null && hole == currentCorrectHole)
+        {
+            currentCorrectHole = null;
+        }
+    }
 }

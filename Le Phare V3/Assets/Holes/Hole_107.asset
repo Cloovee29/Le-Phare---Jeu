@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252cd3b68bf2ecd4483acd27804a3691, type: 3}
   m_Name: Hole_107
   m_EditorClassIdentifier: 
-  posX: 87.7
-  posY: -49.4
+  posX: 92
+  posY: -46
   answer: silhouette

@@ -18,17 +18,17 @@ public class PageScript : MonoBehaviour
     public GameObject validationDrawing; //image validation page
 
     public float spaceY; //interligne des mots
+    public float spaceX;
 
+    public int compteurMots = 0;
+    public int totalMots = 9;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         listWordsToDrag = new List<GameObject>();
         listHoles = new List<GameObject>();
     }
 
-
-    //Y de 400 à -200
     public void CreatePage(int numbNewPage, PageSOScript pageContent)
     {
         numbPage = numbNewPage;
@@ -40,11 +40,12 @@ public class PageScript : MonoBehaviour
         for (int i = 0; i < pageContent.listWords.Count; i++)
         {
             GameObject newWord = Instantiate(word);
+            word.SetActive(false);
             newWord.transform.SetParent(page.transform, false);
             listWordsToDrag.Add(newWord);
 
-           float newY = 60f - i * spaceY;
-            listWordsToDrag[i].GetComponent<WordScript>().CreateWord(pageContent.listWords[i], newY);
+            float newX = -165f - i * spaceX;
+            listWordsToDrag[i].GetComponent<WordScript>().CreateWord(pageContent.listWords[i], newX);
         }
 
         //crée une liste de trous
@@ -58,27 +59,22 @@ public class PageScript : MonoBehaviour
         }
     }
 
+    public void MotCorrect()
+    {
+        compteurMots++;
+        Debug.Log("Mots corrects : " + compteurMots);
+
+        if (compteurMots == totalMots)
+        {
+            Debug.Log("texte à trous terminé");
+            CompletePage();
+        }
+    }
+
     public void CompletePage()
     {
-        bool pageNotComplete = false;
-
-        
-
-        for (int i = 0; i < listWordsToDrag.Count; i++)
-        {
-            print(listWordsToDrag[i].GetComponent<WordScript>().isLocked);
-            if (listWordsToDrag[i].GetComponent<WordScript>().isLocked == false)
-            {
-                pageNotComplete = true;
-                print("oui");
-            }  
-        }
-
-        if (!pageNotComplete)
-        {
-            validationDrawing.SetActive(true);
-        }
-
+        print("enigme résolue, dessin apparait");
+        validationDrawing.SetActive(true);
     }
 
 }

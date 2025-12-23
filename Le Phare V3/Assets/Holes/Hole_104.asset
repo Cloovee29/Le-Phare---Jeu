@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252cd3b68bf2ecd4483acd27804a3691, type: 3}
   m_Name: Hole_104
   m_EditorClassIdentifier: 
-  posX: 237.1
-  posY: 3.61
+  posX: 156
+  posY: 55
   answer: Ankou

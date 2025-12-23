@@ -54,7 +54,6 @@ public class PortraitsScript : MonoBehaviour
         {
             isCorrectlyPlaced = true;
             countGoodPositionPortrait++;
-            Debug.Log($"{name} bien placé ({countGoodPositionPortrait})");
         }
 
         // Détection d'une zone cible pour le snap
@@ -74,12 +73,11 @@ public class PortraitsScript : MonoBehaviour
         {
             currentSlot = null;
         }
-        // Le portrait quitte SA bonne zone
+        // Le portrait quitte sa bonne zone
         if (collision.CompareTag(gameObject.tag) && isCorrectlyPlaced)
         {
             isCorrectlyPlaced = false;
             countGoodPositionPortrait--;
-            Debug.Log($"{name} retiré ({countGoodPositionPortrait})");
         }
 
         // Sortie d'une zone cible
@@ -90,27 +88,11 @@ public class PortraitsScript : MonoBehaviour
             //isOnTarget = false;
         }
     }
-
-    //private void Update()
-    //{
-    //    if (countGoodPositionPortrait == 3 && !portraitEnigmaSolved)
-    //    {
-    //        SolvedEnigma();
-    //    }
-    //}
-
-    //void SolvedEnigma()
-    //{
-    //    portraitEnigmaSolved = true;
-    //    Debug.Log("Énigme résolue");
-    //}
     void CheckSolved()
     {
         if (!portraitEnigmaSolved && countGoodPositionPortrait == 3)
         {
             portraitEnigmaSolved = true;
-            Debug.Log("Énigme résolue");
-            //cameraScript.ButtonRight();
             ladderScript.PlayLadderTween();
             Destroy(imagesWall);
             
