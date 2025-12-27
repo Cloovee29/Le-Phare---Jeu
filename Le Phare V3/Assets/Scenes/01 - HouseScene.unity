@@ -1411,7 +1411,7 @@ MonoBehaviour:
   uiDescription: {fileID: 1990228115}
   textDescription: {fileID: 0}
   objectDescription: "Le dipl\xF4me de gardien d'Andr\xE9 ... 1899... Il l'a obtenu
-    deux ans avant moi."
+    deux ans avant moi. Je devrais le remplacer."
   readingTime: 3
   objectDescribed: {fileID: 207986362}
   positionAboveObject: -1
@@ -10413,6 +10413,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 8f4b5f7ba518dcc44842486e2571cd04, type: 2}
     - target: {fileID: 607937233285265389, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 607937233285265389, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
@@ -10508,6 +10512,10 @@ PrefabInstance:
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 8f4b5f7ba518dcc44842486e2571cd04, type: 2}
+    - target: {fileID: 5012270493000479773, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5012270493000479773, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_RaycastTarget
       value: 0

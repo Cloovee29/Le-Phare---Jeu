@@ -15,6 +15,11 @@ MonoBehaviour:
   listWords: []
   numbPage: 3
   listHoles: []
-  textPage1: coucou c'est sacha
-  textPage2: hello
+  textPage1: "Toujours de l\u2019humidit\xE9 et de l\u2019avel. Toujours aucun b\xE2teau.<br><br>Visite
+    de <uppercase>Evn</uppercase>, ami-go\xE9land, tous les apr\xE8s-midi. Musique
+    ensemble avec <uppercase>coquillage</uppercase>."
+  textPage2: "Ronan Gwaggen a jet\xE9 une bouteille sur son portrait. Il est tout
+    d\xE9form\xE9. Son fils Konan l\u2019a quand m\xEAme laiss\xE9 accroch\xE9. Dr\xF4le
+    de fa\xE7on d\u2019honorer sa m\xE9moire. <br><br>\u201CSirenn par-del\xE0 <uppercase>gwagenn</uppercase>.<br><uppercase>Vagues</uppercase>
+    par-del\xE0 Sir\xE8ne.<br>Loin celui qui est proche.\u201D"
   imageValidation: {fileID: -7785853240612941435, guid: 63d904b2624eeb34fa7a172d8d4affc2, type: 3}

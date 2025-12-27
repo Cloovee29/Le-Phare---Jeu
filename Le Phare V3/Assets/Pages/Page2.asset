@@ -13,15 +13,24 @@ MonoBehaviour:
   m_Name: Page2
   m_EditorClassIdentifier: 
   listWords:
-  - Lasagnes
-  - Curry
-  - miam
+  - Vague
+  - Oiseau
+  - Evn
+  - Luhet
+  - Coquillage
+  - Avel
   numbPage: 2
   listHoles:
-  - {fileID: 11400000, guid: db667a56754ea774fb6ea6a6a0529b99, type: 2}
-  textPage1: "<br><br> Bran a \xE9crit toutes les instructions \xE0 l\u2019origine
-    du phare. Ancien marin un peu bourru: tout est en breton. Pas encore traduit
-    par le service. Je suis rouill\xE9 mais j\u2019ai pu d\xE9duire quelques mots
-    :"
-  textPage2: 
+  - {fileID: 11400000, guid: 4e8ceec11b1dfd64b8cdcc7f7f819c79, type: 2}
+  - {fileID: 11400000, guid: 20ba4dd1125e05f42970eaf9f14e3f02, type: 2}
+  - {fileID: 11400000, guid: fb7113c35c83abf4784e6180bc89870c, type: 2}
+  - {fileID: 11400000, guid: 876bceb184bef9a4993b23eb5d0c9927, type: 2}
+  - {fileID: 11400000, guid: 5aa40d6a1a51e4e40b4b0f9789476f2d, type: 2}
+  - {fileID: 11400000, guid: 30f81c977b46c1e42af1f5f6e2029ef8, type: 2}
+  textPage1: "E. Bran a \xE9crit les premi\xE8res instructions \xE0 la mise en service
+    du phare en 1823. Ancien marin un peu bourru: tout est en breton. Pas encore
+    traduit par le service. Suis rouill\xE9 mais ai pu d\xE9duire quelques mots:
+    <br>Sir\xE8ne : Sirenn <br><br> Monstre : Euzhvil<br><br>Mort : Ankou "
+  textPage2: "         : Gwaggen<br><br>        :         <br><br>Phare : Tour-tan<br><br>Lumi\xE8re:        
+    <br><br>           : Kregen<br><br> Livre : Levr<br><br>Vent:        "
   imageValidation: {fileID: -7785853240612941435, guid: 63d904b2624eeb34fa7a172d8d4affc2, type: 3}
