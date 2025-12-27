@@ -10,6 +10,7 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     public TextMeshProUGUI word;
+    public Image wordTagBackground;
     private float YBasic;
 
     float XBasic;
