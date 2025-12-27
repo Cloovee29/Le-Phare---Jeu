@@ -33,13 +33,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b84be694c2d498c48bad3184b08d30a1, type: 2}
   - {fileID: 11400000, guid: 11153cf443f1c3043a9c73b2ac70bbae, type: 2}
   - {fileID: 11400000, guid: 2440799b6bcaa3642bc328c267799331, type: 2}
-  textPage1: "Premier jour. Rien \xE0 signaler. Gwaggen (dernier gardien) a bien
-    nettoy\xE9 la maison avant sa disparition.<br>Mer calme. Aucun bateau.<br><br>Cl\xE9s
-    \xE9tranges pour            . <br><br>Penser \xE0               pour la serrure.<br><br>Lumi\xE8re
+  textPage1: "Premier jour. Rien \xE0 signaler. Gwaggen a bien nettoy\xE9 la maison
+    avant sa disparition.<br><br>Mer calme. Aucun bateau.<br><br>Cl\xE9s \xE9tranges
+    pour            . <br><br>Penser \xE0               pour la serrure.<br><br>Lumi\xE8re
     entretenue. "
   textPage2: "Commence \xE0 manquer de                . <br>Plus que 2j avant            
     .<br><br>Bourrasques et orages.<br>Cris dehors. Go\xE9land ?             ?<br><br>Vis
     seul. Mange seul. Dors              .<br><br>                par la fen\xEAtre
-    ? Ai-je r\xEAv\xE9 ?<br><br>Fissures du mur comme des         .<br><br>Maison
-    comme mon          . "
+    ? Ai-je r\xEAv\xE9 ?<br><br>Fissures du mur comme des         .<br><br>Phare
+    comme mon          . Les tonneaux prot\xE9geront mes secrets."
   imageValidation: {fileID: -7785853240612941435, guid: 63d904b2624eeb34fa7a172d8d4affc2, type: 3}

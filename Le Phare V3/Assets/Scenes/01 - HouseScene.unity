@@ -1827,7 +1827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_text
-      value: "R\xE9citer le texte a  permis de d\xE9placer les tonneaux !"
+      value: "J'ai pu les pousser sans probl\xE8me ! "
       objectReference: {fileID: 0}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_fontSize
@@ -3938,8 +3938,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDescription: {fileID: 1990228115}
   textDescription: {fileID: 0}
-  objectDescription: "Ils semblent bloquer l'acc\xE8s \xE0 quelque chose. Je les
-    ai d\xE9j\xE0 vu en dessin quelque part..."
+  objectDescription: "Ils bloquent l'acc\xE8s \xE0 la porte. Je crois les avoir d\xE9j\xE0
+    vus en dessin quelque part..."
   readingTime: 3
   objectDescribed: {fileID: 751368613}
   positionAboveObject: 2
@@ -5253,6 +5253,10 @@ PrefabInstance:
       propertyPath: eventSystem
       value: 
       objectReference: {fileID: 131336210}
+    - target: {fileID: 6556169225859257901, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7175,7 +7179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_text
-      value: "Je vais essayer de r\xE9citer le texte du journal..."
+      value: "Lire le journal d'Andr\xE9 semble avoir envell\xE9 un poids. "
       objectReference: {fileID: 0}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_fontSize
@@ -7574,8 +7578,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.8727, y: 62.1969}
-  m_SizeDelta: {x: 78.3579, y: 58.2085}
+  m_AnchoredPosition: {x: -17.9, y: 57.5}
+  m_SizeDelta: {x: 53.6498, y: 38.3672}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1589587784
 MonoBehaviour:
@@ -7590,7 +7594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 0.7058824}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.69411767}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10832,6 +10836,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
+    - target: {fileID: 5601854329751382041, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5601854329751382041, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5601854329751382041, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: duration
       value: 1.5
@@ -10856,6 +10872,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
+    - target: {fileID: 8654174148161820120, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654174148161820120, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654174148161820120, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
