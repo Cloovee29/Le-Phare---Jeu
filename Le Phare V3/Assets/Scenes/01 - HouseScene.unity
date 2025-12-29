@@ -9698,12 +9698,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiMarieThought: {fileID: 1359883441}
   textMarieThought: {fileID: 0}
-  marieThought: "Andr\xE9... O\xF9 es-tu ?"
-  readingTime: 3
+  readingTime: 5
   marie: {fileID: 2102459816}
   positionAboveMarie: 3
   startThoughts: 0.5
   clickMove2D: {fileID: 2016547166}
+  inventoryMarie: {fileID: 0}
+  marieThoughts:
+  - "J'ai r\xE9cup\xE9r\xE9 le journal d'Andr\xE9 devant la porte, mais des mots
+    sont effac\xE9s par la pluie."
+  - "Il ne faut pas que j'oublie d'accrocher mon dipl\xF4me."
 --- !u!114 &2135610567 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4755481561254092858, guid: adb5e51192405a846b3e2f3b7bb2b2fc, type: 3}

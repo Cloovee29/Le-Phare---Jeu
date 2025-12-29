@@ -19,7 +19,10 @@ public class ShowDescriptionScript : MonoBehaviour
 
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0) && newDescription != null)
+        {
+            Invoke("endDescription", 0);
+        }
     }
     void OnMouseOver()
     {
