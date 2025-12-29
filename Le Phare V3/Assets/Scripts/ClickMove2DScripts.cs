@@ -21,6 +21,8 @@ public class ClickMove2D : MonoBehaviour
 
     public AudioSource characterFeedback;
 
+    public float distanceMarieTarget;
+
 
     void Start()
     {
@@ -73,8 +75,10 @@ public class ClickMove2D : MonoBehaviour
 
                 transform.localScale = scale;
             }
+            Vector3 direction = (mousePos - transform.position).normalized;
 
-            targetPosition = mousePos;
+            targetPosition = mousePos - direction * distanceMarieTarget; //permet de gérer la distance de Marie par rapport au point où l'on clique pour éviter que les deux se superposent.
+
         }
 
         transform.position = Vector3.MoveTowards(

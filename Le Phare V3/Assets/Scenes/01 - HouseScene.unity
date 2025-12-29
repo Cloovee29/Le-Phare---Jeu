@@ -1410,8 +1410,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDescription: {fileID: 1990228115}
   textDescription: {fileID: 0}
-  objectDescription: "Le dipl\xF4me de gardien d'Andr\xE9 ... 1899... Il l'a obtenu
-    deux ans avant moi. Je devrais le remplacer."
+  objectDescription: "Le dipl\xF4me de gardien d'Andr\xE9 ... 1899... Deux ans avant
+    moi. Je devrais le remplacer par le mien."
   readingTime: 3
   objectDescribed: {fileID: 207986362}
   positionAboveObject: -1
@@ -3055,8 +3055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDescription: {fileID: 1990228115}
   textDescription: {fileID: 0}
-  objectDescription: "Les tiroirs sont coinc\xE9s."
-  readingTime: 1
+  objectDescription: Les tiroirs sont remplis de registres et de documents officiels.
+  readingTime: 3
   objectDescribed: {fileID: 567024798}
   positionAboveObject: 1
   positionSideObject: 0
