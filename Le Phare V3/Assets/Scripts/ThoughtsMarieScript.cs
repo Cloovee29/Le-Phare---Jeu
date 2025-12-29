@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ThoughtsMarieScript : MonoBehaviour
 {
@@ -18,13 +20,13 @@ public class ThoughtsMarieScript : MonoBehaviour
     //gérer les pensées de Marie : 
     public List<string> marieThoughts;
     private int currentThoughtIndex = 0;
-    private bool marieThinking;
+    //private bool marieThinking;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Start() //Attention à bien utiliser ce script dans le cas d'une pensée au début d'une scène, sinon il y aura une erreur. 
     {
-        Invoke("launchMarieThought", startThoughts); // lance la première pensée
+       Invoke("launchMarieThought", startThoughts); // lance la première pensée
     }
 
     // Update is called once per frame
@@ -52,7 +54,7 @@ public class ThoughtsMarieScript : MonoBehaviour
             //marieThinking = false;
         }
 
-        if (currentThoughtIndex == 1) //&& marieThinking == false) // lance la pensée suivante.
+        if (currentThoughtIndex == 1 && marieThoughts.Count > 1 ) //&& marieThinking == false) // lance la pensée suivante.
         {
             Invoke("launchMarieThought", 1);
         }
