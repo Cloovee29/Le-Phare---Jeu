@@ -3842,9 +3842,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -74.5
       objectReference: {fileID: 0}
+    - target: {fileID: 607937233285265389, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f4b5f7ba518dcc44842486e2571cd04, type: 2}
+    - target: {fileID: 607937233285265389, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 936635662619590484, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_Name
-      value: ValidationElement
+      value: ValidationDrawing
       objectReference: {fileID: 0}
     - target: {fileID: 4936342674496662843, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3885,6 +3893,14 @@ PrefabInstance:
     - target: {fileID: 4936342674496662843, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5012270493000479773, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f4b5f7ba518dcc44842486e2571cd04, type: 2}
+    - target: {fileID: 5012270493000479773, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5425056237937022246, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: page

@@ -29,8 +29,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 30f81c977b46c1e42af1f5f6e2029ef8, type: 2}
   textPage1: "E. Bran a \xE9crit les premi\xE8res instructions \xE0 la mise en service
     du phare en 1823. Ancien marin un peu bourru: tout est en breton. Pas encore
-    traduit par le service. Suis rouill\xE9 mais ai pu d\xE9duire quelques mots:
-    <br>Sir\xE8ne : Sirenn <br><br> Monstre : Euzhvil<br><br>Mort : Ankou "
+    traduit. Suis rouill\xE9 mais ai pu d\xE9duire quelques mots: <br><br>Sir\xE8ne
+    : Sirenn <br><br> Monstre : Euzhvil<br><br>La Mort : Ankou "
   textPage2: "         : Gwaggen<br><br>        :         <br><br>Phare : Tour-tan<br><br>Lumi\xE8re:        
     <br><br>           : Kregen<br><br> Livre : Levr<br><br>Vent:        "
   imageValidation: {fileID: -7785853240612941435, guid: 63d904b2624eeb34fa7a172d8d4affc2, type: 3}

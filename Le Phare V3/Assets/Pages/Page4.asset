@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6040875705efb5043a402ca42a7e1f6b, type: 3}
-  m_Name: PageTest
+  m_Name: Page4
   m_EditorClassIdentifier: 
   listWords:
   - phare
