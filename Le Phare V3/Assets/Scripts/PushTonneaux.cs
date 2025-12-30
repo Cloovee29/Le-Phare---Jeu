@@ -67,7 +67,6 @@ public class PushTonneaux : MonoBehaviour
                 print("corres pushtonneaux");
                 marieDialogue.SetActive(true);
             }
-            //marieDialogue.transform.position = marie.transform.position;
         }
 
     }

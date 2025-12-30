@@ -10,6 +10,8 @@ public class WindowView : MonoBehaviour
 
     private BoxCollider2D[] decorsBoxCollider2D;
     public GameObject decors;
+    public GameObject autourAndre;
+    public GameObject frescoMeeting;
     public void CloseWindow()
     {
         decorsBoxCollider2D = decors.GetComponentsInChildren<BoxCollider2D>();
@@ -22,6 +24,8 @@ public class WindowView : MonoBehaviour
 
     public void windowView()
     {
+        autourAndre.SetActive(true);
+        frescoMeeting.SetActive(false);
         decorsBoxCollider2D = decors.GetComponentsInChildren<BoxCollider2D>();
         foreach (BoxCollider2D col in decorsBoxCollider2D)
             col.enabled = false;

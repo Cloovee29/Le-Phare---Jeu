@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8c6b52cba2ee97f4eb2f47eb6884ef29
+guid: 8c90e83817fe48a4db498254ff2a8196
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1092160579550297845
-    second: arrow_se_0
+      213: 5774212243343673416
+    second: oiseau_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrow_se_0
+      name: oiseau_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 15
-        width: 34
-        height: 34
+        x: 36
+        y: 39
+        width: 135
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b01483a4dbdd7d0f0800000000000000
-      internalID: -1092160579550297845
+      spriteID: 8480636317f122050800000000000000
+      internalID: 5774212243343673416
       vertices: []
       indices: 
       edges: []
@@ -134,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      arrow_se_0: -1092160579550297845
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

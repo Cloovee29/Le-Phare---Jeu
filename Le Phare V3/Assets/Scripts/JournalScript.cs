@@ -144,7 +144,6 @@ public class JournalScript : MonoBehaviour
         if (journalOpened)
         {
             character.SetActive(true);
-
             foreach (BoxCollider2D col in decorsBoxCollider2D)
                 col.enabled = true;
         }

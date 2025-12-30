@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cb1501f80c248c440b5dbef91484d806
+guid: c908bcef75cd49f498f8a904e35d35f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7797115855328607649
-    second: diplomeold_surbri_0
+      213: 6523866653569619721
+    second: diplomeold_surbriv2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: diplomeold_surbri_0
+      name: diplomeold_surbriv2_0
       rect:
         serializedVersion: 2
         x: 33
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f528292c0741bc390800000000000000
-      internalID: -7797115855328607649
+      spriteID: 9079800182e698a50800000000000000
+      internalID: 6523866653569619721
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      diplomeold_surbri_0: -7797115855328607649
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 20b436f44fee0a5418d37f8a4a62b5ae
+guid: b7d969af1b1d1754494b9c1997a62909
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8111027820698633273
-    second: arrow_n_0
+      213: -390916146330862785
+    second: journal_droitr_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrow_n_0
+      name: journal_droitr_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 11
-        width: 30
-        height: 42
+        x: 59
+        y: 18
+        width: 124
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7cb72ffcb27df6f80800000000000000
-      internalID: -8111027820698633273
+      spriteID: f3bfbf806df239af0800000000000000
+      internalID: -390916146330862785
       vertices: []
       indices: 
       edges: []
@@ -134,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      arrow_n_0: -8111027820698633273
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

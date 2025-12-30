@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b8b365ed1a05a47a634eefdb53127e, type: 3}
   m_Name: diplomeMarie
   m_EditorClassIdentifier: 
-  image: {fileID: -7311468251057098373, guid: 70652dc47e174c7488ebe2cbd879fbe0, type: 3}
+  image: {fileID: -3847721854429538626, guid: 7302fdd32535f3c46bd74e3e9be823a8, type: 3}
   idName: 1
   audioClip: {fileID: 0}

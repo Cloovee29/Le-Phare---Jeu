@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 30e4ba6ebc72a68479f661f758319a1b
+guid: 10f45fdb4a5604f4796052d883cfc2c2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1289751551860879046
-    second: arrow_sw_0
+      213: 3673446464866942000
+    second: livre_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrow_sw_0
+      name: livre_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 15
-        width: 34
-        height: 34
+        x: 36
+        y: 39
+        width: 135
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a31d2d60cc1e91ee0800000000000000
-      internalID: -1289751551860879046
+      spriteID: 03cfec7d814baf230800000000000000
+      internalID: 3673446464866942000
       vertices: []
       indices: 
       edges: []
@@ -134,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      arrow_sw_0: -1289751551860879046
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

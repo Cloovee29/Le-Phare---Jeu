@@ -12,6 +12,7 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     public TextMeshProUGUI word;
     public Image wordTagBackground;
     private float YBasic;
+    public MouseAspectManagerScript mouseAspectManagerScript;
 
     float XBasic;
 
@@ -49,12 +50,14 @@ public class WordScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnDrag(PointerEventData eventData)
     {
+        Cursor.SetCursor(mouseAspectManagerScript.grabCursor, mouseAspectManagerScript.hotSpot, mouseAspectManagerScript.cursorMode); 
         if (isCorrectlyPlaced) return;
         transform.position = Input.mousePosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        Cursor.SetCursor(mouseAspectManagerScript.defaultCursor, mouseAspectManagerScript.hotSpot, mouseAspectManagerScript.cursorMode);
         canvasGroup.blocksRaycasts = true;
         if (isCorrectlyPlaced) return;
         if (currentCorrectHole != null && !isCorrectlyPlaced)

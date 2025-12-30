@@ -1373,7 +1373,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1904704914469204854, guid: e1709069de73d9943a2da512bef50eff, type: 3}
+  m_Sprite: {fileID: 3027538296514273737, guid: 0cafe0fb62881ff4f9703d7d2043a62d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1429,9 +1429,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b9672899be211e46976cc5892b0bd9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newDiplome: {fileID: -7311468251057098373, guid: 8680a01a79837524b851570c4bdb32d6, type: 3}
-  oldDiplomeSurbriSprite: {fileID: -7797115855328607649, guid: b0f790f33b080e0458288172d385d775, type: 3}
-  oldDiplomeSprite: {fileID: -1904704914469204854, guid: 3e8d5a04a9c9dbf479ae2f3687db16ab, type: 3}
+  newDiplome: {fileID: -3847721854429538626, guid: 7302fdd32535f3c46bd74e3e9be823a8, type: 3}
+  oldDiplomeSurbriSprite: {fileID: 6523866653569619721, guid: c908bcef75cd49f498f8a904e35d35f9, type: 3}
+  oldDiplomeSprite: {fileID: 3027538296514273737, guid: 0cafe0fb62881ff4f9703d7d2043a62d, type: 3}
   keys: {fileID: 1894481016}
 --- !u!114 &207986369
 MonoBehaviour:
@@ -6020,10 +6020,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1290704065}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -688, y: -403}
-  m_SizeDelta: {x: 202.4041, y: 202.4041}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1438, y: -855}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1079459574
 MonoBehaviour:
@@ -6113,7 +6113,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6565611790505804585, guid: 4dd287045fb92024b88b6f29c9413c02, type: 3}
+  m_Sprite: {fileID: 622137271081825968, guid: e9486cd7a5e8fa341b20ff10bf48cb4a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -7522,7 +7522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_text
-      value: "Lire le journal d'Andr\xE9 semble avoir envell\xE9 un poids. "
+      value: "Lire le journal d'Andr\xE9 semble avoir enlev\xE9 un poids. "
       objectReference: {fileID: 0}
     - target: {fileID: 7900731682062290550, guid: a3afe1c84f0b244648bc8466926beb87, type: 3}
       propertyPath: m_fontSize
@@ -8110,8 +8110,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 689, y: -403}
-  m_SizeDelta: {x: 202.4041, y: 202.4041}
+  m_AnchoredPosition: {x: 684, y: -393.28}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1645285862
 MonoBehaviour:
@@ -8201,7 +8201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7019206827932137109, guid: 6ae2c9b37e6a9874fbdbd952b867e615, type: 3}
+  m_Sprite: {fileID: -390916146330862785, guid: b7d969af1b1d1754494b9c1997a62909, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -11176,6 +11176,10 @@ PrefabInstance:
       propertyPath: pageScript
       value: 
       objectReference: {fileID: 1062033233}
+    - target: {fileID: 5425056237937022246, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: mouseAspectManagerScript
+      value: 
+      objectReference: {fileID: 66876370}
     - target: {fileID: 5641402217605038497, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_BodyType
       value: 0
@@ -11471,7 +11475,7 @@ PrefabInstance:
     - target: {fileID: 5601854329751382041, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
+      objectReference: {fileID: -644086356973432991, guid: b1cd9065372327047b618b57a9b40ae5, type: 3}
     - target: {fileID: 5601854329751382041, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -11507,7 +11511,7 @@ PrefabInstance:
     - target: {fileID: 8654174148161820120, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -3497705377561342267, guid: 19712e925dd22dc4ea3e09f0b7fc93e5, type: 3}
+      objectReference: {fileID: -644086356973432991, guid: b1cd9065372327047b618b57a9b40ae5, type: 3}
     - target: {fileID: 8654174148161820120, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: m_Color.b
       value: 1

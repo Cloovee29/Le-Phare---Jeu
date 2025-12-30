@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dc26ea9d8486eb24091051a9417a6d51
+guid: e9486cd7a5e8fa341b20ff10bf48cb4a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5878321476267287197
-    second: illu5_0
+      213: 622137271081825968
+    second: journal_gauche_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: illu5_0
+      name: journal_gauche_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 47
+        y: 13
+        width: 124
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d92267cec3ef39150800000000000000
-      internalID: 5878321476267287197
+      spriteID: 0b6fc544d8642a800800000000000000
+      internalID: 622137271081825968
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      illu5_0: 5878321476267287197
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

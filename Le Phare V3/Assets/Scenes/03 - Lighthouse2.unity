@@ -2211,7 +2211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &633231930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3926,6 +3926,10 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1324654644}
+    - target: {fileID: 5425056237937022246, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: mouseAspectManagerScript
+      value: 
+      objectReference: {fileID: 1038532613}
     - target: {fileID: 5867895439799590865, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -5988,6 +5992,8 @@ MonoBehaviour:
   buttonEndGame: {fileID: 433046147}
   character: {fileID: 1289624839}
   decors: {fileID: 1790203481}
+  autourAndre: {fileID: 633231929}
+  frescoMeeting: {fileID: 1183258773}
 --- !u!1001 &1629940805
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7d0f1d792c8bc0341b3a40c343128e30
+guid: 494f9d84d02fe1444812aeff5a1f8837
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6555059972143686015
-    second: "Capture d'\xE9cran 2025-12-21 115405_0"
+      213: 3211125702643728294
+    second: phare_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Capture d'\xE9cran 2025-12-21 115405_0"
+      name: phare_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1919
-        height: 1079
+        x: 36
+        y: 39
+        width: 135
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18e5efe7fafb705a0800000000000000
-      internalID: -6555059972143686015
+      spriteID: 6afb43330d5309c20800000000000000
+      internalID: 3211125702643728294
       vertices: []
       indices: 
       edges: []
@@ -134,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Capture d'\xE9cran 2025-12-21 115405_0": -6555059972143686015
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

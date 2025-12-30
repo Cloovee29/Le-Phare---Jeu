@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using static UnityEngine.InputSystem.UI.VirtualMouseInput;
 
 public class DigicodeScript : MonoBehaviour
 {
@@ -87,9 +88,7 @@ public class DigicodeScript : MonoBehaviour
             chestOpen.SetActive(true);
             portrait5.SetActive(true);
             chestClose.SetActive(false);
-
         }
-       
     }
 
 

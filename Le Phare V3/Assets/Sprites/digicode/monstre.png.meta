@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 71dac45143a097a4d9cd228e85ad8b32
+guid: bd99defc672b3df43921fb4091649668
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6500879890538287173
-    second: diplome1_surbri_0
+      213: 2568190241375428685
+    second: monstre_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: diplome1_surbri_0
+      name: monstre_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 10
-        width: 111
-        height: 90
+        x: 36
+        y: 39
+        width: 136
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbf2cf4ce2c38c5a0800000000000000
-      internalID: -6500879890538287173
+      spriteID: d40aeccea6b04a320800000000000000
+      internalID: 2568190241375428685
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      diplome1_surbri_0: -6500879890538287173
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
