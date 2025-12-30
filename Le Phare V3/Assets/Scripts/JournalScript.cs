@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.EventSystems;
 
 public class JournalScript : MonoBehaviour
@@ -27,6 +28,11 @@ public class JournalScript : MonoBehaviour
     private BoxCollider2D[] decorsBoxCollider2D;
     public GameObject decors;
 
+    //[Header("Audio")]    // ------SON QUI A CASSE LES MOTS ----
+    //public AudioClip openSound;
+    //public AudioClip closeSound;
+    //public AudioClip pageTurn;
+    //private AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -44,7 +50,6 @@ public class JournalScript : MonoBehaviour
             listPages[i].GetComponent<PageScript>().CreatePage(i, pagesContent[i]);
         }
       
-        
     }
 
     // Update is called once per frame
@@ -123,6 +128,8 @@ public class JournalScript : MonoBehaviour
 
         //if (journalOpened)
         //    character.SetActive(true);
+
+        //audioSource.PlayOneShot(openSound);    // ----SON QUI A CASSE LES MOTS
 
         // nouveau code qui affiche le journal et désactive le box collider des objets derrière
         decorsBoxCollider2D = decors.GetComponentsInChildren<BoxCollider2D>();
