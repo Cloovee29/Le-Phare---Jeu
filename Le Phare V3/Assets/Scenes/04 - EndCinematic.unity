@@ -469,9 +469,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayImage: {fileID: 1858254626}
   images:
-  - {fileID: -7848821292793060783, guid: d82ca095554e5b343876b0409953c6ac, type: 3}
-  - {fileID: -6555059972143686015, guid: 7d0f1d792c8bc0341b3a40c343128e30, type: 3}
-  - {fileID: -5407538627079469048, guid: d6b1a70d9ebeb4c4880c8cd06f1c4449, type: 3}
+  - {fileID: 6247349756565330685, guid: c147a1033ae3a754999d98c8673872ec, type: 3}
+  - {fileID: 5878321476267287197, guid: dc26ea9d8486eb24091051a9417a6d51, type: 3}
+  - {fileID: 1464858747501889694, guid: 4970a6fdb4d3ce84eb1703ab611afb0e, type: 3}
   delay: 3
   EndCinematic: 
   fadeController: {fileID: 6643426}

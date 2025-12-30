@@ -485,7 +485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5079245216b25dd40925b11eb9691f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 35
+  scrollSpeed: 45
   endPositionY: 1900
 --- !u!1 &911797447
 GameObject:
@@ -1096,7 +1096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5079245216b25dd40925b11eb9691f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 35
+  scrollSpeed: 45
   endPositionY: 1900
 --- !u!225 &1629517527
 CanvasGroup:
