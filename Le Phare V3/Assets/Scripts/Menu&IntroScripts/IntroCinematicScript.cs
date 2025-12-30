@@ -40,8 +40,8 @@ public class IntroCinematicScript : MonoBehaviour
 
             yield return StartCoroutine(fadeController.FadeIn());
 
-            // si c'est les deux premières images, attendre le clic
-            if (i < 2)
+            // si c'est les deux premières images, attendre le clic //NB Anto: j'ai changé à trois pour les trois parties de la lettre
+            if (i < 3)
             {
                 if (clickIndicator != null)   // pour mon curseur
                     clickIndicator.SetActive(true);

@@ -3830,6 +3830,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 944425132}
     m_Modifications:
+    - target: {fileID: 598072916917048812, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 707.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 598072916917048812, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 455.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 598072916917048812, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -74.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 936635662619590484, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_Name
+      value: ValidationElement
+      objectReference: {fileID: 0}
     - target: {fileID: 4936342674496662843, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_LocalPosition.x
       value: -101.95033
@@ -3933,6 +3949,22 @@ PrefabInstance:
     - target: {fileID: 8274539997584271298, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_Name
       value: Page
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949073524359854771, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 724
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949073524359854771, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 455
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949073524359854771, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 147
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949073524359854771, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5585221190261451067, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
