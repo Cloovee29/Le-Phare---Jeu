@@ -25,11 +25,18 @@ public class OpenWindowScript : MonoBehaviour
     public Sprite pieceFGSprite;
 
     int compteurWindow;
+
+    [Header("Audio")]
+    public AudioClip openSound;
+
+    private AudioSource audioSource;
     void Start()
     {
         window = windowGO.GetComponent<SpriteRenderer>();
         fieldGlass2.SetActive(false);
         spriteRenderer = fieldGlass2.GetComponent<SpriteRenderer>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,6 +57,9 @@ public class OpenWindowScript : MonoBehaviour
         if (window.sprite == closedWindowAndSeagull && compteurWindow == 1)
         {
             window.sprite = openedWindowAndSeagull;
+
+            if (audioSource != null && openSound != null)  //le son de amélie
+                audioSource.PlayOneShot(openSound);
         }
         if (window.sprite == openedWindowAndSeagull && compteurWindow == 2)
         {
