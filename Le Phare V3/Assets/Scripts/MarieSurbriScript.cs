@@ -12,12 +12,6 @@ public class MarieSurbriScript : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SurbriMarie(bool newState)
     {
         if (newState)

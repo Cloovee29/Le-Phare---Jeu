@@ -1,8 +1,8 @@
-﻿using Unity.VisualScripting;
+﻿using System.Collections; 
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
-using System.Collections; 
 
 public class ClickMove2D : MonoBehaviour
 {
@@ -23,6 +23,7 @@ public class ClickMove2D : MonoBehaviour
 
     public float distanceMarieTarget;
 
+    [SerializeField] Animator animator;
 
     void Start()
     {
@@ -34,32 +35,40 @@ public class ClickMove2D : MonoBehaviour
 
         footstepsAudio = GetComponent<AudioSource>();
 
-    }
+        Vector3 scale = transform.localScale;
 
+        scale.x = Mathf.Abs(scale.x);
+
+        transform.localScale = scale;
+    }
     void Update()
     {
         if (transform.position != targetPosition)
         {
+            animator.SetBool("isWalking", true);
             if (!footstepsAudio.isPlaying)
                 footstepsAudio.Play();
         }
         else
         {
+            animator.SetBool("isWalking", false);
             if (footstepsAudio.isPlaying)
                 footstepsAudio.Stop();
         }
 
-            if (Input.GetMouseButtonDown(0) && eventSystem.currentSelectedGameObject == null)
+        if (Input.GetMouseButtonDown(0) && eventSystem.currentSelectedGameObject == null)
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);   // position de mon curseur sur mon écran retranscris en position sur Unity
 
             mousePos.y = groundY;
+    
+            mousePos.z = 0; // pas retirer sinon perso bouge sur les murs
 
-            mousePos.z = 0;   // pas retirer sinon perso bouge sur les murs
 
             // flip
 
-            if (mousePos.x < transform.position.x){
+            if (mousePos.x < transform.position.x)
+            {
                 Vector3 scale = transform.localScale;
 
                 scale.x = -Mathf.Abs(scale.x);
@@ -68,26 +77,27 @@ public class ClickMove2D : MonoBehaviour
             }
             else
             {
-
                 Vector3 scale = transform.localScale;
 
                 scale.x = Mathf.Abs(scale.x);
 
                 transform.localScale = scale;
             }
+
             Vector3 direction = (mousePos - transform.position).normalized;
 
             targetPosition = mousePos - direction * distanceMarieTarget; //permet de gérer la distance de Marie par rapport au point où l'on clique pour éviter que les deux se superposent.
-
+            //bool isWalking = Vector3.Distance(transform.position, targetPosition) > 0.05f;
         }
 
-        transform.position = Vector3.MoveTowards(
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                targetPosition,
+                speed * Time.deltaTime
+            );
 
-        transform.position,
-
-        targetPosition,
-        speed * Time.deltaTime);
     }
+
     // Pour quand on clique sur une flèche
     public void HideAndResetCharacter()
     {

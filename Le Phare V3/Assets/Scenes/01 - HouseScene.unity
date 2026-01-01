@@ -1604,6 +1604,7 @@ MonoBehaviour:
   InventoryManagerScript: {fileID: 933263916}
   itemToPickup: {fileID: 11400000, guid: 47d02a9d18116df409f7e05def5dd15a, type: 2}
   mouseAspectManagerScript: {fileID: 0}
+  pickSound: {fileID: 0}
 --- !u!114 &235297803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5448,24 +5449,12 @@ PrefabInstance:
       propertyPath: eventSystem
       value: 
       objectReference: {fileID: 131336210}
-    - target: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
-      propertyPath: distanceMarieTarget
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6106687214909394912, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
-      propertyPath: distanceMarieTarget.x
-      value: -20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6556169225859257901, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5859461775448578166, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
-      insertIndex: -1
+      insertIndex: 5
       addedObject: {fileID: 2102459821}
   m_SourcePrefab: {fileID: 100100000, guid: cc1aad8aaf1511449ac44bfdd828903b, type: 3}
 --- !u!1 &1032670411
@@ -9502,6 +9491,7 @@ MonoBehaviour:
   InventoryManagerScript: {fileID: 933263916}
   itemToPickup: {fileID: 11400000, guid: 038db189aeb1b63438c53e36d85ad36e, type: 2}
   mouseAspectManagerScript: {fileID: 66876370}
+  pickSound: {fileID: 0}
 --- !u!114 &1894481021
 MonoBehaviour:
   m_ObjectHideFlags: 0

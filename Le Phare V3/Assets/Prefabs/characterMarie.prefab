@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6106687214909394912}
   - component: {fileID: -6097754267870976536}
   - component: {fileID: 621207348066209180}
+  - component: {fileID: 348129152317956443}
   m_Layer: 0
   m_Name: characterMarie
   m_TagString: Untagged
@@ -79,10 +80,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 4928917721884981284, guid: 384d092140da73042a8bfb82fe1f4360, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 7103098046888217708, guid: aa5d4fc2c501d654ab65394454e2a281, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 6.4, y: 6.4}
@@ -108,6 +109,8 @@ MonoBehaviour:
   Arrows: {fileID: 0}
   eventSystem: {fileID: 0}
   characterFeedback: {fileID: 3919925569586914393}
+  distanceMarieTarget: 2
+  animator: {fileID: 348129152317956443}
 --- !u!82 &-6097754267870976536
 AudioSource:
   m_ObjectHideFlags: 0
@@ -302,6 +305,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &348129152317956443
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5859461775448578166}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5e50fe99ccec754d871dc25685ddac7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7787348628215316146
 GameObject:
   m_ObjectHideFlags: 0
