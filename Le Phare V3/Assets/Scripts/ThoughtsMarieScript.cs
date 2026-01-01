@@ -20,8 +20,6 @@ public class ThoughtsMarieScript : MonoBehaviour
     //gérer les pensées de Marie : 
     public List<string> marieThoughts;
     private int currentThoughtIndex = 0;
-    //private bool marieThinking;
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() //Attention à bien utiliser ce script dans le cas d'une pensée au début d'une scène, sinon il y aura une erreur. 
@@ -36,6 +34,15 @@ public class ThoughtsMarieScript : MonoBehaviour
            {
             Invoke("endThought", 0);
            }
+
+        if(currentThoughtIndex < marieThoughts.Count) // empêche le déplacement de Marie tant que les pensées ne sont pas finies pour éviter des bugs d'affichage ou d'animation de Marie
+        {
+            clickMove2D.enabled = false;
+        }
+        else
+        {
+            clickMove2D.enabled = true;
+        }
     }
 
     public void thoughtMariePosition()
@@ -49,12 +56,11 @@ public class ThoughtsMarieScript : MonoBehaviour
         if (newMarieThought != null)
         {
             Destroy(newMarieThought);
-            clickMove2D.enabled = true;
+            //clickMove2D.enabled = true;
             currentThoughtIndex++;
-            //marieThinking = false;
         }
 
-        if (currentThoughtIndex == 1 && marieThoughts.Count > 1 ) //&& marieThinking == false) // lance la pensée suivante.
+        if (currentThoughtIndex == 1 && marieThoughts.Count > 1 ) // lance la pensée suivante.
         {
             Invoke("launchMarieThought", 1);
         }
@@ -70,7 +76,7 @@ public class ThoughtsMarieScript : MonoBehaviour
             textMarieThought.text = marieThoughts[currentThoughtIndex];
 
             Invoke("endThought", readingTime);
-            clickMove2D.enabled = false;
+            //clickMove2D.enabled = false;
         }
     }
 }

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      etage_phare_bgV2_0: 6827622448835711503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
