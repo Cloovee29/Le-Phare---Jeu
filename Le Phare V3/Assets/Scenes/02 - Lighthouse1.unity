@@ -2490,6 +2490,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UiArrows
       objectReference: {fileID: 0}
+    - target: {fileID: 2067678794179231244, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 765
+      objectReference: {fileID: 0}
     - target: {fileID: 2515330988639527313, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2574,6 +2578,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -644086356973432991, guid: b1cd9065372327047b618b57a9b40ae5, type: 3}
+    - target: {fileID: 6796462188135123298, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -785
+      objectReference: {fileID: 0}
     - target: {fileID: 8449027132385792480, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
       propertyPath: duration
       value: 1.5
@@ -3198,7 +3206,6 @@ GameObject:
   - component: {fileID: 559693798}
   - component: {fileID: 559693799}
   - component: {fileID: 559693800}
-  - component: {fileID: 559693801}
   m_Layer: 0
   m_Name: LocationPortrait1
   m_TagString: Portrait1
@@ -3335,26 +3342,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.04, y: 3.48}
   m_EdgeRadius: 0
---- !u!114 &559693801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559693795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiDescription: {fileID: 560326755}
-  textDescription: {fileID: 0}
-  objectDescription: "D'autres portraits de gardiens devaient \xEAtre accroch\xE9s
-    l\xE0. Je me demande o\xF9 ils sont..."
-  readingTime: 3
-  objectDescribed: {fileID: 1537183311}
-  positionAboveObject: 1
-  positionSideObject: 0
 --- !u!1001 &560326753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5379,7 +5366,6 @@ GameObject:
   - component: {fileID: 1032036420}
   - component: {fileID: 1032036421}
   - component: {fileID: 1032036422}
-  - component: {fileID: 1032036423}
   m_Layer: 0
   m_Name: LocationPortrait4
   m_TagString: Portrait4
@@ -5516,26 +5502,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.04, y: 3.48}
   m_EdgeRadius: 0
---- !u!114 &1032036423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032036417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiDescription: {fileID: 560326755}
-  textDescription: {fileID: 0}
-  objectDescription: "D'autres portraits de gardiens devaient \xEAtre accroch\xE9s
-    l\xE0. Je me demande o\xF9 ils sont..."
-  readingTime: 3
-  objectDescribed: {fileID: 1537183311}
-  positionAboveObject: 1
-  positionSideObject: 0
 --- !u!1 &1092605289
 GameObject:
   m_ObjectHideFlags: 0
@@ -5548,7 +5514,6 @@ GameObject:
   - component: {fileID: 1092605292}
   - component: {fileID: 1092605293}
   - component: {fileID: 1092605294}
-  - component: {fileID: 1092605295}
   m_Layer: 0
   m_Name: LocationPortrait5
   m_TagString: Portrait5
@@ -5685,26 +5650,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.04, y: 3.48}
   m_EdgeRadius: 0
---- !u!114 &1092605295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1092605289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiDescription: {fileID: 560326755}
-  textDescription: {fileID: 0}
-  objectDescription: "D'autres portraits de gardiens devaient \xEAtre accroch\xE9s
-    l\xE0. Je me demande o\xF9 ils sont..."
-  readingTime: 3
-  objectDescribed: {fileID: 1537183311}
-  positionAboveObject: 1
-  positionSideObject: 0
 --- !u!1 &1161683527
 GameObject:
   m_ObjectHideFlags: 0
@@ -8819,7 +8764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDescription: {fileID: 560326755}
   textDescription: {fileID: 0}
-  objectDescription: "De l'alcool s\u2019est m\xE9lang\xE9 \xE0 la peinture... Konan
+  objectDescription: "De l'alcool s\u2019est m\xE9lang\xE9 \xE0 la peinture... Ronan
     est m\xE9connaissable.  "
   readingTime: 3
   objectDescribed: {fileID: 1913184761}
