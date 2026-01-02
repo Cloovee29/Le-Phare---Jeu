@@ -4873,7 +4873,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.001473546, y: 0.057777375}
+  m_Offset: {x: 0.04916072, y: 0.08696075}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4883,7 +4883,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.52866197, y: 0.53695863}
+  m_Size: {x: 1.2750375, y: 1.0622584}
   m_EdgeRadius: 0
 --- !u!212 &1274066655
 SpriteRenderer:
@@ -4930,7 +4930,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 12
   m_Sprite: {fileID: 935683453505650346, guid: c14e7feb1f6b738469e11294f51ae0d7, type: 3}
-  m_Color: {r: 0.8490566, g: 0.41251338, b: 0.41251338, a: 1}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5273,6 +5273,7 @@ MonoBehaviour:
   marie: {fileID: 1289624839}
   positionAboveMarie: 4
   startThoughts: 0.25
+  timeInBetweenThoughts: 0
   clickMove2D: {fileID: 1289624838}
   inventoryMarie: {fileID: 2133832764}
   marieThoughts:
