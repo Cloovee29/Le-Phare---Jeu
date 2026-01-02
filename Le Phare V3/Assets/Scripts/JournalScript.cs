@@ -6,6 +6,7 @@ using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class JournalScript : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class JournalScript : MonoBehaviour
 
     public List<PageSOScript> pagesContent;
     public int currentPage;
+    public int sceneBeginningPage;
+    public int sceneMaxPage;
+    public int sceneMinPage;
 
     private BoxCollider2D[] decorsBoxCollider2D;
     public GameObject decors;
@@ -49,15 +53,18 @@ public class JournalScript : MonoBehaviour
             listPages.Add(newPage);
             listPages[i].GetComponent<PageScript>().CreatePage(i, pagesContent[i]);
         }
-      
+
+        //afficher la bonne page au début
+        currentPage = sceneBeginningPage;
+        ChangePage();
+
     }
 
     // Update is called once per frame
     void Update()
     {
       
-        //changement de page de journal WIP
-        if (Input.GetKeyDown(KeyCode.RightArrow) && journalOpened && currentPage+1< pagesContent.Count)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && journalOpened && currentPage+1 <= sceneMaxPage)
         {
             currentPage = currentPage + 1;
             ChangePage();
@@ -66,7 +73,7 @@ public class JournalScript : MonoBehaviour
             //afficher la nouvelle page du carnet et cacher la précédente
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && journalOpened && currentPage - 1 > -1)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && journalOpened && currentPage-1 >= sceneMinPage)
         {
             currentPage = currentPage - 1;
             ChangePage();
@@ -97,7 +104,7 @@ public class JournalScript : MonoBehaviour
 
     public void ChangePageNext()
     {
-        if(currentPage + 1 < pagesContent.Count)
+        if(currentPage + 1 <= sceneMaxPage)
         {
             currentPage = currentPage + 1;
             ChangePage();
@@ -110,7 +117,7 @@ public class JournalScript : MonoBehaviour
 
     public void ChangePagePrevious()
     {
-        if (currentPage - 1 > -1)
+        if (currentPage - 1 >= sceneMinPage)
         {
             currentPage = currentPage - 1;
             ChangePage();

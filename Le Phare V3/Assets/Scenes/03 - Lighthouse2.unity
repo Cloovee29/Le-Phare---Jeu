@@ -4122,7 +4122,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0c5e075d0845ec644a93b4838539b611, type: 2}
   - {fileID: 11400000, guid: 78bf718cffe4b204287e0b8ef4d42d0c, type: 2}
   - {fileID: 11400000, guid: b60e087675f8d1e44a669a6802299452, type: 2}
-  currentPage: 1
+  currentPage: 3
+  sceneBeginningPage: 3
+  sceneMaxPage: 3
+  sceneMinPage: 3
   decors: {fileID: 1790203481}
 --- !u!114 &944425134
 MonoBehaviour:
