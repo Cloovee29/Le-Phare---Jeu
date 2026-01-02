@@ -13,7 +13,8 @@ public class ThoughtsMarieScript : MonoBehaviour
     public float readingTime;
     public GameObject marie;
     public float positionAboveMarie;
-    public float startThoughts; // permet de régler le temps de lancement des pensées de marie
+    public float startThoughts; // permet de régler le temps de lancement de la première pensée de Marie
+    public float timeInBetweenThoughts; //temps entre les pensées
     public ClickMove2D clickMove2D;
     public GameObject inventoryMarie;
 
@@ -56,13 +57,12 @@ public class ThoughtsMarieScript : MonoBehaviour
         if (newMarieThought != null)
         {
             Destroy(newMarieThought);
-            //clickMove2D.enabled = true;
             currentThoughtIndex++;
         }
 
         if (currentThoughtIndex == 1 && marieThoughts.Count > 1 ) // lance la pensée suivante.
         {
-            Invoke("launchMarieThought", 1);
+            Invoke("launchMarieThought", timeInBetweenThoughts);
         }
     }
 
@@ -76,7 +76,6 @@ public class ThoughtsMarieScript : MonoBehaviour
             textMarieThought.text = marieThoughts[currentThoughtIndex];
 
             Invoke("endThought", readingTime);
-            //clickMove2D.enabled = false;
         }
     }
 }
