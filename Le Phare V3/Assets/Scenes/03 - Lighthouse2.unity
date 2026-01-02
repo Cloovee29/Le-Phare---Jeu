@@ -2296,7 +2296,6 @@ GameObject:
   - component: {fileID: 643857836}
   - component: {fileID: 643857835}
   - component: {fileID: 643857840}
-  - component: {fileID: 643857839}
   m_Layer: 0
   m_Name: seashell
   m_TagString: Coquillage
@@ -2436,25 +2435,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1790203482}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &643857839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643857834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d414561ba0f74694b6d0356331ab1d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiDescription: {fileID: 1694004468}
-  textDescription: {fileID: 0}
-  objectDescription: "Une conque. Elle murmure \xE0 l'oreille les secrets de la mer."
-  readingTime: 3
-  objectDescribed: {fileID: 643857834}
-  positionAboveObject: 1
-  positionSideObject: -2
 --- !u!114 &643857840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2471,7 +2451,7 @@ MonoBehaviour:
   hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
   grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
   descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
-  containsDescription: 1
+  containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1 &654708218 stripped
@@ -2580,7 +2560,7 @@ Transform:
   m_GameObject: {fileID: 805617134}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.38, y: 2.45, z: 3.422885}
+  m_LocalPosition: {x: -11.388, y: 2.825, z: 3.422885}
   m_LocalScale: {x: 1.4140139, y: 1.6319017, z: 2.822383}
   m_ConstrainProportionsScale: 0
   m_Children: []
