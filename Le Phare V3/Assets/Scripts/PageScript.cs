@@ -43,6 +43,7 @@ public class PageScript : MonoBehaviour
 
         transform.Find("TextPage").GetComponent<TextMeshProUGUI>().text = pageContent.textPage1;
         transform.Find("TextPage2").GetComponent<TextMeshProUGUI>().text = pageContent.textPage2;
+        
 
         //crée une liste d'objets mots à partir de la liste de scripts dans unity
         for (int i = 0; i < pageContent.listWords.Count; i++)

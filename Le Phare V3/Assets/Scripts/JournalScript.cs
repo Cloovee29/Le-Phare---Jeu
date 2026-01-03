@@ -32,6 +32,8 @@ public class JournalScript : MonoBehaviour
     private BoxCollider2D[] decorsBoxCollider2D;
     public GameObject decors;
 
+    public GameObject pageBase;
+
     //[Header("Audio")]    // ------SON QUI A CASSE LES MOTS ----
     //public AudioClip openSound;
     //public AudioClip closeSound;
@@ -57,6 +59,7 @@ public class JournalScript : MonoBehaviour
         //afficher la bonne page au début
         currentPage = sceneBeginningPage;
         ChangePage();
+        pageBase.SetActive(false);
 
     }
 
@@ -127,18 +130,6 @@ public class JournalScript : MonoBehaviour
 
     public void ActiveJournal()
     {
-        //Affiche le journal et les mots associés à l'écran
-
-        // ancien code qui affiche juste le journal
-        //if (!journalOpened)
-        //    character.SetActive(false);
-
-        //if (journalOpened)
-        //    character.SetActive(true);
-
-        //audioSource.PlayOneShot(openSound);    // ----SON QUI A CASSE LES MOTS
-
-        // nouveau code qui affiche le journal et désactive le box collider des objets derrière
         decorsBoxCollider2D = decors.GetComponentsInChildren<BoxCollider2D>();
         if (!journalOpened)
         {
