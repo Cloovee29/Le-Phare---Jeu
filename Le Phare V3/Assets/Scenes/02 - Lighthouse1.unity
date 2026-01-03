@@ -1328,6 +1328,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 936635662619590484, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4936342674496662843, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_LocalPosition.x
       value: -101.95033
@@ -1430,11 +1434,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5867895439799590865, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 80
+      value: 194.1
       objectReference: {fileID: 0}
     - target: {fileID: 5867895439799590865, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 18
+      value: -116.5
       objectReference: {fileID: 0}
     - target: {fileID: 5867895439799590865, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -1452,6 +1456,14 @@ PrefabInstance:
       propertyPath: spaceY
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7522337901277996814, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: totalMots
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7522337901277996814, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: totalMotsScene
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7855065385458995915, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -201
@@ -1464,6 +1476,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Page
       objectReference: {fileID: 0}
+    - target: {fileID: 8274539997584271298, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747631575870493048, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 359004767490234375, guid: 921a32f23fa241c4a99ee7a0974b9ead, type: 3}
     - target: {fileID: 8949073524359854771, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: m_SizeDelta.x
       value: 724
@@ -8365,9 +8385,9 @@ MonoBehaviour:
   uiDescription: {fileID: 560326755}
   textDescription: {fileID: 0}
   objectDescription: "\u201CUn espace immense o\xF9 tremble le vertige. S\xE9pare
-    \xE0 tout jamais, l\u2019un de l\u2019autre incompris.\u201D Andr\xE9 n\u2019avait
-    pas l\u2019air de regretter le continent.. "
-  readingTime: 5
+    \xE0 tout jamais, l\u2019un de l\u2019autre incompris.\u201D Andr\xE9 n\u2019a
+    jamais aim\xE9 le continent."
+  readingTime: 6
   objectDescribed: {fileID: 1857034253}
   positionAboveObject: 1
   positionSideObject: 0

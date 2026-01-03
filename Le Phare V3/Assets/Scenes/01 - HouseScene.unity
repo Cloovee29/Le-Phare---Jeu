@@ -11327,6 +11327,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7522337901277996814, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
+      propertyPath: sceneMaison
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7522337901277996814, guid: 6ebeac2670dd5904a9908f65ea02e018, type: 3}
       propertyPath: pushTonneaux
       value: 
       objectReference: {fileID: 751368619}

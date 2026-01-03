@@ -21,10 +21,11 @@ public class PageScript : MonoBehaviour
     public float spaceX;
 
     public int compteurMots = 0;
-    public int totalMots = 9;
+    public int totalMotsScene;
 
     public bool textHolesSolve = false;
 
+    public bool sceneMaison; // pour éviter une erreur du Pushtonneaux dans les autres scènes. Mais aurait sûrement été mieux dans un script séparé.
     public PushTonneaux pushTonneaux;
 
     void Awake()
@@ -68,7 +69,7 @@ public class PageScript : MonoBehaviour
         compteurMots++;
         Debug.Log("Mots corrects : " + compteurMots);
 
-        if (compteurMots == totalMots)
+        if (compteurMots == totalMotsScene)
         {
             Debug.Log("texte à trous terminé");
             CompletePage();
@@ -81,7 +82,10 @@ public class PageScript : MonoBehaviour
         textHolesSolve = true;
         print(textHolesSolve);
         validationDrawing.SetActive(true);
-        pushTonneaux.CanBePushed();
+        if(sceneMaison == true)
+        {
+            pushTonneaux.CanBePushed();
+        }   
     }
 
 }
