@@ -28,6 +28,9 @@ public class PageScript : MonoBehaviour
     public bool sceneMaison; // pour éviter une erreur du Pushtonneaux dans les autres scènes. Mais aurait sûrement été mieux dans un script séparé.
     public PushTonneaux pushTonneaux;
 
+    public bool sceneFinPhare;
+    public NotesEnigmaScript notesEnigmaScript;
+
     void Awake()
     {
         listWordsToDrag = new List<GameObject>();
@@ -80,12 +83,20 @@ public class PageScript : MonoBehaviour
     {
         print("enigme résolue, dessin apparait");
         textHolesSolve = true;
-        print(textHolesSolve);
+        print("textHolesSolved");
+
         validationDrawing.SetActive(true);
-        if(sceneMaison == true)
+
+        if (sceneMaison == true)
         {
             pushTonneaux.CanBePushed();
-        }   
+
+        }
+
+        if (sceneFinPhare == true)
+        {
+            notesEnigmaScript.journalPageSolved = true;
+        }
     }
 
 }
