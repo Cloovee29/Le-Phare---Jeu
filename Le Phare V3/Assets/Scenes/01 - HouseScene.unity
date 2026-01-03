@@ -638,6 +638,7 @@ GameObject:
   - component: {fileID: 65237370}
   - component: {fileID: 65237369}
   - component: {fileID: 65237368}
+  - component: {fileID: 65237371}
   m_Layer: 0
   m_Name: Wall (3)
   m_TagString: Untagged
@@ -780,6 +781,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &65237371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65237366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!114 &66876370 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6698103716590991203, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
@@ -1637,11 +1657,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultCursor: {fileID: 0}
-  hoverObjectsCursor: {fileID: 0}
-  grabCursor: {fileID: 0}
-  descriptionCursor: {fileID: 0}
-  containsDescription: 0
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1 &255887354
@@ -2918,7 +2938,7 @@ MonoBehaviour:
   defaultCursor: {fileID: 0}
   hoverObjectsCursor: {fileID: 0}
   grabCursor: {fileID: 0}
-  descriptionCursor: {fileID: 0}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
   containsDescription: 0
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
@@ -3785,6 +3805,7 @@ GameObject:
   - component: {fileID: 725352600}
   - component: {fileID: 725352599}
   - component: {fileID: 725352598}
+  - component: {fileID: 725352601}
   m_Layer: 0
   m_Name: Wall (2)
   m_TagString: Untagged
@@ -3927,6 +3948,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &725352601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725352596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &745158382
 GameObject:
   m_ObjectHideFlags: 0
@@ -7953,6 +7993,10 @@ PrefabInstance:
       propertyPath: containsDescription
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6698103716590991203, guid: 9e4871ca3edc73d4abaf07c8ed8ffc0a, type: 3}
+      propertyPath: sizeDescriptionCursor
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8465,11 +8509,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultCursor: {fileID: 0}
-  hoverObjectsCursor: {fileID: 0}
-  grabCursor: {fileID: 0}
-  descriptionCursor: {fileID: 0}
-  containsDescription: 0
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1 &1713680725
@@ -9155,11 +9199,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultCursor: {fileID: 0}
-  hoverObjectsCursor: {fileID: 0}
-  grabCursor: {fileID: 0}
-  descriptionCursor: {fileID: 0}
-  containsDescription: 0
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
 --- !u!1001 &1884681245
@@ -9556,6 +9600,7 @@ GameObject:
   - component: {fileID: 1917243255}
   - component: {fileID: 1917243254}
   - component: {fileID: 1917243253}
+  - component: {fileID: 1917243256}
   m_Layer: 0
   m_Name: Wall (1)
   m_TagString: Untagged
@@ -9698,6 +9743,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1917243256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917243251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce3b30fea1655b4cad8f014d3d656b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: a144bab85cc6ba54383bbdb85fef3ffd, type: 3}
+  hoverObjectsCursor: {fileID: 2800000, guid: 1613b48d67c2e634d89d6b2ca7eeee56, type: 3}
+  grabCursor: {fileID: 2800000, guid: 23469597e19911640a088209dc5f0b9f, type: 3}
+  descriptionCursor: {fileID: 2800000, guid: bf4ccef7e3cf6ba4c8ca5c6902124524, type: 3}
+  containsDescription: 1
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &1966188914 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1256034983169195623, guid: d65e45aab79b9f64990931375d6f85df, type: 3}
